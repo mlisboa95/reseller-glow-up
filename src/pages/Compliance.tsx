@@ -1,5 +1,5 @@
 import { useState } from "react";
-import { ShieldCheck, FileCheck, Leaf, ScrollText, Send } from "lucide-react";
+import { Send } from "lucide-react";
 import Header from "@/components/Header";
 import Footer from "@/components/Footer";
 import { Button } from "@/components/ui/button";
@@ -11,14 +11,15 @@ import { useToast } from "@/hooks/use-toast";
 import useScrollAnimation from "@/hooks/useScrollAnimation";
 import { complianceFormSchema, complianceFormSchemaRequired, type ComplianceFormData } from "@/lib/validations";
 import { useLanguage } from "@/contexts/LanguageContext";
+import SEOHead from "@/components/SEOHead";
 
 const Compliance = () => {
   const { toast } = useToast();
   const { ref: contentRef, isVisible: contentVisible } = useScrollAnimation();
-  const { ref: certsRef, isVisible: certsVisible } = useScrollAnimation();
   const { t } = useLanguage();
 
   const [isAnonymous, setIsAnonymous] = useState(false);
+  const [honeypot, setHoneypot] = useState("");
   const [formData, setFormData] = useState<ComplianceFormData>({
     name: "",
     email: "",
@@ -27,13 +28,6 @@ const Compliance = () => {
   });
   const [errors, setErrors] = useState<Partial<Record<keyof ComplianceFormData, string>>>({});
   const [isSubmitting, setIsSubmitting] = useState(false);
-
-  const complianceItems = [
-    { icon: ScrollText, title: t("compliance.integrity"), subtitle: undefined, available: false },
-    { icon: ShieldCheck, title: "ISO 37001", subtitle: t("compliance.antisuborno"), available: true },
-    { icon: FileCheck, title: "ISO 9001", subtitle: t("compliance.quality"), available: true },
-    { icon: Leaf, title: "ISO 14001", subtitle: t("compliance.environmental"), available: true },
-  ];
 
   const reasonOptions = [
     t("reason.corruption"),
@@ -66,7 +60,10 @@ const Compliance = () => {
 
   const handleSubmit = async (e: React.FormEvent) => {
     e.preventDefault();
-    
+
+    // Honeypot check — bots fill this hidden field
+    if (honeypot) return;
+
     if (!validateForm()) {
       toast({
         title: t("compliance.toast.error.title"),
@@ -99,6 +96,10 @@ const Compliance = () => {
 
   return (
     <div className="min-h-screen bg-white pt-3 md:pt-5">
+      <SEOHead
+        title="Compliance e Ética | Mahvla Telecomm"
+        description="Programa de compliance da Mahvla Telecomm. Relate irregularidades com sigilo absoluto. Certificações ISO 37001, ISO 9001, ISO 14001."
+      />
       <div className="mx-3 md:mx-5 rounded-[1.25rem] bg-background overflow-hidden relative">
         <Header />
         <div className="pt-32 md:pt-36 pb-10 px-6 lg:px-12 max-w-[1400px] mx-auto relative z-10">
@@ -121,11 +122,10 @@ const Compliance = () => {
 
       <main className="py-4 md:py-6">
         <div className="max-w-[1400px] mx-auto px-6 lg:px-12">
-          <div 
+          <div
             ref={contentRef}
             className={`max-w-2xl mx-auto scroll-fade-up ${contentVisible ? 'visible' : ''}`}
           >
-
             <div className="flex flex-col justify-start">
               <div className="mb-4 text-center">
                 <h2 className="text-2xl font-display font-bold text-foreground mb-2">
@@ -137,6 +137,20 @@ const Compliance = () => {
               </div>
 
               <form onSubmit={handleSubmit} className="space-y-4 p-6 rounded-2xl bg-card border border-border">
+                {/* Honeypot — hidden from users, catches bots */}
+                <div className="absolute -left-[9999px]" aria-hidden="true">
+                  <label htmlFor="website">Website</label>
+                  <input
+                    type="text"
+                    id="website"
+                    name="website"
+                    tabIndex={-1}
+                    autoComplete="off"
+                    value={honeypot}
+                    onChange={(e) => setHoneypot(e.target.value)}
+                  />
+                </div>
+
                 <div className="flex items-center space-x-3 p-3 rounded-xl bg-muted/50 border border-border">
                   <Checkbox
                     id="anonymous"
@@ -190,8 +204,8 @@ const Compliance = () => {
                     value={formData.reason}
                     onChange={(e) => handleInputChange("reason", e.target.value)}
                     className={`w-full h-10 px-3 rounded-md bg-background border text-foreground text-sm focus:outline-none focus:ring-2 transition-colors ${
-                      errors.reason 
-                        ? 'border-destructive focus:ring-destructive/20' 
+                      errors.reason
+                        ? 'border-destructive focus:ring-destructive/20'
                         : 'border-border focus:ring-primary/20 focus:border-primary'
                     }`}
                   >
