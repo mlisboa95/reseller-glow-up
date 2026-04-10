@@ -25,6 +25,7 @@ import trendLogo from "@/assets/partners/trend.jpg";
 import veeamLogo from "@/assets/partners/veeam-partner.svg";
 import invenziLogo from "@/assets/partners/invenzi-partner.png";
 import lenovoLogo from "@/assets/partners/lenovo-partner.svg";
+import rsaLogo from "@/assets/partners/rsa-partner.svg";
 import veeamWhiteLogo from "@/assets/partners/veeam.svg";
 
 const logoMap: Record<string, string> = {
@@ -46,6 +47,7 @@ const logoMap: Record<string, string> = {
   veeam: veeamLogo,
   invenzi: invenziLogo,
   lenovo: lenovoLogo,
+  rsa: rsaLogo,
 };
 
 // Partners with dedicated white logos for dark backgrounds (skip CSS filter)
