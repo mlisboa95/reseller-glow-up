@@ -325,10 +325,28 @@ export const partners: Partner[] = [
   {
     slug: "veeam",
     name: "Veeam",
-    description: "Descrição em breve.",
-    relatedSolutions: [{ label: "Infraestrutura & Cloud", href: "/#servicos" }],
-    seoTitle: "Veeam | Mahvla Telecomm | Parceiro Autorizado",
-    seoDescription: "Parceiro Veeam em Brasília. Backup e recuperação de dados com Mahvla Telecomm.",
+    description: "A Mahvla é revenda Veeam com classificação Silver no programa de canais ProPartner, com sede em Brasília-DF e atendimento em todo o Brasil. Nossa equipe projeta, implanta e opera soluções de backup, recuperação de dados e resiliência cibernética baseadas na Veeam Data Platform, desde o dimensionamento e cotação até o suporte técnico contínuo com SLA dedicado. Atuamos com Veeam integrado a ambientes ExaGrid, garantindo uma solução completa de proteção de dados com storage em camadas e recuperação ultrarrápida.\n\nA Veeam é líder global em proteção de dados e resiliência cibernética, protegendo mais de 550.000 organizações no mundo. Sua plataforma unifica backup, recuperação e segurança de dados para ambientes de data center, cloud (AWS, Azure, Google Cloud), SaaS (Microsoft 365, Salesforce) e aplicações corporativas em um único console. Com detecção proativa de ameaças por IA, backups imutáveis e recuperação instantânea, a Veeam é a principal linha de defesa contra ransomware e perda de dados.\n\nSe você busca uma revenda Veeam no Brasil para proteger seus dados, implementar backup corporativo, garantir recuperação rápida contra ransomware ou proteger seu ambiente Microsoft 365, fale com nosso time para uma cotação ou assessment de proteção de dados.",
+    technologies: [
+      { title: "Veeam Data Platform", detail: "Plataforma unificada de backup, recuperação e segurança de dados" },
+      { title: "Backup para data center", detail: "Proteção de VMs (VMware, Hyper-V, Nutanix AHV), servidores físicos e aplicações enterprise (SQL, Oracle, SAP)" },
+      { title: "Backup cloud-native", detail: "Proteção nativa para AWS, Azure e Google Cloud com imutabilidade" },
+      { title: "Veeam Backup for Microsoft 365", detail: "Backup de Exchange, SharePoint, OneDrive e Teams" },
+      { title: "Proteção contra ransomware", detail: "Backups imutáveis, detecção inline de malware com IA, Threat Hunter e Clean Rooms" },
+      { title: "Recuperação instantânea (Instant Recovery)", detail: "RPO e RTO próximos de zero para VMs e workloads cloud" },
+      { title: "Veeam Recovery Orchestrator", detail: "Automação de planos de recuperação de desastres com testes e runbooks" },
+      { title: "Integração com ExaGrid", detail: "Backup acelerado com Tiered Backup Storage e proteção contra ransomware em camadas" },
+    ],
+    faq: [
+      { question: "Como comprar soluções Veeam pela Mahvla?", answer: "Somos revenda Veeam Silver ProPartner no Brasil. Solicite uma cotação pelo botão Fale com um especialista ou envie um e-mail para contato@mahvla.com.br. Atendemos empresas privadas e órgãos públicos em todo o Brasil." },
+      { question: "Veeam protege contra ransomware?", answer: "Sim. A Veeam Data Platform oferece múltiplas camadas de proteção: backups imutáveis que não podem ser criptografados por ransomware, detecção inline de malware com IA durante o backup, análise de indicadores de comprometimento e recuperação em ambientes isolados (Clean Rooms) para garantir que o restore esteja limpo." },
+      { question: "Veeam faz backup do Microsoft 365?", answer: "Sim. O Veeam Backup for Microsoft 365 protege Exchange Online, SharePoint, OneDrive e Teams. A responsabilidade pela proteção dos dados no Microsoft 365 é do cliente, não da Microsoft. A Veeam garante que você tenha backup e recuperação granular de e-mails, arquivos e conversas." },
+      { question: "Veeam funciona com ExaGrid?", answer: "Sim. A Mahvla é parceira de ambos os fabricantes e implanta a solução integrada. A ExaGrid é certificada Veeam Ready e oferece uma Landing Zone dedicada para backups Veeam com restore ultrarrápido, além de um repositório isolado da rede com proteção contra ransomware. É a combinação ideal para proteção de dados corporativa." },
+      { question: "A Mahvla atende fora de Brasília?", answer: "Sim. Temos sede em Brasília-DF, mas atendemos projetos em todo o território nacional, com equipe técnica certificada e suporte remoto e presencial." },
+      { question: "A Mahvla oferece suporte técnico pós-implantação?", answer: "Sim. Oferecemos contratos de suporte com SLA garantido, operação assistida 24/7, monitoramento proativo e manutenção preventiva e corretiva para ambientes Veeam." },
+    ],
+    relatedSolutions: [{ label: "Cibersegurança", href: "/#servicos" }],
+    seoTitle: "Veeam | Parceiro Silver — Mahvla Telecomm, Brasília-DF",
+    seoDescription: "Revenda Veeam em Brasília. Backup, recuperação de dados, proteção contra ransomware e resiliência cibernética para ambientes cloud, data center e SaaS. Projeto, implantação e suporte com SLA dedicado. Atendimento em todo o Brasil.",
   },
 ];
 
