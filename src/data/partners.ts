@@ -55,10 +55,10 @@ export const partners: Partner[] = [
   {
     slug: "extreme-networks",
     name: "Extreme Networks",
-    badge: "Diamond Partner",
+    badge: undefined,
     description: "A Extreme Networks é líder global em infraestrutura de redes corporativas, reconhecida seis vezes consecutivas como Leader no Gartner Magic Quadrant para Wired and Wireless LAN Infrastructure. Seu portfólio abrange switches universais, access points Wi-Fi 6E/7, SD-WAN, network fabric e segurança de rede, tudo gerenciado por uma única plataforma em nuvem, a Extreme Platform ONE.\n\nA Mahvla é parceira Diamond da Extreme, o mais alto nível do programa de canais Extreme Partner First. Isso significa que nossa equipe possui certificações técnicas e comerciais avançadas em todo o portfólio Extreme, com capacidade comprovada de projetar, implantar e operar redes completas, do edge ao data center.",
     technologies: [
-      { title: "Switching", detail: "Universal Switches — séries 4000, 5320, 5420, 5520, 5720" },
+      { title: "Switching", detail: "Universal Switches — séries 4000, 5320, 5420, 5520, 5720, 7520, 7720, 7830" },
       { title: "Wireless", detail: "Access Points Wi-Fi 6E e Wi-Fi 7" },
       { title: "Extreme Fabric", detail: "Segmentação automatizada e Zero Trust" },
       { title: "ExtremeCloud IQ / Platform ONE", detail: "Gestão centralizada em nuvem com AIOps" },
