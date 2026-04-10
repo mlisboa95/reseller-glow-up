@@ -20,16 +20,16 @@ import veeamLogo from "@/assets/partners/veeam.svg";
 
 // Alphabetical order, with individual height tuning for visual balance
 const heroPartners = [
-  { name: "AWS", logo: awsLogo, h: "h-7 md:h-8" },
-  { name: "Check Point", logo: checkpointLogo, h: "h-7 md:h-8" },
-  { name: "Everpure", logo: everpureLogo, h: "h-5 md:h-6" },
-  { name: "ExaGrid", logo: exagridLogo, h: "h-5 md:h-6" },
-  { name: "Extreme Networks", logo: extremeLogo, h: "h-5 md:h-6" },
-  { name: "Gigamon", logo: gigamonLogo, h: "h-5 md:h-6" },
-  { name: "HPE", logo: hpeLogo, h: "h-5 md:h-6" },
-  { name: "Nutanix", logo: nutanixLogo, h: "h-5 md:h-6" },
-  { name: "Riverbed", logo: riverbedLogo, h: "w-32 md:w-40" },
-  { name: "Veeam", logo: veeamLogo, h: "w-32 md:w-40" },
+  { name: "AWS", logo: awsLogo },
+  { name: "Check Point", logo: checkpointLogo },
+  { name: "Everpure", logo: everpureLogo },
+  { name: "ExaGrid", logo: exagridLogo },
+  { name: "Extreme Networks", logo: extremeLogo },
+  { name: "Gigamon", logo: gigamonLogo },
+  { name: "HPE", logo: hpeLogo },
+  { name: "Nutanix", logo: nutanixLogo },
+  { name: "Riverbed", logo: riverbedLogo },
+  { name: "Veeam", logo: veeamLogo },
 ];
 
 const HeroSection = () => {
