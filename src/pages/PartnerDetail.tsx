@@ -11,7 +11,7 @@ import aristaLogo from "@/assets/partners/arista.jpg";
 import checkpointLogo from "@/assets/partners/checkpoint.jpg";
 import cyberarkLogo from "@/assets/partners/cyberark.jpg";
 import exagridLogo from "@/assets/partners/exagrid.jpg";
-import extremeLogo from "@/assets/partners/extreme.jpg";
+import extremeLogo from "@/assets/partners/extreme-partner.svg";
 import f5Logo from "@/assets/partners/f5.jpg";
 import gigamonLogo from "@/assets/partners/gigamon.jpg";
 import hpeLogo from "@/assets/partners/hpe.jpg";
@@ -87,7 +87,7 @@ const PartnerDetail = () => {
             {t("partners.detail.back")}
           </button>
 
-          <div className="flex items-center gap-6 mb-6">
+          <div className="flex items-center gap-6 mb-4">
             {logo ? (
               <img src={logo} alt={partner.name} className="h-16 w-auto object-contain" />
             ) : (
@@ -96,6 +96,12 @@ const PartnerDetail = () => {
               </div>
             )}
           </div>
+
+          {partner.badge && (
+            <span className="inline-block px-3 py-1 text-xs font-semibold rounded bg-primary/15 text-primary mb-4">
+              {partner.badge}
+            </span>
+          )}
 
           <h1 className="text-4xl md:text-5xl font-display font-bold tracking-tight text-foreground mb-4">
             {partner.name}
@@ -106,9 +112,31 @@ const PartnerDetail = () => {
       <main className="py-14 md:py-20">
         <div className="max-w-[1400px] mx-auto px-6 lg:px-12">
           <div className="max-w-3xl">
-            <p className="text-lg text-gray-600 leading-relaxed mb-12">
-              {partner.description}
-            </p>
+            {partner.description.split('\n\n').map((paragraph, i) => (
+              <p key={i} className="text-lg text-gray-600 leading-relaxed mb-6">
+                {paragraph}
+              </p>
+            ))}
+
+            {/* Technologies */}
+            {partner.technologies && partner.technologies.length > 0 && (
+              <div className="mb-12">
+                <h2 className="text-xl font-display font-bold text-gray-900 mb-4">
+                  Soluções e tecnologias
+                </h2>
+                <div className="space-y-3">
+                  {partner.technologies.map((tech) => (
+                    <div key={tech.title} className="flex items-start gap-3">
+                      <span className="w-1.5 h-1.5 rounded-full bg-primary mt-2.5 flex-shrink-0" />
+                      <div>
+                        <span className="font-medium text-gray-900">{tech.title}</span>
+                        <span className="text-gray-500"> — {tech.detail}</span>
+                      </div>
+                    </div>
+                  ))}
+                </div>
+              </div>
+            )}
 
             {/* Related solutions */}
             <div className="mb-12">
