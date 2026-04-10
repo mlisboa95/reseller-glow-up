@@ -63,10 +63,6 @@ const Parceiros = () => {
             ref={headerRef}
             className={`max-w-3xl mb-12 scroll-fade-up ${headerVisible ? "visible" : ""}`}
           >
-            <span className="inline-flex items-center gap-2 px-4 py-1.5 rounded-full text-xs font-semibold tracking-wider uppercase border border-primary/30 text-primary bg-primary/5 mb-4">
-              <span className="w-1.5 h-1.5 rounded-full bg-primary" />
-              {t("partners.label")}
-            </span>
             <h1 className="text-4xl md:text-5xl lg:text-6xl font-display font-bold tracking-tight text-foreground mb-4 leading-[1.1]">
               {t("partners.page.title")}{" "}
               <span className="text-primary">{t("partners.page.titleHighlight")}</span>
