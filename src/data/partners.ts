@@ -24,7 +24,7 @@ export const partners: Partner[] = [
   {
     slug: "checkpoint",
     name: "Check Point",
-    description: "A Check Point Software Technologies é líder global em cibersegurança, protegendo mais de 100.000 organizações em todo o mundo. Desde 1993, quando pioneirou o conceito de firewall stateful inspection, a empresa evoluiu para uma plataforma de segurança completa, potencializada por inteligência artificial e entregue via nuvem, com uma taxa de prevenção de 99,8% contra ameaças.\n\nA Mahvla é parceira autorizada da Check Point, com capacidade de projetar, implantar e operar soluções de segurança baseadas na plataforma Check Point Infinity. Nossa equipe atua desde o dimensionamento da solução até a operação contínua, garantindo proteção em todas as camadas do ambiente.",
+    description: "A Mahvla é revenda autorizada Check Point Software Technologies, com sede em Brasília-DF e atendimento em todo o Brasil. Nossa equipe projeta, implanta e opera soluções de cibersegurança baseadas na plataforma Check Point Infinity, desde o dimensionamento e cotação até o suporte técnico contínuo com SLA dedicado.\n\nA Check Point protege mais de 100.000 organizações no mundo. Desde 1993, quando criou o conceito de firewall stateful inspection, a empresa evoluiu para uma plataforma de segurança completa, potencializada por inteligência artificial e entregue via nuvem. Seu portfólio cobre proteção de rede, cloud, endpoints, e-mail e acesso remoto em uma única arquitetura unificada.\n\nSe você busca um parceiro Check Point no Brasil para proteger sua rede corporativa, ambiente cloud ou endpoints, fale com nosso time para uma cotação ou assessment de segurança.",
     technologies: [
       { title: "Check Point Quantum", detail: "Firewalls de próxima geração (NGFW) e segurança de rede" },
       { title: "Check Point CloudGuard", detail: "Segurança nativa para ambientes cloud (AWS, Azure, GCP)" },
@@ -33,9 +33,16 @@ export const partners: Partner[] = [
       { title: "Threat Prevention", detail: "IPS, Anti-Bot, SandBlast, Threat Extraction" },
       { title: "SD-WAN & SASE", detail: "Conectividade segura e acesso distribuído" },
     ],
+    faq: [
+      { question: "Como comprar soluções Check Point pela Mahvla?", answer: "Somos revenda autorizada Check Point. Solicite uma cotação pelo botão Fale com um especialista ou envie um e-mail para contato@mahvla.com.br. Atendemos empresas privadas e órgãos públicos em todo o Brasil." },
+      { question: "A Mahvla faz assessment de segurança com Check Point?", answer: "Sim. Realizamos Security Checkup e avaliações de postura de segurança utilizando ferramentas Check Point para identificar vulnerabilidades, gaps de conformidade e oportunidades de melhoria no seu ambiente." },
+      { question: "Quais ambientes a Check Point protege?", answer: "A plataforma Check Point Infinity cobre rede (firewalls NGFW Quantum), cloud (CloudGuard para AWS, Azure e GCP), endpoints e dispositivos móveis (Harmony), e-mail corporativo e acesso remoto. Tudo gerenciado por um console unificado." },
+      { question: "A Mahvla atende fora de Brasília?", answer: "Sim. Temos sede em Brasília-DF, mas atendemos projetos em todo o território nacional, com equipe técnica certificada e suporte remoto e presencial." },
+      { question: "A Mahvla oferece suporte técnico pós-implantação?", answer: "Sim. Oferecemos contratos de suporte com SLA garantido, operação assistida 24/7, monitoramento proativo e manutenção preventiva e corretiva para todo o ambiente Check Point." },
+    ],
     relatedSolutions: [{ label: "Cibersegurança", href: "/#servicos" }],
-    seoTitle: "Check Point | Mahvla Telecomm | Parceiro Autorizado",
-    seoDescription: "Parceiro Check Point em Brasília. Soluções de cibersegurança, NGFW e proteção de ameaças com Mahvla Telecomm.",
+    seoTitle: "Check Point | Parceiro Autorizado — Mahvla Telecomm, Brasília-DF",
+    seoDescription: "Revenda Check Point em Brasília. Firewall NGFW, proteção de endpoint, segurança de e-mail, cloud e SASE. Projeto, implantação e suporte técnico com SLA dedicado. Atendimento em todo o Brasil.",
   },
   {
     slug: "cyberark",
