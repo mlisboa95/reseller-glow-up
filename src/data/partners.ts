@@ -2,8 +2,10 @@
 export interface Partner {
   slug: string;
   name: string;
-  logo?: string; // path to logo image
+  logo?: string;
+  badge?: string;
   description: string;
+  technologies?: { title: string; detail: string }[];
   relatedSolutions: { label: string; href: string }[];
   seoTitle: string;
   seoDescription: string;
@@ -53,10 +55,19 @@ export const partners: Partner[] = [
   {
     slug: "extreme-networks",
     name: "Extreme Networks",
-    description: "Descrição em breve.",
+    badge: "Diamond Partner",
+    description: "A Extreme Networks é líder global em infraestrutura de redes corporativas, reconhecida seis vezes consecutivas como Leader no Gartner Magic Quadrant para Wired and Wireless LAN Infrastructure. Seu portfólio abrange switches universais, access points Wi-Fi 6E/7, SD-WAN, network fabric e segurança de rede, tudo gerenciado por uma única plataforma em nuvem, a Extreme Platform ONE.\n\nA Mahvla é parceira Diamond da Extreme, o mais alto nível do programa de canais Extreme Partner First. Isso significa que nossa equipe possui certificações técnicas e comerciais avançadas em todo o portfólio Extreme, com capacidade comprovada de projetar, implantar e operar redes completas, do edge ao data center.",
+    technologies: [
+      { title: "Switching", detail: "Universal Switches — séries 4000, 5320, 5420, 5520, 5720" },
+      { title: "Wireless", detail: "Access Points Wi-Fi 6E e Wi-Fi 7" },
+      { title: "Extreme Fabric", detail: "Segmentação automatizada e Zero Trust" },
+      { title: "ExtremeCloud IQ / Platform ONE", detail: "Gestão centralizada em nuvem com AIOps" },
+      { title: "SD-WAN", detail: "Conectividade segura entre sites" },
+      { title: "Universal ZTNA", detail: "Controle de acesso Zero Trust" },
+    ],
     relatedSolutions: [{ label: "Redes & Conectividade", href: "/#servicos" }],
-    seoTitle: "Extreme Networks | Mahvla Telecomm | Parceiro Autorizado",
-    seoDescription: "Parceiro Extreme Networks em Brasília. Redes campus e cloud networking com Mahvla Telecomm.",
+    seoTitle: "Extreme Networks | Mahvla Telecomm | Parceiro Diamond Autorizado",
+    seoDescription: "Mahvla Telecomm é parceira Diamond da Extreme Networks em Brasília. Switching, Wi-Fi 6E/7, SD-WAN e Extreme Fabric.",
   },
   {
     slug: "f5",
