@@ -10,6 +10,7 @@ import useScrollAnimation from "@/hooks/useScrollAnimation";
 import aristaLogo from "@/assets/partners/arista.jpg";
 import checkpointLogo from "@/assets/partners/checkpoint-partner.svg";
 import cyberarkLogo from "@/assets/partners/cyberark.jpg";
+import dahuaLogo from "@/assets/partners/dahua-partner.svg";
 import exagridLogo from "@/assets/partners/exagrid-partner.svg";
 import extremeLogo from "@/assets/partners/extreme-partner.svg";
 import f5Logo from "@/assets/partners/f5.jpg";
