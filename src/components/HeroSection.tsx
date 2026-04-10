@@ -11,6 +11,7 @@ import aristaLogo from "@/assets/partners/arista-partner.svg";
 import awsLogo from "@/assets/partners/aws.svg";
 import checkpointLogo from "@/assets/partners/checkpoint.svg";
 import everpureLogo from "@/assets/partners/everpure.svg";
+import elasticLogo from "@/assets/partners/elastic-partner.svg";
 import exagridLogo from "@/assets/partners/exagrid.svg";
 import extremeLogo from "@/assets/partners/extreme-partner.svg";
 import gigamonLogo from "@/assets/partners/gigamon.png";
@@ -35,6 +36,7 @@ const heroPartners = [
   { name: "AWS", logo: awsLogo, cls: "w-[52px] md:w-[60px] h-auto" },
   { name: "Check Point", logo: checkpointLogo, cls: "w-[112px] md:w-[128px] h-auto" },
   { name: "Everpure", logo: everpureLogo, cls: "w-[112px] md:w-[128px] h-auto" },
+  { name: "Elastic", logo: elasticLogo, cls: "w-[96px] md:w-[112px] h-auto" },
   { name: "ExaGrid", logo: exagridLogo, cls: "w-[96px] md:w-[112px] h-auto" },
   { name: "Extreme Networks", logo: extremeLogo, cls: "w-[112px] md:w-[128px] h-auto" },
   { name: "Gigamon", logo: gigamonLogo, cls: "w-[112px] md:w-[128px] h-auto" },
