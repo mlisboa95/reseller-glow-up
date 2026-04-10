@@ -61,7 +61,7 @@ const Terms = () => {
     <div className="min-h-screen bg-white pt-3 md:pt-5">
       <div className="mx-3 md:mx-5 rounded-[1.25rem] bg-background overflow-hidden relative">
         <Header />
-        <div className="pt-40 md:pt-44 pb-12 px-6 lg:px-12 max-w-[1400px] mx-auto relative z-10">
+        <div className="pt-40 md:pt-48 pb-16 px-6 lg:px-12 max-w-[1400px] mx-auto relative z-10">
           <div 
             ref={headerRef}
             className={`max-w-3xl scroll-fade-up ${headerVisible ? 'visible' : ''}`}
