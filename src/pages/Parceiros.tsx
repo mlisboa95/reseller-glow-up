@@ -18,7 +18,7 @@ import gigamonLogo from "@/assets/partners/gigamon-partner.svg";
 import hpeLogo from "@/assets/partners/hpe.jpg";
 import mitelLogo from "@/assets/partners/mitel-partner.svg";
 import nutanixLogo from "@/assets/partners/nutanix-partner.svg";
-import purestorageLogo from "@/assets/partners/purestorage.jpg";
+import everpureLogo from "@/assets/partners/everpure-partner.svg";
 import riverbedLogo from "@/assets/partners/riverbed-partner.svg";
 import thalesLogo from "@/assets/partners/thales.jpg";
 import trendLogo from "@/assets/partners/trend.jpg";
@@ -36,7 +36,7 @@ const logoMap: Record<string, string> = {
   "hpe-aruba": hpeLogo,
   mitel: mitelLogo,
   nutanix: nutanixLogo,
-  purestorage: purestorageLogo,
+  everpure: everpureLogo,
   riverbed: riverbedLogo,
   thales: thalesLogo,
   "trend-micro": trendLogo,

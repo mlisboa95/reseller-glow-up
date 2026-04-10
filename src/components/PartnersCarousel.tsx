@@ -8,7 +8,7 @@ import gigamonLogo from "@/assets/partners/gigamon.jpg";
 import hpeLogo from "@/assets/partners/hpe.jpg";
 import mitelLogo from "@/assets/partners/mitel.jpg";
 import nutanixLogo from "@/assets/partners/nutanix.jpg";
-import purestorageLogo from "@/assets/partners/purestorage.jpg";
+import everpureLogo from "@/assets/partners/everpure.svg";
 import riverbedLogo from "@/assets/partners/riverbed.jpg";
 import thalesLogo from "@/assets/partners/thales.jpg";
 import trendLogo from "@/assets/partners/trend.jpg";
@@ -27,7 +27,7 @@ const partners = [
   { name: "HPE", logo: hpeLogo },
   { name: "Mitel", logo: mitelLogo },
   { name: "Nutanix", logo: nutanixLogo },
-  { name: "Pure Storage", logo: purestorageLogo },
+  { name: "Everpure", logo: everpureLogo },
   { name: "Riverbed", logo: riverbedLogo },
   { name: "Thales", logo: thalesLogo },
   { name: "Trend Micro", logo: trendLogo },
