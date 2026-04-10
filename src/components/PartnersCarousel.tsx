@@ -15,6 +15,7 @@ import trendLogo from "@/assets/partners/trend.jpg";
 import veeamLogo from "@/assets/partners/veeam.jpg";
 import halcyonLogo from "@/assets/partners/halcyon-partner.svg";
 import proofpointLogo from "@/assets/partners/proofpoint-partner.svg";
+import milestoneLogo from "@/assets/partners/milestone-partner.svg";
 import { useLanguage } from "@/contexts/LanguageContext";
 import useScrollAnimation from "@/hooks/useScrollAnimation";
 
@@ -36,6 +37,7 @@ const partners = [
   { name: "Veeam", logo: veeamLogo },
   { name: "Halcyon", logo: halcyonLogo },
   { name: "Proofpoint", logo: proofpointLogo },
+  { name: "Milestone", logo: milestoneLogo },
 ];
 
 const PartnersCarousel = () => {
