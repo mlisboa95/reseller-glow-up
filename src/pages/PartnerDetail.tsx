@@ -28,6 +28,7 @@ const logoMap: Record<string, string> = {
   arista: aristaLogo,
   checkpoint: checkpointLogo,
   cyberark: cyberarkLogo,
+  dahua: dahuaLogo,
   exagrid: exagridLogo,
   "extreme-networks": extremeLogo,
   f5: f5Logo,
