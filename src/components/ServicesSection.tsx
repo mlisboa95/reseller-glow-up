@@ -23,25 +23,25 @@ const ServicesSection = () => {
     {
       icon: CloudCog,
       title: t("services.s3.title"),
-      tags: "HCI • Storage • Cloud • Containers",
+      tags: "HCI • STORAGE • CLOUD • CONTAINERS",
       description: t("services.s3.desc"),
     },
     {
       icon: Camera,
       title: t("services.s4.title"),
-      tags: "CCTV • Access Control • LPR • Smart City",
+      tags: "CFTV • CONTROLE DE ACESSO • LPR • CIDADES INTELIGENTES",
       description: t("services.s4.desc"),
     },
     {
       icon: HeadsetIcon,
       title: t("services.s5.title"),
-      tags: "SLA • 24/7 • NOC • Monitoring",
+      tags: "SLA • 24/7 • NOC • MONITORAMENTO",
       description: t("services.s5.desc"),
     },
     {
       icon: Cog,
       title: t("services.s6.title"),
-      tags: "Assessment • Architecture • Advisory",
+      tags: "ASSESSMENT • ARQUITETURA • CONSULTORIA",
       description: t("services.s6.desc"),
     },
   ];
