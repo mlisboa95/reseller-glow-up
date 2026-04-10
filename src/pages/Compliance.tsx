@@ -101,7 +101,7 @@ const Compliance = () => {
     <div className="min-h-screen bg-white pt-3 md:pt-5">
       <div className="mx-3 md:mx-5 rounded-[1.25rem] bg-background overflow-hidden relative">
         <Header />
-        <div className="pt-40 md:pt-48 pb-16 px-6 lg:px-12 max-w-[1400px] mx-auto relative z-10">
+        <div className="pt-32 md:pt-36 pb-10 px-6 lg:px-12 max-w-[1400px] mx-auto relative z-10">
           <h1 className="text-4xl md:text-5xl font-display font-bold tracking-tight text-foreground mb-4 leading-[1.1]">
             {t("compliance.title")} <span className="text-primary">{t("compliance.titleHighlight")}</span>
           </h1>
