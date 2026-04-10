@@ -13,10 +13,6 @@ const ContactCta = () => {
           ref={ref}
           className={`text-center max-w-2xl mx-auto scroll-fade-up ${isVisible ? 'visible' : ''}`}
         >
-          <span className="inline-flex items-center gap-2 px-4 py-1.5 rounded-full text-xs font-semibold tracking-wider uppercase border border-primary/30 text-primary bg-primary/5 mb-6">
-            <span className="w-1.5 h-1.5 rounded-full bg-primary" />
-            {t("cta.badge")}
-          </span>
           <h2 className="text-3xl md:text-4xl lg:text-5xl font-display font-bold text-gray-900 mb-6 leading-tight">
             {t("cta.title")}{" "}
             <span className="text-primary">{t("cta.titleHighlight")}</span>
