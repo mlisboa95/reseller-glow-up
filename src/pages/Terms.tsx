@@ -1,3 +1,4 @@
+import { FileText } from "lucide-react";
 import Header from "@/components/Header";
 import Footer from "@/components/Footer";
 import useScrollAnimation from "@/hooks/useScrollAnimation";
