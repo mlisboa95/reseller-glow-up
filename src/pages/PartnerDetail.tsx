@@ -127,11 +127,11 @@ const PartnerDetail = () => {
           </button>
 
           <div className="flex items-center gap-6">
-            {logo ? (
+            {(whiteLogo || logo) ? (
               <img
-                src={logo}
+                src={whiteLogo || logo}
                 alt={partner.name}
-                className="h-14 w-auto object-contain brightness-0 invert"
+                className={`h-14 w-auto object-contain ${whiteLogo ? '' : 'brightness-0 invert'}`}
               />
             ) : (
               <div className="h-14 flex items-center">
