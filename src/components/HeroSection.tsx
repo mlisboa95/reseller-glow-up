@@ -20,16 +20,16 @@ import veeamLogo from "@/assets/partners/veeam.svg";
 
 // Alphabetical order, with individual height tuning for visual balance
 const heroPartners = [
-  { name: "AWS", logo: awsLogo },
-  { name: "Check Point", logo: checkpointLogo },
-  { name: "Everpure", logo: everpureLogo },
-  { name: "ExaGrid", logo: exagridLogo },
-  { name: "Extreme Networks", logo: extremeLogo },
-  { name: "Gigamon", logo: gigamonLogo },
-  { name: "HPE", logo: hpeLogo },
-  { name: "Nutanix", logo: nutanixLogo },
-  { name: "Riverbed", logo: riverbedLogo },
-  { name: "Veeam", logo: veeamLogo },
+  { name: "AWS", logo: awsLogo, cls: "h-10 md:h-12 w-auto" },
+  { name: "Check Point", logo: checkpointLogo, cls: "w-28 md:w-32 h-auto" },
+  { name: "Everpure", logo: everpureLogo, cls: "w-28 md:w-32 h-auto" },
+  { name: "ExaGrid", logo: exagridLogo, cls: "w-24 md:w-28 h-auto" },
+  { name: "Extreme Networks", logo: extremeLogo, cls: "w-28 md:w-32 h-auto" },
+  { name: "Gigamon", logo: gigamonLogo, cls: "h-7 md:h-8 w-auto" },
+  { name: "HPE", logo: hpeLogo, cls: "h-9 md:h-10 w-auto" },
+  { name: "Nutanix", logo: nutanixLogo, cls: "w-28 md:w-32 h-auto" },
+  { name: "Riverbed", logo: riverbedLogo, cls: "w-28 md:w-32 h-auto" },
+  { name: "Veeam", logo: veeamLogo, cls: "w-28 md:w-32 h-auto" },
 ];
 
 const HeroSection = () => {
@@ -126,7 +126,7 @@ const HeroSection = () => {
                 <img
                   src={partner.logo}
                   alt={partner.name}
-                  className="h-7 md:h-8 max-w-[120px] md:max-w-[140px] w-auto object-contain opacity-90"
+                  className={`${partner.cls} object-contain opacity-90`}
                   draggable={false}
                 />
               </div>
