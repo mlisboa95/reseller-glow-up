@@ -147,6 +147,7 @@ const Privacidade = () => {
             ))}
           </div>
         </div>
+      </main>
 
       <Footer showCta={false} />
     </div>
