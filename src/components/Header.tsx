@@ -106,7 +106,7 @@ const Header = () => {
         {/* CTA button */}
         <div className="hidden lg:flex items-center">
           <a
-            href="mailto:contact@mahvla.com.br"
+            href="mailto:contato@mahvla.com.br"
             className="inline-flex items-center gap-2 px-5 py-2.5 text-sm font-semibold rounded-full bg-primary text-primary-foreground hover:bg-primary/90 transition-all duration-300"
           >
             {t("nav.portal")}
@@ -163,7 +163,7 @@ const Header = () => {
             )
           ))}
           <a
-            href="mailto:contact@mahvla.com.br"
+            href="mailto:contato@mahvla.com.br"
             className="inline-flex items-center justify-center gap-2 px-5 py-3 text-sm font-semibold rounded-full bg-primary text-primary-foreground mt-4"
           >
             {t("nav.portal")}
