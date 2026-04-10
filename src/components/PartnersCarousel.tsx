@@ -1,6 +1,6 @@
 import aristaLogo from "@/assets/partners/arista.jpg";
 import checkpointLogo from "@/assets/partners/checkpoint.jpg";
-import cyberarkLogo from "@/assets/partners/cyberark.jpg";
+import sentineloneLogo from "@/assets/partners/s1-partner.svg";
 import exagridLogo from "@/assets/partners/exagrid.jpg";
 import extremeLogo from "@/assets/partners/extreme.jpg";
 import f5Logo from "@/assets/partners/f5.jpg";
@@ -22,7 +22,7 @@ import useScrollAnimation from "@/hooks/useScrollAnimation";
 const partners = [
   { name: "Arista", logo: aristaLogo },
   { name: "Check Point", logo: checkpointLogo },
-  { name: "CyberArk", logo: cyberarkLogo },
+  { name: "SentinelOne", logo: sentineloneLogo },
   { name: "ExaGrid", logo: exagridLogo },
   { name: "Extreme Networks", logo: extremeLogo },
   { name: "F5", logo: f5Logo },
