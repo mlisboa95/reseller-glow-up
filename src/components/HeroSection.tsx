@@ -15,7 +15,7 @@ import elasticLogo from "@/assets/partners/elastic-partner.svg";
 import everpureLogo from "@/assets/partners/everpure.svg";
 import exagridLogo from "@/assets/partners/exagrid.svg";
 import extremeLogo from "@/assets/partners/extreme-partner.svg";
-import f5Logo from "@/assets/partners/f5-partner.svg";
+import f5Logo from "@/assets/partners/f5-white.svg";
 import gigamonLogo from "@/assets/partners/gigamon.png";
 import halcyonLogo from "@/assets/partners/halcyon-partner.svg";
 import hpeLogo from "@/assets/partners/hpe.svg";
@@ -43,7 +43,7 @@ const heroPartners = [
   { name: "Everpure", logo: everpureLogo, cls: "w-[112px] md:w-[128px] h-auto" },
   { name: "ExaGrid", logo: exagridLogo, cls: "w-[96px] md:w-[112px] h-auto" },
   { name: "Extreme Networks", logo: extremeLogo, cls: "w-[112px] md:w-[128px] h-auto" },
-  { name: "F5", logo: f5Logo, cls: "w-[56px] md:w-[64px] h-auto" },
+  { name: "F5", logo: f5Logo, cls: "w-[56px] md:w-[64px] h-auto", noFilter: true },
   { name: "Gigamon", logo: gigamonLogo, cls: "w-[112px] md:w-[128px] h-auto" },
   { name: "Halcyon", logo: halcyonLogo, cls: "w-[108px] md:w-[124px] h-auto" },
   { name: "HPE", logo: hpeLogo, cls: "w-[64px] md:w-[72px] h-auto" },
@@ -66,6 +66,7 @@ interface PartnerItem {
   name: string;
   logo: string;
   cls: string;
+  noFilter?: boolean;
 }
 
 const DragCarousel = ({ partners }: { partners: PartnerItem[] }) => {
@@ -145,7 +146,7 @@ const DragCarousel = ({ partners }: { partners: PartnerItem[] }) => {
                 alt={`Logo ${partner.name}`}
                 loading="lazy"
                 decoding="async"
-                className={`${partner.cls} object-contain opacity-90 brightness-0 invert`}
+                className={`${partner.cls} object-contain opacity-90 ${partner.noFilter ? '' : 'brightness-0 invert'}`}
                 draggable={false}
               />
             </div>
