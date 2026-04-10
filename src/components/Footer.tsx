@@ -28,7 +28,7 @@ const Footer = forwardRef<HTMLElement, FooterProps>(({ showCta = true }, ref) =>
               <div className="flex items-start gap-3">
                 <MapPin className="w-4 h-4 text-primary mt-1 flex-shrink-0" />
                 <div>
-                  <p className="text-foreground font-medium mb-1">Brasília, DF — Sede</p>
+                  <p className="text-foreground font-medium mb-1">Brasília, DF (Sede)</p>
                   <p>SRTVS Qd 701 Cj. L N. 38</p>
                   <p>Bloco 01, Salas 8, 9 e 10</p>
                   <p>Asa Sul, Brasília - DF, Brasil</p>
@@ -73,7 +73,7 @@ const Footer = forwardRef<HTMLElement, FooterProps>(({ showCta = true }, ref) =>
       <div className="border-t border-border">
         <div className="max-w-[1400px] mx-auto px-6 lg:px-12 py-6 flex flex-col md:flex-row items-center justify-between gap-4">
           <p className="text-muted-foreground/60 text-sm text-center md:text-left">
-            © {new Date().getFullYear()} Mahvla Telecomm Consultoria e Serviços em Tecnologia LTDA — CNPJ 06.277.077/0001-90 — {t("footer.copyright")}
+            © {new Date().getFullYear()} Mahvla Telecomm Consultoria e Serviços em Tecnologia LTDA · CNPJ 06.277.077/0001-90 · {t("footer.copyright")}
           </p>
           <div className="flex items-center gap-6">
             <a href="/privacy" className="text-muted-foreground/60 text-sm hover:text-primary transition-colors underline underline-offset-4">

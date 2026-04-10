@@ -16,18 +16,18 @@ const translations: Record<string, string> = {
   "nav.portal": "Fale Conosco",
 
   // Hero
-  "hero.eyebrow": "Projeto. Execução. Entrega.",
+  "hero.eyebrow": "",
   "hero.title1": "Tecnologia que entrega",
   "hero.title2": "resultado.",
-  "hero.subtitle": "Integradora brasileira com 22 anos de experiência em redes, cibersegurança, infraestrutura e cidades inteligentes.",
+  "hero.subtitle": "22 anos de experiência em redes, cibersegurança, infraestrutura e cidades inteligentes.",
   "hero.cta1": "Nossas Soluções",
   "hero.cta2": "Conheça a Mahvla",
 
   // About
   "about.label": "Sobre Nós",
-  "about.title": "Mais de duas décadas entregando com",
-  "about.titleHighlight": "consistência",
-  "about.description": "Somos uma integradora de tecnologia com sede em Brasília-DF e escritório nos Estados Unidos (Boca Raton, FL). Há mais de 22 anos, ajudamos empresas privadas e órgãos públicos — federais, estaduais e municipais — a projetar, implantar e operar infraestrutura de TI segura, do data center à nuvem.",
+  "about.title": "22 anos conectando tecnologia a",
+  "about.titleHighlight": "resultados reais.",
+  "about.description": "Com sede em Brasília e atuação nacional e internacional, há mais de 22 anos ajudamos empresas privadas e órgãos públicos (federais, estaduais e municipais) a projetar, implantar e operar infraestrutura de TI segura, do data center à nuvem.",
   "about.stat1": "anos de experiência",
   "about.stat2": "certificações ativas",
   "about.stat3": "projetos entregues",
@@ -40,13 +40,13 @@ const translations: Record<string, string> = {
   "services.s1.title": "Redes & Conectividade",
   "services.s1.desc": "Projetos de rede corporativa abrangendo LAN/WLAN campus, otimização WAN, SD-WAN e comunicações unificadas. Entregamos visibilidade completa com ferramentas de NPM e operação 24/7 via NOC dedicado.",
   "services.s2.title": "Cibersegurança",
-  "services.s2.desc": "Estratégias de defesa em camadas com NGFW, WAF, EDR/XDR e frameworks Zero Trust. Implementamos governança de identidade (IAM/PAM), arquiteturas SASE e pipelines de detecção de ameaças — em conformidade com a LGPD e controles NIST/CIS.",
+  "services.s2.desc": "Estratégias de defesa em camadas com NGFW, WAF, EDR/XDR e frameworks Zero Trust. Implementamos governança de identidade (IAM/PAM), arquiteturas SASE e pipelines de detecção de ameaças, em conformidade com a LGPD e controles NIST/CIS.",
   "services.s3.title": "Infraestrutura & Cloud",
-  "services.s3.desc": "Ambientes híbridos e multi-cloud projetados para performance e resiliência — desde plataformas hiperconvergentes e storage enterprise até migração de workloads para AWS, deployments containerizados e automação via IaC.",
+  "services.s3.desc": "Ambientes híbridos e multi-cloud projetados para performance e resiliência. De plataformas hiperconvergentes e storage enterprise à migração de workloads para AWS, deployments containerizados e automação via IaC.",
   "services.s4.title": "Segurança Física & Cidades Inteligentes",
   "services.s4.desc": "Ecossistemas de vigilância integrada com CFTV IP, controle de acesso biométrico, LPR e analíticos com IA. Experiência comprovada em órgãos governamentais, infraestrutura crítica e projetos de mobilidade urbana.",
   "services.s5.title": "Operação Assistida & Suporte",
-  "services.s5.desc": "Equipes técnicas dedicadas para operação assistida, monitoramento proativo e contratos de manutenção com SLAs garantidos — ampliando a capacidade de TI sem aumentar o headcount.",
+  "services.s5.desc": "Equipes técnicas dedicadas para operação assistida, monitoramento proativo e contratos de manutenção com SLAs garantidos, ampliando a capacidade de TI sem aumentar o headcount.",
   "services.s6.title": "Consultoria & Arquitetura",
   "services.s6.desc": "Assessments de tecnologia, arquitetura de soluções e advisory vendor-neutral. Traduzimos requisitos de negócio em blueprints de infraestrutura com ROI mensurável e roadmaps claros de implementação.",
 
@@ -54,7 +54,7 @@ const translations: Record<string, string> = {
   "cta.badge": "Vamos Conversar",
   "cta.title": "Vamos conversar sobre o seu",
   "cta.titleHighlight": "projeto?",
-  "cta.description": "Conte sobre o seu ambiente — desenhamos a solução e cuidamos de toda a entrega.",
+  "cta.description": "Conte sobre o seu ambiente. Desenhamos a solução e cuidamos de toda a entrega.",
   "cta.button": "Fale Conosco",
 
   // Footer
