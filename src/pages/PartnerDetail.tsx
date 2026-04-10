@@ -108,10 +108,10 @@ const PartnerDetail = () => {
     <div className="min-h-screen bg-white pt-3 md:pt-5">
       <div className="mx-3 md:mx-5 rounded-[1.25rem] bg-background overflow-hidden relative">
         <Header />
-        <div className="pt-32 md:pt-36 pb-10 px-6 lg:px-12 max-w-[1400px] mx-auto relative z-10">
+        <div className="pt-28 md:pt-32 pb-8 px-6 lg:px-12 max-w-[1400px] mx-auto relative z-10">
           <button
             onClick={() => navigate("/parceiros")}
-            className="inline-flex items-center gap-2 text-sm text-muted-foreground hover:text-foreground transition-colors mb-6"
+            className="inline-flex items-center gap-2 text-sm text-muted-foreground hover:text-foreground transition-colors mb-4"
           >
             <ArrowLeft className="w-4 h-4" />
             {t("partners.detail.back")}
@@ -140,7 +140,7 @@ const PartnerDetail = () => {
 
       <main className="py-6 md:py-10">
         <div className="max-w-[1400px] mx-auto px-6 lg:px-12">
-          {/* Two-column layout: description left, technologies right */}
+          {/* Two-column layout: description left, technologies + area right */}
           <div className={`grid gap-10 mb-8 ${hasTechnologies ? 'lg:grid-cols-[1fr_380px]' : ''}`}>
             <div>
               {partner.description.split('\n\n').map((paragraph, i) => (
@@ -148,17 +148,6 @@ const PartnerDetail = () => {
                   {paragraph}
                 </p>
               ))}
-              {primarySolution && (
-                <p className="text-sm text-gray-500">
-                  Área de atuação:{" "}
-                  <Link
-                    to={primarySolution.href}
-                    className="text-primary hover:underline font-medium"
-                  >
-                    {primarySolution.label}
-                  </Link>
-                </p>
-              )}
             </div>
 
             {hasTechnologies && (
@@ -177,20 +166,39 @@ const PartnerDetail = () => {
                     </div>
                   ))}
                 </div>
+                {primarySolution && (
+                  <p className="text-sm text-gray-500 mt-6 pt-4 border-t border-gray-200">
+                    Área de atuação:{" "}
+                    <Link
+                      to={primarySolution.href}
+                      className="text-primary hover:underline font-medium"
+                    >
+                      {primarySolution.label}
+                    </Link>
+                  </p>
+                )}
               </div>
+            )}
+
+            {/* If no technologies, show area link in left column */}
+            {!hasTechnologies && primarySolution && (
+              <p className="text-sm text-gray-500">
+                Área de atuação:{" "}
+                <Link
+                  to={primarySolution.href}
+                  className="text-primary hover:underline font-medium"
+                >
+                  {primarySolution.label}
+                </Link>
+              </p>
             )}
           </div>
 
-          {/* FAQ */}
-          {partner.faq && partner.faq.length > 0 && (
-            <FaqSection items={partner.faq} />
-          )}
-
           {/* CTA */}
-          <div className="pt-8 border-t border-gray-200">
+          <div className="py-8 border-t border-gray-200 flex justify-center">
             <a
               href="mailto:contato@mahvla.com.br"
-              className="cta-button inline-flex items-center gap-3 px-8 py-4 font-semibold rounded-full text-primary-foreground text-sm"
+              className="cta-button inline-flex items-center justify-center gap-3 px-10 py-4 font-semibold rounded-full text-primary-foreground text-sm w-full sm:w-auto sm:min-w-[320px]"
             >
               {t("partners.detail.cta")}
               <span className="w-8 h-8 rounded-full bg-white/20 flex items-center justify-center">
@@ -198,6 +206,11 @@ const PartnerDetail = () => {
               </span>
             </a>
           </div>
+
+          {/* FAQ */}
+          {partner.faq && partner.faq.length > 0 && (
+            <FaqSection items={partner.faq} />
+          )}
         </div>
       </main>
 
