@@ -6,6 +6,7 @@ export interface Partner {
   badge?: string;
   description: string;
   technologies?: { title: string; detail: string }[];
+  faq?: { question: string; answer: string }[];
   relatedSolutions: { label: string; href: string }[];
   seoTitle: string;
   seoDescription: string;
@@ -63,8 +64,7 @@ export const partners: Partner[] = [
   {
     slug: "extreme-networks",
     name: "Extreme Networks",
-    badge: undefined,
-    description: "A Extreme Networks é líder global em infraestrutura de redes corporativas, reconhecida seis vezes consecutivas como Leader no Gartner Magic Quadrant para Wired and Wireless LAN Infrastructure. Seu portfólio abrange switches universais, access points Wi-Fi 6E/7, SD-WAN, network fabric e segurança de rede, tudo gerenciado por uma única plataforma em nuvem, a Extreme Platform ONE.\n\nA Mahvla é parceira Diamond da Extreme, o mais alto nível do programa de canais Extreme Partner First. Isso significa que nossa equipe possui certificações técnicas e comerciais avançadas em todo o portfólio Extreme, com capacidade comprovada de projetar, implantar e operar redes completas, do edge ao data center.",
+    description: "A Mahvla é revenda autorizada Extreme Networks com classificação Diamond, o mais alto nível do programa de canais Extreme Partner First. Com sede em Brasília-DF e atendimento em todo o Brasil, nossa equipe possui certificações técnicas e comerciais avançadas em todo o portfólio Extreme, com capacidade comprovada de projetar, implantar e operar redes corporativas completas.\n\nA Extreme Networks é reconhecida seis vezes consecutivas como Leader no Gartner Magic Quadrant para Wired and Wireless LAN Infrastructure. Seu portfólio abrange switches universais, access points Wi-Fi 6E e Wi-Fi 7, SD-WAN, network fabric e segurança de rede, tudo gerenciado por uma única plataforma em nuvem, a Extreme Platform ONE.\n\nOferecemos desde o dimensionamento e cotação de equipamentos até a implantação completa e suporte técnico contínuo com SLA dedicado. Se você busca um parceiro Extreme Networks no Brasil para seu projeto de rede corporativa, campus, data center ou filiais distribuídas, fale com nosso time.",
     technologies: [
       { title: "Switching", detail: "Universal Switches — séries 4000, 5320, 5420, 5520, 5720, 7520, 7720, 7830" },
       { title: "Wireless", detail: "Access Points Wi-Fi 6E e Wi-Fi 7" },
@@ -73,9 +73,16 @@ export const partners: Partner[] = [
       { title: "SD-WAN", detail: "Conectividade segura entre sites" },
       { title: "Universal ZTNA", detail: "Controle de acesso Zero Trust" },
     ],
+    faq: [
+      { question: "Como comprar equipamentos Extreme Networks pela Mahvla?", answer: "Somos revenda Diamond autorizada. Solicite uma cotação pelo botão Fale com um especialista ou envie um e-mail para contato@mahvla.com.br. Atendemos empresas privadas e órgãos públicos em todo o Brasil." },
+      { question: "A Mahvla atende fora de Brasília?", answer: "Sim. Temos sede em Brasília-DF, mas atendemos projetos em todo o território nacional, com equipe técnica certificada e suporte remoto e presencial." },
+      { question: "Quais segmentos a Mahvla atende com Extreme Networks?", answer: "Atendemos empresas privadas, órgãos federais, estaduais e municipais, instituições de ensino, saúde e ambientes de missão crítica que necessitam de infraestrutura de rede de alto desempenho." },
+      { question: "Qual o prazo de implantação de uma rede Extreme?", answer: "O prazo varia conforme a complexidade do projeto. Após o levantamento técnico, apresentamos um cronograma detalhado. Projetos de campus corporativo típicos levam de 4 a 12 semanas entre aprovação e operação." },
+      { question: "A Mahvla oferece suporte técnico pós-implantação?", answer: "Sim. Oferecemos contratos de suporte com SLA garantido, operação assistida 24/7, monitoramento proativo via NOC e manutenção preventiva e corretiva." },
+    ],
     relatedSolutions: [{ label: "Redes & Conectividade", href: "/#servicos" }],
-    seoTitle: "Extreme Networks | Mahvla Telecomm | Parceiro Diamond Autorizado",
-    seoDescription: "Mahvla Telecomm é parceira Diamond da Extreme Networks em Brasília. Switching, Wi-Fi 6E/7, SD-WAN e Extreme Fabric.",
+    seoTitle: "Extreme Networks | Parceiro Diamond Autorizado — Mahvla Telecomm, Brasília-DF",
+    seoDescription: "Revenda Extreme Networks Diamond em Brasília. Switches universais, access points Wi-Fi 6E/7, SD-WAN e Extreme Fabric. Projeto, implantação e suporte técnico com SLA dedicado. Atendimento em todo o Brasil.",
   },
   {
     slug: "f5",
