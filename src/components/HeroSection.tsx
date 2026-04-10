@@ -1,5 +1,5 @@
 import { ArrowRight } from "lucide-react";
-import { useEffect, useState } from "react";
+import { useEffect, useState, useRef, useCallback } from "react";
 
 import TextReveal from "./TextReveal";
 import MagneticButton from "./MagneticButton";
@@ -111,29 +111,8 @@ const HeroSection = () => {
         </div>
       </div>
 
-      {/* Partner carousel — contained within hero dark area */}
-      <div className="relative z-10 overflow-hidden">
-        <div className="py-6">
-          <div
-            className="flex animate-scroll-left-slow"
-            style={{ width: "max-content" }}
-          >
-            {doubled.map((partner, i) => (
-              <div
-                key={`${partner.name}-${i}`}
-                className="flex-shrink-0 px-6 md:px-10 flex items-center justify-center h-14"
-              >
-                <img
-                  src={partner.logo}
-                  alt={partner.name}
-                  className={`${partner.cls} object-contain opacity-90`}
-                  draggable={false}
-                />
-              </div>
-            ))}
-          </div>
-        </div>
-      </div>
+      {/* Partner carousel with drag-to-scroll */}
+      <DragCarousel partners={doubled} />
     </section>
   );
 };
