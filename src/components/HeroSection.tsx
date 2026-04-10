@@ -126,7 +126,7 @@ const HeroSection = () => {
                 <img
                   src={partner.logo}
                   alt={partner.name}
-                  className={`${partner.h} w-auto object-contain opacity-90`}
+                  className="h-7 md:h-8 max-w-[120px] md:max-w-[140px] w-auto object-contain opacity-90"
                   draggable={false}
                 />
               </div>
