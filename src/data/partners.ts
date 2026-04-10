@@ -55,7 +55,7 @@ export const partners: Partner[] = [
   {
     slug: "dahua",
     name: "Dahua",
-    badge: "Diamond",
+    
     description: "A Mahvla é revenda Dahua Technology com classificação Diamond, o mais alto nível do programa de canais no Brasil. Com sede em Brasília-DF e atendimento em todo o território nacional, nossa equipe projeta, implanta e opera soluções completas de videomonitoramento, controle de acesso e segurança eletrônica baseadas no portfólio Dahua, desde o dimensionamento e cotação de equipamentos até o suporte técnico contínuo com SLA dedicado.\n\nA Dahua Technology é o segundo maior fabricante de equipamentos de vigilância por vídeo do mundo (Omdia) e líder em soluções de AIoT baseadas em análise inteligente de imagens. Com mais de 23 mil colaboradores e investimento anual de 10% do faturamento em pesquisa e desenvolvimento, a Dahua possui mais de 8.000 patentes e certificações internacionais de referência em cibersegurança, incluindo ISO/IEC 27701. No Brasil, suas soluções estão instaladas em projetos de grande porte como o Aeroporto Internacional de São Paulo, Allianz Parque, Metrô de Salvador e Prefeitura de São Paulo.\n\nSe você busca uma revenda Dahua no Brasil para seu projeto de CFTV, videomonitoramento, reconhecimento facial, leitura de placas (LPR), controle de acesso ou cidade inteligente, fale com nosso time para uma cotação ou visita técnica.",
     technologies: [
       { title: "Câmeras IP e CFTV", detail: "Câmeras bullet, dome, PTZ, multisensor e térmicas" },
