@@ -1,10 +1,11 @@
-import { useEffect, useState } from "react";
+import { useState } from "react";
 import { useParams, Link, useNavigate } from "react-router-dom";
 import { ArrowLeft, Mail, ChevronDown } from "lucide-react";
 import Header from "@/components/Header";
 import Footer from "@/components/Footer";
 import { getPartnerBySlug } from "@/data/partners";
 import { useLanguage } from "@/contexts/LanguageContext";
+import SEOHead from "@/components/SEOHead";
 
 // Reuse logo map
 import aristaLogo from "@/assets/partners/arista-partner.svg";
@@ -101,16 +102,6 @@ const PartnerDetail = () => {
   const { t } = useLanguage();
   const partner = slug ? getPartnerBySlug(slug) : undefined;
 
-  useEffect(() => {
-    if (partner) {
-      document.title = partner.seoTitle;
-      const meta = document.querySelector('meta[name="description"]');
-      if (meta) {
-        meta.setAttribute("content", partner.seoDescription);
-      }
-    }
-  }, [partner]);
-
   if (!partner) {
     return (
       <div className="min-h-screen bg-white">
@@ -133,6 +124,7 @@ const PartnerDetail = () => {
 
   return (
     <div className="min-h-screen bg-white pt-3 md:pt-5">
+      <SEOHead title={partner.seoTitle} description={partner.seoDescription} />
       <div className="mx-3 md:mx-5 rounded-[1.25rem] bg-background overflow-hidden relative">
         <Header />
         <div className="pt-28 md:pt-32 pb-8 px-6 lg:px-12 max-w-[1400px] mx-auto relative z-10">
