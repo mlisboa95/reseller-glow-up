@@ -23,7 +23,15 @@ export const partners: Partner[] = [
   {
     slug: "checkpoint",
     name: "Check Point",
-    description: "Descrição em breve.",
+    description: "A Check Point Software Technologies é líder global em cibersegurança, protegendo mais de 100.000 organizações em todo o mundo. Desde 1993, quando pioneirou o conceito de firewall stateful inspection, a empresa evoluiu para uma plataforma de segurança completa, potencializada por inteligência artificial e entregue via nuvem, com uma taxa de prevenção de 99,8% contra ameaças.\n\nA Mahvla é parceira autorizada da Check Point, com capacidade de projetar, implantar e operar soluções de segurança baseadas na plataforma Check Point Infinity. Nossa equipe atua desde o dimensionamento da solução até a operação contínua, garantindo proteção em todas as camadas do ambiente.",
+    technologies: [
+      { title: "Check Point Quantum", detail: "Firewalls de próxima geração (NGFW) e segurança de rede" },
+      { title: "Check Point CloudGuard", detail: "Segurança nativa para ambientes cloud (AWS, Azure, GCP)" },
+      { title: "Check Point Harmony", detail: "Proteção de endpoints, e-mail, navegação e acesso remoto" },
+      { title: "Check Point Infinity", detail: "Plataforma unificada de gerenciamento e inteligência contra ameaças" },
+      { title: "Threat Prevention", detail: "IPS, Anti-Bot, SandBlast, Threat Extraction" },
+      { title: "SD-WAN & SASE", detail: "Conectividade segura e acesso distribuído" },
+    ],
     relatedSolutions: [{ label: "Cibersegurança", href: "/#servicos" }],
     seoTitle: "Check Point | Mahvla Telecomm | Parceiro Autorizado",
     seoDescription: "Parceiro Check Point em Brasília. Soluções de cibersegurança, NGFW e proteção de ameaças com Mahvla Telecomm.",
