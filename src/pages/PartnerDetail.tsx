@@ -23,6 +23,7 @@ import riverbedLogo from "@/assets/partners/riverbed-partner.svg";
 import thalesLogo from "@/assets/partners/thales.jpg";
 import trendLogo from "@/assets/partners/trend.jpg";
 import veeamLogo from "@/assets/partners/veeam-partner.svg";
+import invenziLogo from "@/assets/partners/invenzi-partner.png";
 import veeamWhiteLogo from "@/assets/partners/veeam.svg";
 
 const logoMap: Record<string, string> = {
@@ -42,6 +43,7 @@ const logoMap: Record<string, string> = {
   thales: thalesLogo,
   "trend-micro": trendLogo,
   veeam: veeamLogo,
+  invenzi: invenziLogo,
 };
 
 // Partners with dedicated white logos for dark backgrounds (skip CSS filter)
