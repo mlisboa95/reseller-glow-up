@@ -14,6 +14,8 @@ const Header = () => {
   const navLinks = [
     { label: t("nav.about"), href: "#sobre", isExternal: false },
     { label: t("nav.solutions"), href: "#servicos", isExternal: false },
+    { label: t("nav.partners"), href: "/parceiros", isExternal: true },
+    { label: t("nav.atas"), href: "/atas", isExternal: true },
     { label: t("nav.compliance"), href: "/compliance", isExternal: true },
   ];
 
@@ -64,7 +66,7 @@ const Header = () => {
         >
           <img
             src={logoMahvla}
-            alt="Mahvla Group"
+            alt="Mahvla Telecomm"
             className={`h-[5.8rem] md:h-[6.5rem] w-auto transition-all duration-300 group-hover:opacity-80 ${
               scrolled ? 'brightness-0' : ''
             }`}

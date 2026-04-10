@@ -43,10 +43,10 @@ const AboutSection = () => {
   ];
 
   const differentiators = [
-    "Multi-vendor certified team (50+ active certifications)",
-    "Tailored procurement & vendor management",
-    "On-prem, hybrid, and cloud delivery",
-    "Dedicated project management & long-term support",
+    "Equipe multi-vendor com 50+ certificações ativas",
+    "Compras customizadas e gestão de fornecedores",
+    "Entrega on-prem, híbrida e cloud",
+    "Gestão dedicada de projetos e suporte contínuo",
   ];
 
   return (
