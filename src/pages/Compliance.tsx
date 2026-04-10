@@ -98,33 +98,33 @@ const Compliance = () => {
   };
 
   return (
-    <div className="min-h-screen bg-background">
-      <Header />
-      
-      <main className="pt-32 pb-16">
-        <div className="container mx-auto px-6">
+    <div className="min-h-screen bg-white pt-3 md:pt-5">
+      <div className="mx-3 md:mx-5 rounded-[1.25rem] bg-background overflow-hidden relative">
+        <Header />
+        <div className="pt-40 md:pt-44 pb-12 px-6 lg:px-12 max-w-[1400px] mx-auto relative z-10">
+          <h1 className="text-4xl md:text-5xl font-display font-bold tracking-tight text-foreground mb-4 leading-[1.1]">
+            {t("compliance.title")} <span className="text-primary">{t("compliance.titleHighlight")}</span>
+          </h1>
+          <p className="text-lg text-muted-foreground leading-relaxed max-w-2xl">
+            Mantemos um programa robusto de compliance alinhado aos mais altos padrões nacionais e internacionais, garantindo transparência, ética e responsabilidade em todas as operações.
+          </p>
+          <div className="mt-4">
+            <h3 className="text-sm font-semibold text-foreground uppercase tracking-wider mb-2">
+              {t("compliance.certifications")}
+            </h3>
+            <p className="text-sm text-muted-foreground">
+              ISO 37001 <span className="text-muted-foreground/40 mx-1.5">·</span> ISO 9001 <span className="text-muted-foreground/40 mx-1.5">·</span> ISO 14001
+            </p>
+          </div>
+        </div>
+      </div>
+
+      <main className="py-14 md:py-20">
+        <div className="max-w-[1400px] mx-auto px-6 lg:px-12">
           <div 
             ref={contentRef}
-            className={`grid lg:grid-cols-2 gap-12 lg:gap-16 scroll-fade-up ${contentVisible ? 'visible' : ''}`}
+            className={`max-w-2xl mx-auto scroll-fade-up ${contentVisible ? 'visible' : ''}`}
           >
-            <div className="flex flex-col justify-start">
-              <h1 className="text-4xl md:text-5xl font-display font-bold tracking-tight text-foreground mb-6 leading-[1.1]">
-                {t("compliance.title")} <span className="text-primary">{t("compliance.titleHighlight")}</span>
-              </h1>
-              <p className="text-lg text-muted-foreground leading-relaxed mb-10">
-                Mantemos um programa robusto de compliance alinhado aos mais altos padrões nacionais e internacionais, garantindo transparência, ética e responsabilidade em todas as operações.
-              </p>
-
-              {/* Certifications inline */}
-              <div>
-                <h3 className="text-sm font-semibold text-foreground uppercase tracking-wider mb-3">
-                  {t("compliance.certifications")}
-                </h3>
-                <p className="text-sm text-muted-foreground">
-                  ISO 37001 <span className="text-muted-foreground/40 mx-1.5">·</span> ISO 9001 <span className="text-muted-foreground/40 mx-1.5">·</span> ISO 14001
-                </p>
-              </div>
-            </div>
 
             <div className="flex flex-col justify-start">
               <div className="mb-3 text-center">

@@ -70,14 +70,13 @@ const Privacidade = () => {
   ];
 
   return (
-    <div className="min-h-screen bg-background">
-      <Header />
-      
-      <main className="pt-32 pb-16">
-        <div className="container mx-auto px-6">
+    <div className="min-h-screen bg-white pt-3 md:pt-5">
+      <div className="mx-3 md:mx-5 rounded-[1.25rem] bg-background overflow-hidden relative">
+        <Header />
+        <div className="pt-40 md:pt-44 pb-12 px-6 lg:px-12 max-w-[1400px] mx-auto relative z-10">
           <div 
             ref={headerRef}
-            className={`max-w-3xl mx-auto text-center mb-16 scroll-fade-up ${headerVisible ? 'visible' : ''}`}
+            className={`max-w-3xl scroll-fade-up ${headerVisible ? 'visible' : ''}`}
           >
             <div className="inline-flex items-center gap-2 px-4 py-2 rounded-full bg-primary/10 border border-primary/20 mb-6">
               <Shield className="w-4 h-4 text-primary" />
@@ -92,7 +91,11 @@ const Privacidade = () => {
               Última atualização: {new Date().toLocaleDateString('pt-BR', { year: 'numeric', month: 'long', day: 'numeric' })}
             </p>
           </div>
+        </div>
+      </div>
 
+      <main className="py-14 md:py-20">
+        <div className="max-w-[1400px] mx-auto px-6 lg:px-12">
           <div 
             ref={contentRef}
             className={`max-w-3xl mx-auto space-y-6 scroll-fade-up ${contentVisible ? 'visible' : ''}`}
