@@ -29,6 +29,7 @@ import rsaLogo from "@/assets/partners/rsa-partner.svg";
 import halcyonLogo from "@/assets/partners/halcyon-partner.svg";
 import proofpointLogo from "@/assets/partners/proofpoint-partner.svg";
 import milestoneLogo from "@/assets/partners/milestone-partner.svg";
+import veeamWhiteLogo from "@/assets/partners/veeam.svg";
 
 const logoMap: Record<string, string> = {
   arista: aristaLogo,
