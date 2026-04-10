@@ -13,6 +13,7 @@ import Atas from "./pages/Atas";
 import Parceiros from "./pages/Parceiros";
 import PartnerDetail from "./pages/PartnerDetail";
 import NotFound from "./pages/NotFound";
+import SupportButton from "@/components/SupportButton";
 
 const queryClient = new QueryClient();
 
@@ -34,6 +35,7 @@ const App = () => (
             <Route path="/parceiros/:slug" element={<PartnerDetail />} />
             <Route path="*" element={<NotFound />} />
           </Routes>
+          <SupportButton />
         </BrowserRouter>
       </TooltipProvider>
     </LanguageProvider>
