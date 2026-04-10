@@ -105,21 +105,28 @@ const Compliance = () => {
         <div className="container mx-auto px-6">
           <div 
             ref={contentRef}
-            className={`grid lg:grid-cols-2 gap-12 lg:gap-16 mb-16 scroll-fade-up ${contentVisible ? 'visible' : ''}`}
+            className={`grid lg:grid-cols-2 gap-12 lg:gap-16 scroll-fade-up ${contentVisible ? 'visible' : ''}`}
           >
-            <div className="flex flex-col justify-center">
+            <div className="flex flex-col justify-start">
               <h1 className="text-4xl md:text-5xl font-display font-bold tracking-tight text-foreground mb-6 leading-[1.1]">
                 {t("compliance.title")} <span className="text-primary">{t("compliance.titleHighlight")}</span>
               </h1>
-              <p className="text-lg text-muted-foreground leading-relaxed mb-6">
-                {t("compliance.desc1")}
+              <p className="text-lg text-muted-foreground leading-relaxed mb-10">
+                Mantemos um programa robusto de compliance alinhado aos mais altos padrões nacionais e internacionais, garantindo transparência, ética e responsabilidade em todas as operações.
               </p>
-              <p className="text-lg text-muted-foreground leading-relaxed">
-                {t("compliance.desc2")}
-              </p>
+
+              {/* Certifications inline */}
+              <div>
+                <h3 className="text-sm font-semibold text-foreground uppercase tracking-wider mb-3">
+                  {t("compliance.certifications")}
+                </h3>
+                <p className="text-sm text-muted-foreground">
+                  ISO 37001 <span className="text-muted-foreground/40 mx-1.5">·</span> ISO 9001 <span className="text-muted-foreground/40 mx-1.5">·</span> ISO 14001
+                </p>
+              </div>
             </div>
 
-            <div>
+            <div className="flex flex-col justify-start">
               <div className="mb-3 text-center">
                 <h2 className="text-2xl font-display font-bold text-foreground mb-2">
                   {t("compliance.report.title")}
@@ -241,33 +248,6 @@ const Compliance = () => {
                   .
                 </p>
               </form>
-            </div>
-          </div>
-
-          <div 
-            ref={certsRef}
-            className={`scroll-fade-up ${certsVisible ? 'visible' : ''}`}
-          >
-            <h2 className="text-xl font-display font-bold text-foreground mb-6 text-center">
-              {t("compliance.certifications")}
-            </h2>
-            
-            <div className="grid grid-cols-2 lg:grid-cols-4 gap-4">
-              {complianceItems.map((item) => (
-                <div
-                  key={item.title}
-                  className={`group relative p-5 rounded-xl bg-card border border-border transition-all duration-300 text-center ${!item.available ? 'opacity-60' : ''}`}
-                >
-                  <div className="relative z-10">
-                    <div className="w-12 h-12 rounded-lg bg-primary/10 flex items-center justify-center mx-auto mb-3">
-                      <item.icon className="w-6 h-6 text-primary" />
-                    </div>
-                    <h3 className="text-base font-display font-bold text-foreground mb-0.5">{item.title}</h3>
-                    {item.subtitle && <p className="text-xs text-muted-foreground">{item.subtitle}</p>}
-                    {!item.available && <p className="text-xs text-muted-foreground mt-1">{t("compliance.comingSoon")}</p>}
-                  </div>
-                </div>
-              ))}
             </div>
           </div>
         </div>
