@@ -41,6 +41,34 @@ const logoMap: Record<string, string> = {
   veeam: veeamLogo,
 };
 
+const FaqSection = ({ items }: { items: { question: string; answer: string }[] }) => {
+  const [openIndex, setOpenIndex] = useState<number | null>(null);
+
+  return (
+    <div className="mt-10 mb-8">
+      <h2 className="text-lg font-display font-bold text-gray-900 mb-4">Perguntas frequentes</h2>
+      <div className="space-y-2">
+        {items.map((item, i) => (
+          <div key={i} className="border border-gray-200 rounded-lg overflow-hidden">
+            <button
+              onClick={() => setOpenIndex(openIndex === i ? null : i)}
+              className="w-full flex items-center justify-between px-5 py-4 text-left text-sm font-medium text-gray-900 hover:bg-gray-50 transition-colors"
+            >
+              {item.question}
+              <ChevronDown className={`w-4 h-4 text-gray-400 flex-shrink-0 ml-4 transition-transform duration-200 ${openIndex === i ? 'rotate-180' : ''}`} />
+            </button>
+            {openIndex === i && (
+              <div className="px-5 pb-4 text-sm text-gray-600 leading-relaxed">
+                {item.answer}
+              </div>
+            )}
+          </div>
+        ))}
+      </div>
+    </div>
+  );
+};
+
 const PartnerDetail = () => {
   const { slug } = useParams<{ slug: string }>();
   const navigate = useNavigate();
