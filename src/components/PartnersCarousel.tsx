@@ -11,7 +11,6 @@ import nutanixLogo from "@/assets/partners/nutanix.jpg";
 import everpureLogo from "@/assets/partners/everpure.svg";
 import riverbedLogo from "@/assets/partners/riverbed.jpg";
 import thalesLogo from "@/assets/partners/thales.jpg";
-import trendLogo from "@/assets/partners/trend.jpg";
 import veeamLogo from "@/assets/partners/veeam.jpg";
 import halcyonLogo from "@/assets/partners/halcyon-partner.svg";
 import proofpointLogo from "@/assets/partners/proofpoint-partner.svg";
@@ -33,7 +32,6 @@ const partners = [
   { name: "Everpure", logo: everpureLogo },
   { name: "Riverbed", logo: riverbedLogo },
   { name: "Thales", logo: thalesLogo },
-  { name: "Trend Micro", logo: trendLogo },
   { name: "Veeam", logo: veeamLogo },
   { name: "Halcyon", logo: halcyonLogo },
   { name: "Proofpoint", logo: proofpointLogo },
@@ -74,7 +72,7 @@ const PartnersCarousel = () => {
             >
               <img
                 src={partner.logo}
-                alt={partner.name}
+                alt={`Logo ${partner.name}`}
                 loading="lazy"
                 decoding="async"
                 className="h-[50px] md:h-[60px] w-auto object-contain opacity-40 hover:opacity-90 transition-all duration-500 hover:scale-110 grayscale hover:grayscale-0"
