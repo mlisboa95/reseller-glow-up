@@ -11,7 +11,7 @@ import aristaLogo from "@/assets/partners/arista.jpg";
 import checkpointLogo from "@/assets/partners/checkpoint.jpg";
 import cyberarkLogo from "@/assets/partners/cyberark.jpg";
 import exagridLogo from "@/assets/partners/exagrid.jpg";
-import extremeLogo from "@/assets/partners/extreme.jpg";
+import extremeLogo from "@/assets/partners/extreme-partner.svg";
 import f5Logo from "@/assets/partners/f5.jpg";
 import gigamonLogo from "@/assets/partners/gigamon.jpg";
 import hpeLogo from "@/assets/partners/hpe.jpg";

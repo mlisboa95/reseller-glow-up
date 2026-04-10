@@ -11,7 +11,7 @@ import awsLogo from "@/assets/partners/aws.svg";
 import checkpointLogo from "@/assets/partners/checkpoint.svg";
 import everpureLogo from "@/assets/partners/everpure.svg";
 import exagridLogo from "@/assets/partners/exagrid.svg";
-import extremeLogo from "@/assets/partners/extreme.svg";
+import extremeLogo from "@/assets/partners/extreme-partner.svg";
 import gigamonLogo from "@/assets/partners/gigamon.png";
 import hpeLogo from "@/assets/partners/hpe.svg";
 import nutanixLogo from "@/assets/partners/nutanix.svg";
