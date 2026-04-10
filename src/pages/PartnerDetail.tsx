@@ -45,6 +45,7 @@ const logoMap: Record<string, string> = {
   "trend-micro": trendLogo,
   veeam: veeamLogo,
   invenzi: invenziLogo,
+  lenovo: lenovoLogo,
 };
 
 // Partners with dedicated white logos for dark backgrounds (skip CSS filter)

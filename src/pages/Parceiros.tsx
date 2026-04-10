@@ -44,6 +44,7 @@ const logoMap: Record<string, string> = {
   "trend-micro": trendLogo,
   veeam: veeamLogo,
   invenzi: invenziLogo,
+  lenovo: lenovoLogo,
 };
 
 const Parceiros = () => {
