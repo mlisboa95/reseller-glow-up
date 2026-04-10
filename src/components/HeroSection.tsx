@@ -7,29 +7,49 @@ import RippleButton from "./RippleButton";
 import { useLanguage } from "@/contexts/LanguageContext";
 
 // Partner logos (SVG/PNG, white on transparent)
+import aristaLogo from "@/assets/partners/arista-partner.svg";
 import awsLogo from "@/assets/partners/aws.svg";
 import checkpointLogo from "@/assets/partners/checkpoint.svg";
 import everpureLogo from "@/assets/partners/everpure.svg";
 import exagridLogo from "@/assets/partners/exagrid.svg";
 import extremeLogo from "@/assets/partners/extreme-partner.svg";
 import gigamonLogo from "@/assets/partners/gigamon.png";
+import halcyonLogo from "@/assets/partners/halcyon-partner.svg";
 import hpeLogo from "@/assets/partners/hpe.svg";
+import invenziLogo from "@/assets/partners/invenzi-partner.png";
+import lenovoLogo from "@/assets/partners/lenovo-partner.svg";
+import milestoneLogo from "@/assets/partners/milestone-partner.svg";
+import mitelLogo from "@/assets/partners/mitel-partner.svg";
+import netappLogo from "@/assets/partners/netapp-partner.svg";
 import nutanixLogo from "@/assets/partners/nutanix.svg";
+import proofpointLogo from "@/assets/partners/proofpoint-partner.svg";
 import riverbedLogo from "@/assets/partners/riverbed.svg";
+import rsaLogo from "@/assets/partners/rsa-partner.svg";
+import sentineloneLogo from "@/assets/partners/s1-partner.svg";
 import veeamLogo from "@/assets/partners/veeam.svg";
 
-// Alphabetical order, with individual height tuning for visual balance
+// Alphabetical order, with individual width tuning for visual balance (Gigamon = reference at 112/128)
 const heroPartners = [
+  { name: "Arista", logo: aristaLogo, cls: "w-[100px] md:w-[118px] h-auto" },
   { name: "AWS", logo: awsLogo, cls: "w-[52px] md:w-[60px] h-auto" },
   { name: "Check Point", logo: checkpointLogo, cls: "w-[112px] md:w-[128px] h-auto" },
   { name: "Everpure", logo: everpureLogo, cls: "w-[112px] md:w-[128px] h-auto" },
   { name: "ExaGrid", logo: exagridLogo, cls: "w-[96px] md:w-[112px] h-auto" },
   { name: "Extreme Networks", logo: extremeLogo, cls: "w-[112px] md:w-[128px] h-auto" },
   { name: "Gigamon", logo: gigamonLogo, cls: "w-[112px] md:w-[128px] h-auto" },
+  { name: "Halcyon", logo: halcyonLogo, cls: "w-[108px] md:w-[124px] h-auto" },
   { name: "HPE", logo: hpeLogo, cls: "w-[64px] md:w-[72px] h-auto" },
+  { name: "Invenzi", logo: invenziLogo, cls: "w-[96px] md:w-[112px] h-auto" },
+  { name: "Lenovo", logo: lenovoLogo, cls: "w-[100px] md:w-[116px] h-auto" },
+  { name: "Milestone", logo: milestoneLogo, cls: "w-[108px] md:w-[124px] h-auto" },
+  { name: "Mitel", logo: mitelLogo, cls: "w-[88px] md:w-[100px] h-auto" },
+  { name: "NetApp", logo: netappLogo, cls: "w-[96px] md:w-[112px] h-auto" },
   { name: "Nutanix", logo: nutanixLogo, cls: "w-[112px] md:w-[128px] h-auto" },
-  { name: "Riverbed", logo: riverbedLogo, cls: "w-[240px] md:w-[280px] h-auto" },
-  { name: "Veeam", logo: veeamLogo, cls: "w-[240px] md:w-[280px] h-auto" },
+  { name: "Proofpoint", logo: proofpointLogo, cls: "w-[112px] md:w-[128px] h-auto" },
+  { name: "Riverbed", logo: riverbedLogo, cls: "w-[112px] md:w-[128px] h-auto" },
+  { name: "RSA", logo: rsaLogo, cls: "w-[72px] md:w-[84px] h-auto" },
+  { name: "SentinelOne", logo: sentineloneLogo, cls: "w-[108px] md:w-[124px] h-auto" },
+  { name: "Veeam", logo: veeamLogo, cls: "w-[112px] md:w-[128px] h-auto" },
 ];
 
 interface PartnerItem {
