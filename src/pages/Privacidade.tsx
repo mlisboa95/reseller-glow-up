@@ -9,62 +9,62 @@ const Privacidade = () => {
 
   const sections = [
     {
-      title: "1. Introduction",
-      content: "Mahvla Group LLC is committed to protecting the privacy and personal data of its clients, partners, and website visitors. This Privacy Policy describes how we collect, use, store, and protect your personal information in compliance with applicable data protection laws, including the California Consumer Privacy Act (CCPA) and other relevant U.S. regulations."
+      title: "1. Introdução",
+      content: "A Mahvla Telecomm Consultoria e Serviços em Tecnologia LTDA tem o compromisso de proteger a privacidade e os dados pessoais de seus clientes, parceiros e visitantes do site. Esta Política de Privacidade descreve como coletamos, utilizamos, armazenamos e protegemos suas informações pessoais, em conformidade com a Lei Geral de Proteção de Dados (LGPD) e demais legislações aplicáveis."
     },
     {
-      title: "2. Data We Collect",
-      content: "We may collect the following types of information:",
+      title: "2. Dados que coletamos",
+      content: "Podemos coletar os seguintes tipos de informação:",
       list: [
-        "Identification data: name, email address, phone number, job title, and company",
-        "Browsing data: IP address, browser type, pages visited",
-        "Cookies and similar technologies to enhance user experience",
-        "Information voluntarily provided through contact forms"
+        "Dados de identificação: nome, e-mail, telefone, cargo e empresa",
+        "Dados de navegação: endereço IP, tipo de navegador, páginas visitadas",
+        "Cookies e tecnologias similares para melhorar a experiência do usuário",
+        "Informações fornecidas voluntariamente por meio de formulários de contato"
       ]
     },
     {
-      title: "3. How We Use Your Data",
-      content: "We use your data to:",
+      title: "3. Como utilizamos seus dados",
+      content: "Utilizamos seus dados para:",
       list: [
-        "Provide and improve our services",
-        "Respond to inquiries and requests",
-        "Send relevant communications about our products and services",
-        "Comply with legal and regulatory obligations",
-        "Analyze website usage to improve the user experience"
+        "Fornecer e aprimorar nossos serviços",
+        "Responder a dúvidas e solicitações",
+        "Enviar comunicações relevantes sobre nossos produtos e serviços",
+        "Cumprir obrigações legais e regulatórias",
+        "Analisar o uso do site para melhorar a experiência do usuário"
       ]
     },
     {
       title: "4. Cookies",
-      content: "We use cookies for the following purposes:",
+      content: "Utilizamos cookies para os seguintes fins:",
       list: [
-        "Essential cookies: required for the website to function properly",
-        "Preference cookies: store your browsing preferences",
-        "Analytical cookies: help us understand how you use the website"
+        "Cookies essenciais: necessários para o funcionamento adequado do site",
+        "Cookies de preferência: armazenam suas preferências de navegação",
+        "Cookies analíticos: nos ajudam a entender como você utiliza o site"
       ],
-      extra: "You can manage your cookie preferences through your browser settings."
+      extra: "Você pode gerenciar suas preferências de cookies nas configurações do seu navegador."
     },
     {
-      title: "5. Data Sharing",
-      content: "We do not sell, rent, or share your personal information with third parties for marketing purposes. We may share data only with business partners who assist us in providing our services, always under confidentiality agreements and in compliance with applicable privacy laws."
+      title: "5. Compartilhamento de dados",
+      content: "Não vendemos, alugamos ou compartilhamos suas informações pessoais com terceiros para fins de marketing. Podemos compartilhar dados apenas com parceiros de negócios que nos auxiliam na prestação dos nossos serviços, sempre sob acordos de confidencialidade e em conformidade com as leis de privacidade aplicáveis."
     },
     {
-      title: "6. Data Security",
-      content: "We implement appropriate technical and organizational measures to protect your personal data against unauthorized access, alteration, disclosure, or destruction. Our commitment to quality and security is reflected in our operational standards and certifications."
+      title: "6. Segurança dos dados",
+      content: "Implementamos medidas técnicas e organizacionais adequadas para proteger seus dados pessoais contra acesso não autorizado, alteração, divulgação ou destruição. Nosso compromisso com a qualidade e segurança se reflete nos padrões operacionais e certificações que mantemos."
     },
     {
-      title: "7. Your Rights",
-      content: "Depending on your jurisdiction, you may have the right to:",
+      title: "7. Seus direitos",
+      content: "De acordo com a LGPD, você tem o direito de:",
       list: [
-        "Access and review your personal data",
-        "Request correction of inaccurate or incomplete data",
-        "Request deletion of your personal data",
-        "Opt out of the sale or sharing of your personal information",
-        "Withdraw consent at any time"
+        "Acessar e revisar seus dados pessoais",
+        "Solicitar a correção de dados incorretos ou incompletos",
+        "Solicitar a exclusão dos seus dados pessoais",
+        "Revogar o consentimento a qualquer momento",
+        "Solicitar a portabilidade dos seus dados"
       ]
     },
     {
-      title: "8. Contact",
-      content: "To exercise your rights or ask questions about this Privacy Policy, please contact us:",
+      title: "8. Contato",
+      content: "Para exercer seus direitos ou tirar dúvidas sobre esta Política de Privacidade, entre em contato conosco:",
       contact: true
     }
   ];
@@ -75,26 +75,24 @@ const Privacidade = () => {
       
       <main className="pt-32 pb-16">
         <div className="container mx-auto px-6">
-          {/* Header */}
           <div 
             ref={headerRef}
             className={`max-w-3xl mx-auto text-center mb-16 scroll-fade-up ${headerVisible ? 'visible' : ''}`}
           >
             <div className="inline-flex items-center gap-2 px-4 py-2 rounded-full bg-primary/10 border border-primary/20 mb-6">
               <Shield className="w-4 h-4 text-primary" />
-              <span className="text-sm font-medium text-primary">Privacy Compliant</span>
+              <span className="text-sm font-medium text-primary">Conformidade com a LGPD</span>
             </div>
             
             <h1 className="text-4xl md:text-5xl font-display font-bold tracking-tight text-foreground mb-4 leading-[1.1]">
-              Privacy <span className="text-primary">Policy</span>
+              Política de <span className="text-primary">Privacidade</span>
             </h1>
             
             <p className="text-muted-foreground">
-              Last updated: {new Date().toLocaleDateString('en-US', { year: 'numeric', month: 'long', day: 'numeric' })}
+              Última atualização: {new Date().toLocaleDateString('pt-BR', { year: 'numeric', month: 'long', day: 'numeric' })}
             </p>
           </div>
 
-          {/* Content */}
           <div 
             ref={contentRef}
             className={`max-w-3xl mx-auto space-y-6 scroll-fade-up ${contentVisible ? 'visible' : ''}`}
@@ -131,14 +129,14 @@ const Privacidade = () => {
                 {section.contact && (
                   <div className="mt-4 space-y-2">
                     <p className="text-foreground">
-                      <span className="text-muted-foreground">Email:</span>{" "}
-                      <a href="mailto:privacy@mahvla.com" className="text-primary hover:underline">
-                        privacy@mahvla.com
+                      <span className="text-muted-foreground">E-mail:</span>{" "}
+                      <a href="mailto:privacidade@mahvla.com" className="text-primary hover:underline">
+                        privacidade@mahvla.com
                       </a>
                     </p>
                     <p className="text-foreground">
-                      <span className="text-muted-foreground">Address:</span>{" "}
-                      <span className="text-muted-foreground">5550 Glades Road, Suite 511, Boca Raton, FL 33431, United States</span>
+                      <span className="text-muted-foreground">Endereço:</span>{" "}
+                      <span className="text-muted-foreground">SRTVS Qd 701 Cj. L N. 38, Bloco 01, Salas 8, 9 e 10, Asa Sul, Brasília - DF</span>
                     </p>
                   </div>
                 )}
