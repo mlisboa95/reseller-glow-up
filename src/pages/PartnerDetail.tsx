@@ -131,7 +131,7 @@ const PartnerDetail = () => {
 
             {/* CTA */}
             <a
-              href="mailto:contact@mahvla.com"
+              href="mailto:contact@mahvla.com.br"
               className="cta-button inline-flex items-center gap-3 px-8 py-4 font-semibold rounded-full text-primary-foreground text-sm"
             >
               {t("partners.detail.cta")}
