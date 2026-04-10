@@ -83,6 +83,11 @@ const Atas = () => {
   const [search, setSearch] = useState("");
   const [categoria, setCategoria] = useState("Todas");
   const [selectedId, setSelectedId] = useState<string | null>(null);
+  const location = useLocation();
+
+  useEffect(() => {
+    setSelectedId(null);
+  }, [location.key]);
 
   const filtered = useMemo(() => {
     const q = search.toLowerCase();
