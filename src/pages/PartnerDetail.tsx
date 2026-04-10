@@ -1,6 +1,6 @@
-import { useEffect } from "react";
+import { useEffect, useState } from "react";
 import { useParams, Link, useNavigate } from "react-router-dom";
-import { ArrowLeft, Mail } from "lucide-react";
+import { ArrowLeft, Mail, ChevronDown } from "lucide-react";
 import Header from "@/components/Header";
 import Footer from "@/components/Footer";
 import { getPartnerBySlug } from "@/data/partners";
@@ -152,6 +152,11 @@ const PartnerDetail = () => {
               </div>
             )}
           </div>
+
+          {/* FAQ */}
+          {partner.faq && partner.faq.length > 0 && (
+            <FaqSection items={partner.faq} />
+          )}
 
           {/* CTA */}
           <div className="pt-8 border-t border-gray-200">
