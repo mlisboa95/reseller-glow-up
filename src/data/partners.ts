@@ -15,7 +15,7 @@ export const partners: Partner[] = [
     name: "Arista",
     description: "Descrição em breve.",
     relatedSolutions: [{ label: "Redes & Conectividade", href: "/#servicos" }],
-    seoTitle: "Arista | Mahvla Telecomm — Parceiro Autorizado",
+    seoTitle: "Arista | Mahvla Telecomm | Parceiro Autorizado",
     seoDescription: "Mahvla Telecomm é parceira autorizada Arista em Brasília. Soluções de redes e data center com tecnologia Arista.",
   },
   {
@@ -23,7 +23,7 @@ export const partners: Partner[] = [
     name: "Check Point",
     description: "Descrição em breve.",
     relatedSolutions: [{ label: "Cibersegurança", href: "/#servicos" }],
-    seoTitle: "Check Point | Mahvla Telecomm — Parceiro Autorizado",
+    seoTitle: "Check Point | Mahvla Telecomm | Parceiro Autorizado",
     seoDescription: "Parceiro Check Point em Brasília. Soluções de cibersegurança, NGFW e proteção de ameaças com Mahvla Telecomm.",
   },
   {
@@ -31,7 +31,7 @@ export const partners: Partner[] = [
     name: "CyberArk",
     description: "Descrição em breve.",
     relatedSolutions: [{ label: "Cibersegurança", href: "/#servicos" }],
-    seoTitle: "CyberArk | Mahvla Telecomm — Parceiro Autorizado",
+    seoTitle: "CyberArk | Mahvla Telecomm | Parceiro Autorizado",
     seoDescription: "Parceiro CyberArk em Brasília. Gestão de acessos privilegiados (PAM) com Mahvla Telecomm.",
   },
   {
@@ -39,7 +39,7 @@ export const partners: Partner[] = [
     name: "Dahua",
     description: "Descrição em breve.",
     relatedSolutions: [{ label: "Segurança Física & Cidades Inteligentes", href: "/#servicos" }],
-    seoTitle: "Dahua | Mahvla Telecomm — Parceiro Autorizado",
+    seoTitle: "Dahua | Mahvla Telecomm | Parceiro Autorizado",
     seoDescription: "Parceiro Dahua em Brasília. CFTV IP e vigilância inteligente com Mahvla Telecomm.",
   },
   {
@@ -47,7 +47,7 @@ export const partners: Partner[] = [
     name: "ExaGrid",
     description: "Descrição em breve.",
     relatedSolutions: [{ label: "Infraestrutura & Cloud", href: "/#servicos" }],
-    seoTitle: "ExaGrid | Mahvla Telecomm — Parceiro Autorizado",
+    seoTitle: "ExaGrid | Mahvla Telecomm | Parceiro Autorizado",
     seoDescription: "Parceiro ExaGrid em Brasília. Backup e storage tiered com Mahvla Telecomm.",
   },
   {
@@ -55,7 +55,7 @@ export const partners: Partner[] = [
     name: "Extreme Networks",
     description: "Descrição em breve.",
     relatedSolutions: [{ label: "Redes & Conectividade", href: "/#servicos" }],
-    seoTitle: "Extreme Networks | Mahvla Telecomm — Parceiro Autorizado",
+    seoTitle: "Extreme Networks | Mahvla Telecomm | Parceiro Autorizado",
     seoDescription: "Parceiro Extreme Networks em Brasília. Redes campus e cloud networking com Mahvla Telecomm.",
   },
   {
@@ -63,7 +63,7 @@ export const partners: Partner[] = [
     name: "F5",
     description: "Descrição em breve.",
     relatedSolutions: [{ label: "Cibersegurança", href: "/#servicos" }, { label: "Redes & Conectividade", href: "/#servicos" }],
-    seoTitle: "F5 | Mahvla Telecomm — Parceiro Autorizado",
+    seoTitle: "F5 | Mahvla Telecomm | Parceiro Autorizado",
     seoDescription: "Parceiro F5 em Brasília. Application delivery, WAF e segurança de aplicações com Mahvla Telecomm.",
   },
   {
@@ -71,7 +71,7 @@ export const partners: Partner[] = [
     name: "Gigamon",
     description: "Descrição em breve.",
     relatedSolutions: [{ label: "Redes & Conectividade", href: "/#servicos" }, { label: "Cibersegurança", href: "/#servicos" }],
-    seoTitle: "Gigamon | Mahvla Telecomm — Parceiro Autorizado",
+    seoTitle: "Gigamon | Mahvla Telecomm | Parceiro Autorizado",
     seoDescription: "Parceiro Gigamon em Brasília. Visibilidade de rede e network intelligence com Mahvla Telecomm.",
   },
   {
@@ -79,7 +79,7 @@ export const partners: Partner[] = [
     name: "HPE / Aruba",
     description: "Descrição em breve.",
     relatedSolutions: [{ label: "Redes & Conectividade", href: "/#servicos" }, { label: "Infraestrutura & Cloud", href: "/#servicos" }],
-    seoTitle: "HPE / Aruba | Mahvla Telecomm — Parceiro Autorizado",
+    seoTitle: "HPE / Aruba | Mahvla Telecomm | Parceiro Autorizado",
     seoDescription: "Parceiro HPE e Aruba em Brasília. Servidores, redes e infraestrutura enterprise com Mahvla Telecomm.",
   },
   {
@@ -87,7 +87,7 @@ export const partners: Partner[] = [
     name: "Intelbras",
     description: "Descrição em breve.",
     relatedSolutions: [{ label: "Segurança Física & Cidades Inteligentes", href: "/#servicos" }, { label: "Redes & Conectividade", href: "/#servicos" }],
-    seoTitle: "Intelbras | Mahvla Telecomm — Parceiro Autorizado",
+    seoTitle: "Intelbras | Mahvla Telecomm | Parceiro Autorizado",
     seoDescription: "Parceiro Intelbras em Brasília. Segurança eletrônica e redes com Mahvla Telecomm.",
   },
   {
@@ -95,7 +95,7 @@ export const partners: Partner[] = [
     name: "Invenzi",
     description: "Descrição em breve.",
     relatedSolutions: [{ label: "Segurança Física & Cidades Inteligentes", href: "/#servicos" }],
-    seoTitle: "Invenzi | Mahvla Telecomm — Parceiro Autorizado",
+    seoTitle: "Invenzi | Mahvla Telecomm | Parceiro Autorizado",
     seoDescription: "Parceiro Invenzi em Brasília. Controle de acesso e automação predial com Mahvla Telecomm.",
   },
   {
@@ -103,7 +103,7 @@ export const partners: Partner[] = [
     name: "Juniper",
     description: "Descrição em breve.",
     relatedSolutions: [{ label: "Redes & Conectividade", href: "/#servicos" }],
-    seoTitle: "Juniper | Mahvla Telecomm — Parceiro Autorizado",
+    seoTitle: "Juniper | Mahvla Telecomm | Parceiro Autorizado",
     seoDescription: "Parceiro Juniper Networks em Brasília. Redes, SD-WAN e AI-driven enterprise com Mahvla Telecomm.",
   },
   {
@@ -111,7 +111,7 @@ export const partners: Partner[] = [
     name: "Lenovo",
     description: "Descrição em breve.",
     relatedSolutions: [{ label: "Infraestrutura & Cloud", href: "/#servicos" }],
-    seoTitle: "Lenovo | Mahvla Telecomm — Parceiro Autorizado",
+    seoTitle: "Lenovo | Mahvla Telecomm | Parceiro Autorizado",
     seoDescription: "Parceiro Lenovo em Brasília. Servidores, storage e infraestrutura de data center com Mahvla Telecomm.",
   },
   {
@@ -119,7 +119,7 @@ export const partners: Partner[] = [
     name: "Milestone",
     description: "Descrição em breve.",
     relatedSolutions: [{ label: "Segurança Física & Cidades Inteligentes", href: "/#servicos" }],
-    seoTitle: "Milestone | Mahvla Telecomm — Parceiro Autorizado",
+    seoTitle: "Milestone | Mahvla Telecomm | Parceiro Autorizado",
     seoDescription: "Parceiro Milestone em Brasília. VMS e gerenciamento de vídeo inteligente com Mahvla Telecomm.",
   },
   {
@@ -127,7 +127,7 @@ export const partners: Partner[] = [
     name: "Mitel",
     description: "Descrição em breve.",
     relatedSolutions: [{ label: "Redes & Conectividade", href: "/#servicos" }],
-    seoTitle: "Mitel | Mahvla Telecomm — Parceiro Autorizado",
+    seoTitle: "Mitel | Mahvla Telecomm | Parceiro Autorizado",
     seoDescription: "Parceiro Mitel em Brasília. Comunicações unificadas e VoIP com Mahvla Telecomm.",
   },
   {
@@ -135,7 +135,7 @@ export const partners: Partner[] = [
     name: "NetApp",
     description: "Descrição em breve.",
     relatedSolutions: [{ label: "Infraestrutura & Cloud", href: "/#servicos" }],
-    seoTitle: "NetApp | Mahvla Telecomm — Parceiro Autorizado",
+    seoTitle: "NetApp | Mahvla Telecomm | Parceiro Autorizado",
     seoDescription: "Parceiro NetApp em Brasília. Storage e gerenciamento de dados com Mahvla Telecomm.",
   },
   {
@@ -143,7 +143,7 @@ export const partners: Partner[] = [
     name: "Nutanix",
     description: "Descrição em breve.",
     relatedSolutions: [{ label: "Infraestrutura & Cloud", href: "/#servicos" }],
-    seoTitle: "Nutanix | Mahvla Telecomm — Parceiro Autorizado",
+    seoTitle: "Nutanix | Mahvla Telecomm | Parceiro Autorizado",
     seoDescription: "Revenda Nutanix em Brasília. Hiperconvergência e cloud privada com Mahvla Telecomm.",
   },
   {
@@ -151,7 +151,7 @@ export const partners: Partner[] = [
     name: "Proofpoint",
     description: "Descrição em breve.",
     relatedSolutions: [{ label: "Cibersegurança", href: "/#servicos" }],
-    seoTitle: "Proofpoint | Mahvla Telecomm — Parceiro Autorizado",
+    seoTitle: "Proofpoint | Mahvla Telecomm | Parceiro Autorizado",
     seoDescription: "Parceiro Proofpoint em Brasília. Proteção de e-mail e segurança de dados com Mahvla Telecomm.",
   },
   {
@@ -159,7 +159,7 @@ export const partners: Partner[] = [
     name: "PureStorage",
     description: "Descrição em breve.",
     relatedSolutions: [{ label: "Infraestrutura & Cloud", href: "/#servicos" }],
-    seoTitle: "PureStorage | Mahvla Telecomm — Parceiro Autorizado",
+    seoTitle: "PureStorage | Mahvla Telecomm | Parceiro Autorizado",
     seoDescription: "Parceiro Pure Storage em Brasília. All-flash storage e modernização de data center com Mahvla Telecomm.",
   },
   {
@@ -167,7 +167,7 @@ export const partners: Partner[] = [
     name: "Riverbed",
     description: "Descrição em breve.",
     relatedSolutions: [{ label: "Redes & Conectividade", href: "/#servicos" }],
-    seoTitle: "Riverbed | Mahvla Telecomm — Parceiro Autorizado",
+    seoTitle: "Riverbed | Mahvla Telecomm | Parceiro Autorizado",
     seoDescription: "Parceiro Riverbed em Brasília. Otimização WAN e visibilidade de rede com Mahvla Telecomm.",
   },
   {
@@ -175,7 +175,7 @@ export const partners: Partner[] = [
     name: "RSA",
     description: "Descrição em breve.",
     relatedSolutions: [{ label: "Cibersegurança", href: "/#servicos" }],
-    seoTitle: "RSA | Mahvla Telecomm — Parceiro Autorizado",
+    seoTitle: "RSA | Mahvla Telecomm | Parceiro Autorizado",
     seoDescription: "Parceiro RSA em Brasília. Autenticação multifator e gestão de risco com Mahvla Telecomm.",
   },
   {
@@ -183,7 +183,7 @@ export const partners: Partner[] = [
     name: "Segura",
     description: "Descrição em breve.",
     relatedSolutions: [{ label: "Cibersegurança", href: "/#servicos" }],
-    seoTitle: "Segura | Mahvla Telecomm — Parceiro Autorizado",
+    seoTitle: "Segura | Mahvla Telecomm | Parceiro Autorizado",
     seoDescription: "Parceiro Segura em Brasília. Gestão de acessos e segurança de identidade com Mahvla Telecomm.",
   },
   {
@@ -191,7 +191,7 @@ export const partners: Partner[] = [
     name: "Thales",
     description: "Descrição em breve.",
     relatedSolutions: [{ label: "Cibersegurança", href: "/#servicos" }],
-    seoTitle: "Thales | Mahvla Telecomm — Parceiro Autorizado",
+    seoTitle: "Thales | Mahvla Telecomm | Parceiro Autorizado",
     seoDescription: "Parceiro Thales em Brasília. Criptografia e proteção de dados com Mahvla Telecomm.",
   },
   {
@@ -199,7 +199,7 @@ export const partners: Partner[] = [
     name: "Trend Micro",
     description: "Descrição em breve.",
     relatedSolutions: [{ label: "Cibersegurança", href: "/#servicos" }],
-    seoTitle: "Trend Micro | Mahvla Telecomm — Parceiro Autorizado",
+    seoTitle: "Trend Micro | Mahvla Telecomm | Parceiro Autorizado",
     seoDescription: "Parceiro Trend Micro em Brasília. Proteção de endpoints e cloud security com Mahvla Telecomm.",
   },
   {
@@ -207,7 +207,7 @@ export const partners: Partner[] = [
     name: "Veeam",
     description: "Descrição em breve.",
     relatedSolutions: [{ label: "Infraestrutura & Cloud", href: "/#servicos" }],
-    seoTitle: "Veeam | Mahvla Telecomm — Parceiro Autorizado",
+    seoTitle: "Veeam | Mahvla Telecomm | Parceiro Autorizado",
     seoDescription: "Parceiro Veeam em Brasília. Backup e recuperação de dados com Mahvla Telecomm.",
   },
 ];

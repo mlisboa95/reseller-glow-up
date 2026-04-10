@@ -64,11 +64,13 @@ const HeroSection = () => {
         style={{ opacity: contentOpacity }}
       >
         <div className="max-w-3xl text-left">
-          <TextReveal delay={200}>
-            <p className="text-sm font-semibold tracking-widest uppercase text-muted-foreground mb-6">
-              {t("hero.eyebrow")}
-            </p>
-          </TextReveal>
+          {t("hero.eyebrow") && (
+            <TextReveal delay={200}>
+              <p className="text-sm font-semibold tracking-widest uppercase text-muted-foreground mb-6">
+                {t("hero.eyebrow")}
+              </p>
+            </TextReveal>
+          )}
 
           <TextReveal delay={400}>
             <h1 className="font-display text-5xl md:text-6xl lg:text-7xl xl:text-8xl font-bold leading-[0.95] mb-6 tracking-tight">
