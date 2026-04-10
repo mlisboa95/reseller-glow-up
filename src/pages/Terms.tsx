@@ -1,7 +1,7 @@
-import { FileText } from "lucide-react";
 import Header from "@/components/Header";
 import Footer from "@/components/Footer";
 import useScrollAnimation from "@/hooks/useScrollAnimation";
+import SEOHead from "@/components/SEOHead";
 
 const Terms = () => {
   const { ref: headerRef, isVisible: headerVisible } = useScrollAnimation();
