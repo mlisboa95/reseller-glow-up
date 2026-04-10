@@ -8,6 +8,7 @@ import useScrollAnimation from "@/hooks/useScrollAnimation";
 
 // Import available logos
 import aristaLogo from "@/assets/partners/arista-partner.svg";
+import awsLogo from "@/assets/partners/aws-partner.svg";
 import checkpointLogo from "@/assets/partners/checkpoint-partner.svg";
 import sentineloneLogo from "@/assets/partners/s1-partner.svg";
 import dahuaLogo from "@/assets/partners/dahua-partner.svg";
@@ -33,6 +34,7 @@ import netappLogo from "@/assets/partners/netapp-partner.svg";
 
 const logoMap: Record<string, string> = {
   arista: aristaLogo,
+  aws: awsLogo,
   checkpoint: checkpointLogo,
   sentinelone: sentineloneLogo,
   dahua: dahuaLogo,
