@@ -82,7 +82,7 @@ const Terms = () => {
         </div>
       </div>
 
-      <main className="py-14 md:py-20">
+      <main className="py-6 md:py-10">
         <div className="max-w-[1400px] mx-auto px-6 lg:px-12">
           <div 
             ref={contentRef}

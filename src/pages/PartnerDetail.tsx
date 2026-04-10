@@ -110,7 +110,7 @@ const PartnerDetail = () => {
         </div>
       </div>
 
-      <main className="py-10 md:py-14">
+      <main className="py-6 md:py-10">
         <div className="max-w-[1400px] mx-auto px-6 lg:px-12">
           {/* Two-column layout: description left, technologies right */}
           <div className={`grid gap-10 mb-8 ${hasTechnologies ? 'lg:grid-cols-[1fr_380px]' : ''}`}>
