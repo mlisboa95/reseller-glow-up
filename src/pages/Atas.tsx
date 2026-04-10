@@ -1,4 +1,3 @@
-import { Search } from "lucide-react";
 import Header from "@/components/Header";
 import Footer from "@/components/Footer";
 import useScrollAnimation from "@/hooks/useScrollAnimation";
@@ -17,7 +16,7 @@ const Atas = () => {
     <div className="min-h-screen bg-white pt-3 md:pt-5">
       <div className="mx-3 md:mx-5 rounded-[1.25rem] bg-background overflow-hidden relative">
         <Header />
-        <div className="pt-40 md:pt-44 pb-12 px-6 lg:px-12 max-w-[1400px] mx-auto relative z-10">
+        <div className="pt-40 md:pt-48 pb-16 px-6 lg:px-12 max-w-[1400px] mx-auto relative z-10">
           <div
             ref={contentRef}
             className={`max-w-3xl scroll-fade-up ${contentVisible ? "visible" : ""}`}
@@ -35,17 +34,9 @@ const Atas = () => {
 
       <main className="py-14 md:py-20">
         <div className="max-w-[1400px] mx-auto px-6 lg:px-12">
-          <div className="max-w-3xl mx-auto">
-            <div className="bg-card border border-border rounded-2xl p-12 text-center">
-              <Search className="w-10 h-10 text-muted-foreground/40 mx-auto mb-4" />
-              <h2 className="text-xl font-display font-bold text-foreground mb-2">
-                {t("atas.preparing")}
-              </h2>
-              <p className="text-muted-foreground">
-                {t("atas.preparingDesc")}
-              </p>
-            </div>
-          </div>
+          <p className="text-muted-foreground text-lg">
+            As atas de registro de preços estarão disponíveis em breve.
+          </p>
         </div>
       </main>
       <Footer showCta={false} />

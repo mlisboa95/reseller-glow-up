@@ -74,12 +74,13 @@ const PartnerDetail = () => {
 
   const logo = logoMap[partner.slug];
   const hasTechnologies = partner.technologies && partner.technologies.length > 0;
+  const primarySolution = partner.relatedSolutions[0];
 
   return (
     <div className="min-h-screen bg-white pt-3 md:pt-5">
       <div className="mx-3 md:mx-5 rounded-[1.25rem] bg-background overflow-hidden relative">
         <Header />
-        <div className="pt-40 md:pt-44 pb-12 px-6 lg:px-12 max-w-[1400px] mx-auto relative z-10">
+        <div className="pt-40 md:pt-48 pb-16 px-6 lg:px-12 max-w-[1400px] mx-auto relative z-10">
           <button
             onClick={() => navigate("/parceiros")}
             className="inline-flex items-center gap-2 text-sm text-muted-foreground hover:text-foreground transition-colors mb-6"
@@ -88,7 +89,7 @@ const PartnerDetail = () => {
             {t("partners.detail.back")}
           </button>
 
-          <div className="flex items-center gap-6 mb-3">
+          <div className="flex items-center gap-6">
             {logo ? (
               <img
                 src={logo}
@@ -106,23 +107,30 @@ const PartnerDetail = () => {
               </span>
             )}
           </div>
-
-          <h1 className="text-3xl md:text-4xl lg:text-5xl font-display font-bold tracking-tight text-foreground">
-            {partner.name}
-          </h1>
         </div>
       </div>
 
       <main className="py-10 md:py-14">
         <div className="max-w-[1400px] mx-auto px-6 lg:px-12">
           {/* Two-column layout: description left, technologies right */}
-          <div className={`grid gap-10 mb-10 ${hasTechnologies ? 'lg:grid-cols-[1fr_380px]' : ''}`}>
+          <div className={`grid gap-10 mb-8 ${hasTechnologies ? 'lg:grid-cols-[1fr_380px]' : ''}`}>
             <div>
               {partner.description.split('\n\n').map((paragraph, i) => (
                 <p key={i} className="text-lg text-gray-600 leading-relaxed mb-5">
                   {paragraph}
                 </p>
               ))}
+              {primarySolution && (
+                <p className="text-sm text-gray-500">
+                  Área de atuação:{" "}
+                  <Link
+                    to={primarySolution.href}
+                    className="text-primary hover:underline font-medium"
+                  >
+                    {primarySolution.label}
+                  </Link>
+                </p>
+              )}
             </div>
 
             {hasTechnologies && (
@@ -145,29 +153,11 @@ const PartnerDetail = () => {
             )}
           </div>
 
-          {/* Bottom row: related solutions + CTA inline */}
-          <div className="flex flex-col sm:flex-row sm:items-center sm:justify-between gap-6 pt-8 border-t border-gray-200">
-            <div>
-              <h2 className="text-sm font-display font-bold text-gray-900 mb-3">
-                {t("partners.detail.solutions")}
-              </h2>
-              <div className="flex flex-wrap gap-2">
-                {partner.relatedSolutions.map((sol) => (
-                  <Link
-                    key={sol.label}
-                    to={sol.href}
-                    className="inline-flex items-center gap-2 px-4 py-2 rounded-full text-sm font-medium text-gray-700 bg-gray-100 border border-gray-200 hover:border-primary/40 hover:text-primary transition-all"
-                  >
-                    <span className="w-1.5 h-1.5 rounded-full bg-primary" />
-                    {sol.label}
-                  </Link>
-                ))}
-              </div>
-            </div>
-
+          {/* CTA */}
+          <div className="pt-8 border-t border-gray-200">
             <a
               href="mailto:contato@mahvla.com.br"
-              className="cta-button inline-flex items-center gap-3 px-8 py-4 font-semibold rounded-full text-primary-foreground text-sm flex-shrink-0"
+              className="cta-button inline-flex items-center gap-3 px-8 py-4 font-semibold rounded-full text-primary-foreground text-sm"
             >
               {t("partners.detail.cta")}
               <span className="w-8 h-8 rounded-full bg-white/20 flex items-center justify-center">
