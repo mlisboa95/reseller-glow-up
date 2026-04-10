@@ -696,7 +696,7 @@ export const partners: Partner[] = [
     seoTitle: "Veeam | Parceiro Silver — Mahvla Telecomm, Brasília-DF",
     seoDescription: "Revenda Veeam em Brasília. Backup, recuperação de dados, proteção contra ransomware e resiliência cibernética para ambientes cloud, data center e SaaS. Projeto, implantação e suporte com SLA dedicado. Atendimento em todo o Brasil.",
   },
-];
+].sort((a, b) => a.name.localeCompare(b.name, 'pt-BR', { sensitivity: 'base' }));
 
 export const getPartnerBySlug = (slug: string): Partner | undefined => {
   return partners.find((p) => p.slug === slug);
