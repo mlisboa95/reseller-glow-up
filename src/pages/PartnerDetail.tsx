@@ -109,6 +109,7 @@ const PartnerDetail = () => {
   }
 
   const logo = logoMap[partner.slug];
+  const whiteLogo = whiteLogoMap[partner.slug];
   const hasTechnologies = partner.technologies && partner.technologies.length > 0;
   const primarySolution = partner.relatedSolutions[0];
 
