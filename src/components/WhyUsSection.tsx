@@ -37,10 +37,6 @@ const WhyUsSection = () => {
           ref={headerRef}
           className={`text-center max-w-3xl mx-auto mb-14 scroll-fade-up ${headerVisible ? 'visible' : ''}`}
         >
-          <span className="inline-flex items-center gap-2 px-4 py-1.5 rounded-full text-xs font-semibold tracking-wider uppercase border border-primary/30 text-primary bg-primary/5 mb-6">
-            <span className="w-1.5 h-1.5 rounded-full bg-primary" />
-            {t("whyus.label")}
-          </span>
           <h2 className="text-3xl md:text-4xl lg:text-5xl font-display font-bold tracking-tight text-gray-900 leading-[1.1]">
             {t("whyus.title")}{" "}
             <span className="text-primary">{t("whyus.titleHighlight")}</span>
