@@ -1,7 +1,8 @@
 import { Menu, X, Mail } from "lucide-react";
 import { useState, useEffect } from "react";
 import { Link, useLocation, useNavigate } from "react-router-dom";
-import logoMahvla from "@/assets/logo-mahvla-footer.png";
+import logoBranco from "@/assets/mahvla-branco.svg";
+import logoCinza from "@/assets/mahvla-cinza.svg";
 import { useLanguage } from "@/contexts/LanguageContext";
 
 const Header = () => {
@@ -65,11 +66,9 @@ const Header = () => {
           className="flex items-center gap-3 group"
         >
           <img
-            src={logoMahvla}
+            src={scrolled ? logoCinza : logoBranco}
             alt="Mahvla Telecomm"
-            className={`h-[3.5rem] md:h-[4rem] w-auto transition-all duration-300 group-hover:opacity-80 ${
-              scrolled ? 'brightness-0' : ''
-            }`}
+            className="h-[3.5rem] md:h-[4rem] w-auto transition-opacity duration-300 group-hover:opacity-80"
           />
         </a>
 
