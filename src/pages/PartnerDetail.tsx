@@ -23,6 +23,7 @@ import riverbedLogo from "@/assets/partners/riverbed-partner.svg";
 import thalesLogo from "@/assets/partners/thales.jpg";
 import trendLogo from "@/assets/partners/trend.jpg";
 import veeamLogo from "@/assets/partners/veeam-partner.svg";
+import veeamWhiteLogo from "@/assets/partners/veeam.svg";
 
 const logoMap: Record<string, string> = {
   arista: aristaLogo,
@@ -41,6 +42,11 @@ const logoMap: Record<string, string> = {
   thales: thalesLogo,
   "trend-micro": trendLogo,
   veeam: veeamLogo,
+};
+
+// Partners with dedicated white logos for dark backgrounds (skip CSS filter)
+const whiteLogoMap: Record<string, string> = {
+  veeam: veeamWhiteLogo,
 };
 
 const FaqSection = ({ items }: { items: { question: string; answer: string }[] }) => {
@@ -103,6 +109,7 @@ const PartnerDetail = () => {
   }
 
   const logo = logoMap[partner.slug];
+  const whiteLogo = whiteLogoMap[partner.slug];
   const hasTechnologies = partner.technologies && partner.technologies.length > 0;
   const primarySolution = partner.relatedSolutions[0];
 
@@ -120,11 +127,11 @@ const PartnerDetail = () => {
           </button>
 
           <div className="flex items-center gap-6">
-            {logo ? (
+            {(whiteLogo || logo) ? (
               <img
-                src={logo}
+                src={whiteLogo || logo}
                 alt={partner.name}
-                className="h-14 w-auto object-contain brightness-0 invert"
+                className={`h-14 w-auto object-contain ${whiteLogo ? '' : 'brightness-0 invert'}`}
               />
             ) : (
               <div className="h-14 flex items-center">
