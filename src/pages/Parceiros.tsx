@@ -23,6 +23,7 @@ import riverbedLogo from "@/assets/partners/riverbed-partner.svg";
 import thalesLogo from "@/assets/partners/thales.jpg";
 import trendLogo from "@/assets/partners/trend.jpg";
 import veeamLogo from "@/assets/partners/veeam-partner.svg";
+import invenziLogo from "@/assets/partners/invenzi-partner.png";
 
 const logoMap: Record<string, string> = {
   arista: aristaLogo,
