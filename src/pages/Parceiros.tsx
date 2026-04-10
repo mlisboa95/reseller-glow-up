@@ -14,7 +14,7 @@ import dahuaLogo from "@/assets/partners/dahua-partner.svg";
 import exagridLogo from "@/assets/partners/exagrid-partner.svg";
 import extremeLogo from "@/assets/partners/extreme-partner.svg";
 import f5Logo from "@/assets/partners/f5.jpg";
-import gigamonLogo from "@/assets/partners/gigamon.jpg";
+import gigamonLogo from "@/assets/partners/gigamon-partner.svg";
 import hpeLogo from "@/assets/partners/hpe.jpg";
 import mitelLogo from "@/assets/partners/mitel.jpg";
 import nutanixLogo from "@/assets/partners/nutanix-partner.svg";
