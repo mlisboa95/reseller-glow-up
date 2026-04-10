@@ -23,25 +23,25 @@ const ServicesSection = () => {
     {
       icon: CloudCog,
       title: t("services.s3.title"),
-      tags: "HCI • Storage • Cloud • Containers",
+      tags: "HCI • STORAGE • CLOUD • CONTAINERS",
       description: t("services.s3.desc"),
     },
     {
       icon: Camera,
       title: t("services.s4.title"),
-      tags: "CCTV • Access Control • LPR • Smart City",
+      tags: "CFTV • CONTROLE DE ACESSO • LPR • CIDADES INTELIGENTES",
       description: t("services.s4.desc"),
     },
     {
       icon: HeadsetIcon,
       title: t("services.s5.title"),
-      tags: "SLA • 24/7 • NOC • Monitoring",
+      tags: "SLA • 24/7 • NOC • MONITORAMENTO",
       description: t("services.s5.desc"),
     },
     {
       icon: Cog,
       title: t("services.s6.title"),
-      tags: "Assessment • Architecture • Advisory",
+      tags: "ASSESSMENT • ARQUITETURA • CONSULTORIA",
       description: t("services.s6.desc"),
     },
   ];
@@ -68,7 +68,7 @@ const ServicesSection = () => {
               key={service.title}
               className="bg-white p-7 group"
             >
-              <service.icon className="w-7 h-7 text-primary mb-5" />
+              <service.icon className="w-6 h-6 text-primary mb-5 stroke-[1.5]" />
               <h3 className="text-lg font-display font-bold text-gray-900 mb-2">{service.title}</h3>
               <p className="text-xs font-semibold text-primary/60 mb-3 tracking-wide uppercase">{service.tags}</p>
               <p className="text-sm text-gray-500 leading-relaxed">{service.description}</p>

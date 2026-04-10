@@ -119,7 +119,7 @@ const Compliance = () => {
         </div>
       </div>
 
-      <main className="py-6 md:py-10">
+      <main className="py-4 md:py-6">
         <div className="max-w-[1400px] mx-auto px-6 lg:px-12">
           <div 
             ref={contentRef}
@@ -127,7 +127,7 @@ const Compliance = () => {
           >
 
             <div className="flex flex-col justify-start">
-              <div className="mb-3 text-center">
+              <div className="mb-4 text-center">
                 <h2 className="text-2xl font-display font-bold text-foreground mb-2">
                   {t("compliance.report.title")}
                 </h2>

@@ -55,7 +55,7 @@ const Footer = forwardRef<HTMLElement, FooterProps>(({ showCta = true }, ref) =>
                 <div>
                   <p className="text-foreground font-medium">Boca Raton, FL</p>
                   <p>5550 Glades Road, Suite 511</p>
-                  <p>Boca Raton, FL 33431</p>
+                  <p>33431</p>
                 </div>
               </div>
             </address>

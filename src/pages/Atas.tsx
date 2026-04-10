@@ -32,8 +32,8 @@ const Atas = () => {
         </div>
       </div>
 
-      <main className="py-6 md:py-10">
-        <div className="max-w-[1400px] mx-auto px-6 lg:px-12">
+      <main className="py-6 md:py-8">
+        <div className="max-w-[1400px] mx-auto px-6 lg:px-12 min-h-[120px]">
           <p className="text-muted-foreground text-lg">
             As atas de registro de preços estarão disponíveis em breve.
           </p>
