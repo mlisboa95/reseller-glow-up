@@ -20,16 +20,16 @@ import veeamLogo from "@/assets/partners/veeam.svg";
 
 // Alphabetical order, with individual height tuning for visual balance
 const heroPartners = [
-  { name: "AWS", logo: awsLogo, cls: "w-16 md:w-20 h-auto" },
-  { name: "Check Point", logo: checkpointLogo, cls: "w-28 md:w-32 h-auto" },
-  { name: "Everpure", logo: everpureLogo, cls: "w-28 md:w-32 h-auto" },
-  { name: "ExaGrid", logo: exagridLogo, cls: "w-24 md:w-28 h-auto" },
-  { name: "Extreme Networks", logo: extremeLogo, cls: "w-28 md:w-32 h-auto" },
-  { name: "Gigamon", logo: gigamonLogo, cls: "w-28 md:w-32 h-auto" },
-  { name: "HPE", logo: hpeLogo, cls: "w-20 md:w-24 h-auto" },
-  { name: "Nutanix", logo: nutanixLogo, cls: "w-28 md:w-32 h-auto" },
-  { name: "Riverbed", logo: riverbedLogo, cls: "w-40 md:w-48 h-auto" },
-  { name: "Veeam", logo: veeamLogo, cls: "w-40 md:w-48 h-auto" },
+  { name: "AWS", logo: awsLogo, cls: "w-[52px] md:w-[60px] h-auto" },
+  { name: "Check Point", logo: checkpointLogo, cls: "w-[112px] md:w-[128px] h-auto" },
+  { name: "Everpure", logo: everpureLogo, cls: "w-[112px] md:w-[128px] h-auto" },
+  { name: "ExaGrid", logo: exagridLogo, cls: "w-[96px] md:w-[112px] h-auto" },
+  { name: "Extreme Networks", logo: extremeLogo, cls: "w-[112px] md:w-[128px] h-auto" },
+  { name: "Gigamon", logo: gigamonLogo, cls: "w-[112px] md:w-[128px] h-auto" },
+  { name: "HPE", logo: hpeLogo, cls: "w-[64px] md:w-[72px] h-auto" },
+  { name: "Nutanix", logo: nutanixLogo, cls: "w-[112px] md:w-[128px] h-auto" },
+  { name: "Riverbed", logo: riverbedLogo, cls: "w-[240px] md:w-[280px] h-auto" },
+  { name: "Veeam", logo: veeamLogo, cls: "w-[240px] md:w-[280px] h-auto" },
 ];
 
 interface PartnerItem {
