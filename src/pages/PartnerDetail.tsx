@@ -80,7 +80,7 @@ const PartnerDetail = () => {
     <div className="min-h-screen bg-white pt-3 md:pt-5">
       <div className="mx-3 md:mx-5 rounded-[1.25rem] bg-background overflow-hidden relative">
         <Header />
-        <div className="pt-40 md:pt-48 pb-16 px-6 lg:px-12 max-w-[1400px] mx-auto relative z-10">
+        <div className="pt-32 md:pt-36 pb-10 px-6 lg:px-12 max-w-[1400px] mx-auto relative z-10">
           <button
             onClick={() => navigate("/parceiros")}
             className="inline-flex items-center gap-2 text-sm text-muted-foreground hover:text-foreground transition-colors mb-6"
@@ -110,7 +110,7 @@ const PartnerDetail = () => {
         </div>
       </div>
 
-      <main className="py-10 md:py-14">
+      <main className="py-6 md:py-10">
         <div className="max-w-[1400px] mx-auto px-6 lg:px-12">
           {/* Two-column layout: description left, technologies right */}
           <div className={`grid gap-10 mb-8 ${hasTechnologies ? 'lg:grid-cols-[1fr_380px]' : ''}`}>
