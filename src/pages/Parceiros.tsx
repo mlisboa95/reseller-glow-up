@@ -31,6 +31,7 @@ import halcyonLogo from "@/assets/partners/halcyon-partner.svg";
 import proofpointLogo from "@/assets/partners/proofpoint-partner.svg";
 import milestoneLogo from "@/assets/partners/milestone-partner.svg";
 import netappLogo from "@/assets/partners/netapp-partner.svg";
+import seguraLogo from "@/assets/partners/segura-partner.svg";
 
 const logoMap: Record<string, string> = {
   arista: aristaLogo,
@@ -57,6 +58,7 @@ const logoMap: Record<string, string> = {
   proofpoint: proofpointLogo,
   milestone: milestoneLogo,
   netapp: netappLogo,
+  segura: seguraLogo,
 };
 
 const Parceiros = () => {

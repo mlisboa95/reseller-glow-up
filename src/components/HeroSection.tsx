@@ -26,6 +26,7 @@ import proofpointLogo from "@/assets/partners/proofpoint-partner.svg";
 import riverbedLogo from "@/assets/partners/riverbed.svg";
 import rsaLogo from "@/assets/partners/rsa-partner.svg";
 import sentineloneLogo from "@/assets/partners/s1-partner.svg";
+import seguraLogo from "@/assets/partners/segura-partner.svg";
 import veeamLogo from "@/assets/partners/veeam.svg";
 
 // Alphabetical order, with individual width tuning for visual balance (Gigamon = reference at 112/128)
@@ -48,6 +49,7 @@ const heroPartners = [
   { name: "Proofpoint", logo: proofpointLogo, cls: "w-[112px] md:w-[128px] h-auto" },
   { name: "Riverbed", logo: riverbedLogo, cls: "w-[112px] md:w-[128px] h-auto" },
   { name: "RSA", logo: rsaLogo, cls: "w-[72px] md:w-[84px] h-auto" },
+  { name: "Segura", logo: seguraLogo, cls: "w-[108px] md:w-[124px] h-auto" },
   { name: "SentinelOne", logo: sentineloneLogo, cls: "w-[108px] md:w-[124px] h-auto" },
   { name: "Veeam", logo: veeamLogo, cls: "w-[112px] md:w-[128px] h-auto" },
 ];
