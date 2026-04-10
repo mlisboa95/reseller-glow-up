@@ -16,7 +16,7 @@ import extremeLogo from "@/assets/partners/extreme-partner.svg";
 import f5Logo from "@/assets/partners/f5.jpg";
 import gigamonLogo from "@/assets/partners/gigamon-partner.svg";
 import hpeLogo from "@/assets/partners/hpe.jpg";
-import mitelLogo from "@/assets/partners/mitel.jpg";
+import mitelLogo from "@/assets/partners/mitel-partner.svg";
 import nutanixLogo from "@/assets/partners/nutanix-partner.svg";
 import purestorageLogo from "@/assets/partners/purestorage.jpg";
 import riverbedLogo from "@/assets/partners/riverbed-partner.svg";
