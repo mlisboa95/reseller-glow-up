@@ -73,7 +73,7 @@ const HeroSection = () => {
           )}
 
           <TextReveal delay={400}>
-            <h1 className="font-display text-5xl md:text-6xl lg:text-7xl xl:text-8xl font-bold leading-[0.95] mb-6 tracking-tight">
+            <h1 className="font-display text-4xl md:text-5xl lg:text-6xl xl:text-7xl font-bold leading-[0.95] mb-6 tracking-tight">
               <span className="text-foreground">{t("hero.title1")}</span>
               <br />
               <span className="text-primary hero-glow">{t("hero.title2")}</span>
@@ -86,10 +86,10 @@ const HeroSection = () => {
               <MagneticButton strength={0.15}>
                 <RippleButton
                   href="#servicos"
-                  className="cta-button inline-flex items-center justify-center gap-3 px-7 py-3.5 text-sm font-semibold rounded-full text-primary-foreground"
+                  className="cta-button inline-flex items-center justify-center gap-2.5 px-6 py-3 text-sm font-semibold rounded-full text-primary-foreground"
                 >
                   {t("hero.cta1")}
-                  <span className="w-8 h-8 rounded-full bg-white/20 flex items-center justify-center">
+                  <span className="w-7 h-7 rounded-full bg-white/20 flex items-center justify-center">
                     <ArrowRight className="w-4 h-4" />
                   </span>
                 </RippleButton>
@@ -98,10 +98,10 @@ const HeroSection = () => {
               <MagneticButton strength={0.15}>
                 <a
                   href="#sobre"
-                  className="group inline-flex items-center justify-center gap-3 px-7 py-3.5 text-sm font-medium rounded-full border border-border text-foreground hover:border-primary/50 transition-all duration-300"
+                  className="group inline-flex items-center justify-center gap-2.5 px-6 py-3 text-sm font-medium rounded-full border border-border text-foreground hover:border-primary/50 transition-all duration-300"
                 >
                   {t("hero.cta2")}
-                  <span className="w-8 h-8 rounded-full border border-border flex items-center justify-center group-hover:border-primary/50 transition-colors">
+                  <span className="w-7 h-7 rounded-full border border-border flex items-center justify-center group-hover:border-primary/50 transition-colors">
                     <ArrowRight className="w-4 h-4" />
                   </span>
                 </a>
