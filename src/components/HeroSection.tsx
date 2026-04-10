@@ -113,7 +113,7 @@ const DragCarousel = ({ partners }: { partners: PartnerItem[] }) => {
               <img
                 src={partner.logo}
                 alt={partner.name}
-                className={`${partner.cls} object-contain opacity-90`}
+                className={`${partner.cls} object-contain opacity-90 brightness-0 invert`}
                 draggable={false}
               />
             </div>
