@@ -67,7 +67,7 @@ const Header = () => {
           <img
             src={logoMahvla}
             alt="Mahvla Telecomm"
-            className={`h-[5.8rem] md:h-[6.5rem] w-auto transition-all duration-300 group-hover:opacity-80 ${
+            className={`h-[3.5rem] md:h-[4rem] w-auto transition-all duration-300 group-hover:opacity-80 ${
               scrolled ? 'brightness-0' : ''
             }`}
           />
