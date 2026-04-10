@@ -128,9 +128,7 @@ const Terms = () => {
               </div>
             ))}
           </div>
-          </div>
         </div>
-      </main>
 
       <Footer showCta={false} />
     </div>
