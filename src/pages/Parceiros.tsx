@@ -15,7 +15,7 @@ import exagridLogo from "@/assets/partners/exagrid-partner.svg";
 import extremeLogo from "@/assets/partners/extreme-partner.svg";
 import f5Logo from "@/assets/partners/f5-partner.svg";
 import gigamonLogo from "@/assets/partners/gigamon-partner.svg";
-import hpeLogo from "@/assets/partners/hpe.jpg";
+import hpeLogo from "@/assets/partners/hpe-partner.svg";
 import mitelLogo from "@/assets/partners/mitel-partner.svg";
 import nutanixLogo from "@/assets/partners/nutanix-partner.svg";
 import everpureLogo from "@/assets/partners/everpure-partner.svg";
