@@ -7,7 +7,7 @@ import { useLanguage } from "@/contexts/LanguageContext";
 import useScrollAnimation from "@/hooks/useScrollAnimation";
 
 // Import available logos
-import aristaLogo from "@/assets/partners/arista.jpg";
+import aristaLogo from "@/assets/partners/arista-partner.svg";
 import checkpointLogo from "@/assets/partners/checkpoint-partner.svg";
 import cyberarkLogo from "@/assets/partners/cyberark.jpg";
 import dahuaLogo from "@/assets/partners/dahua-partner.svg";

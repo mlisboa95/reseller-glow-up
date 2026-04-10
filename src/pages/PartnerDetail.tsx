@@ -7,7 +7,7 @@ import { getPartnerBySlug } from "@/data/partners";
 import { useLanguage } from "@/contexts/LanguageContext";
 
 // Reuse logo map
-import aristaLogo from "@/assets/partners/arista.jpg";
+import aristaLogo from "@/assets/partners/arista-partner.svg";
 import checkpointLogo from "@/assets/partners/checkpoint-partner.svg";
 import cyberarkLogo from "@/assets/partners/cyberark.jpg";
 import dahuaLogo from "@/assets/partners/dahua-partner.svg";
