@@ -23,6 +23,7 @@ import riverbedLogo from "@/assets/partners/riverbed-partner.svg";
 import thalesLogo from "@/assets/partners/thales.jpg";
 import trendLogo from "@/assets/partners/trend.jpg";
 import veeamLogo from "@/assets/partners/veeam-partner.svg";
+import veeamWhiteLogo from "@/assets/partners/veeam.svg";
 
 const logoMap: Record<string, string> = {
   arista: aristaLogo,
@@ -41,6 +42,11 @@ const logoMap: Record<string, string> = {
   thales: thalesLogo,
   "trend-micro": trendLogo,
   veeam: veeamLogo,
+};
+
+// Partners with dedicated white logos for dark backgrounds (skip CSS filter)
+const whiteLogoMap: Record<string, string> = {
+  veeam: veeamWhiteLogo,
 };
 
 const FaqSection = ({ items }: { items: { question: string; answer: string }[] }) => {
