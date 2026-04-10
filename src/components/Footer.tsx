@@ -52,13 +52,13 @@ const Footer = forwardRef<HTMLElement, FooterProps>(({ showCta = true }, ref) =>
               {t("footer.contact")}
             </h4>
             <div className="space-y-4">
-              <a href="mailto:contact@mahvla.com" className="flex items-center gap-3 text-muted-foreground text-sm hover:text-primary transition-colors">
+              <a href="mailto:contact@mahvla.com.br" className="flex items-center gap-3 text-muted-foreground text-sm hover:text-primary transition-colors">
                 <Mail className="w-4 h-4" />
-                contact@mahvla.com
+                contact@mahvla.com.br
               </a>
-              <a href="mailto:support@mahvla.com" className="flex items-center gap-3 text-muted-foreground text-sm hover:text-primary transition-colors">
+              <a href="mailto:support@mahvla.com.br" className="flex items-center gap-3 text-muted-foreground text-sm hover:text-primary transition-colors">
                 <Mail className="w-4 h-4" />
-                support@mahvla.com
+                support@mahvla.com.br
               </a>
               <a href="tel:+556121914900" className="flex items-center gap-3 text-muted-foreground text-sm hover:text-primary transition-colors">
                 <Phone className="w-4 h-4" />

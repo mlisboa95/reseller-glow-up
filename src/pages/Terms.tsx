@@ -112,8 +112,8 @@ const Terms = () => {
                   <div className="mt-4 space-y-2">
                     <p className="text-foreground">
                       <span className="text-muted-foreground">E-mail:</span>{" "}
-                      <a href="mailto:contato@mahvla.com" className="text-primary hover:underline">
-                        contato@mahvla.com
+                      <a href="mailto:contato@mahvla.com.br" className="text-primary hover:underline">
+                        contato@mahvla.com.br
                       </a>
                     </p>
                     <p className="text-foreground">

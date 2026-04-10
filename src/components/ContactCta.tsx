@@ -25,7 +25,7 @@ const ContactCta = () => {
             {t("cta.description")}
           </p>
           <a
-            href="mailto:contact@mahvla.com"
+            href="mailto:contact@mahvla.com.br"
             className="cta-button inline-flex items-center gap-3 px-8 py-4 font-semibold rounded-full text-primary-foreground text-sm uppercase tracking-wider"
           >
             {t("cta.button")}

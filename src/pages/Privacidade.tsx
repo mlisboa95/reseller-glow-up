@@ -130,8 +130,8 @@ const Privacidade = () => {
                   <div className="mt-4 space-y-2">
                     <p className="text-foreground">
                       <span className="text-muted-foreground">E-mail:</span>{" "}
-                      <a href="mailto:privacidade@mahvla.com" className="text-primary hover:underline">
-                        privacidade@mahvla.com
+                      <a href="mailto:privacidade@mahvla.com.br" className="text-primary hover:underline">
+                        privacidade@mahvla.com.br
                       </a>
                     </p>
                     <p className="text-foreground">
