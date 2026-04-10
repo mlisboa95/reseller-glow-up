@@ -8,7 +8,7 @@ import { useLanguage } from "@/contexts/LanguageContext";
 
 // Reuse logo map
 import aristaLogo from "@/assets/partners/arista.jpg";
-import checkpointLogo from "@/assets/partners/checkpoint.jpg";
+import checkpointLogo from "@/assets/partners/checkpoint-partner.svg";
 import cyberarkLogo from "@/assets/partners/cyberark.jpg";
 import exagridLogo from "@/assets/partners/exagrid.jpg";
 import extremeLogo from "@/assets/partners/extreme-partner.svg";
