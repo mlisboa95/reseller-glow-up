@@ -78,7 +78,7 @@ const HeroSection = () => {
               <br />
               <span className="text-primary hero-glow">{t("hero.title2")}</span>
             </h1>
-
+          </TextReveal>
 
 
           <TextReveal delay={800}>
