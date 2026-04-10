@@ -26,6 +26,7 @@ import veeamLogo from "@/assets/partners/veeam-partner.svg";
 import invenziLogo from "@/assets/partners/invenzi-partner.png";
 import lenovoLogo from "@/assets/partners/lenovo-partner.svg";
 import rsaLogo from "@/assets/partners/rsa-partner.svg";
+import halcyonLogo from "@/assets/partners/halcyon-partner.svg";
 
 const logoMap: Record<string, string> = {
   arista: aristaLogo,
@@ -47,6 +48,7 @@ const logoMap: Record<string, string> = {
   invenzi: invenziLogo,
   lenovo: lenovoLogo,
   rsa: rsaLogo,
+  halcyon: halcyonLogo,
 };
 
 const Parceiros = () => {
