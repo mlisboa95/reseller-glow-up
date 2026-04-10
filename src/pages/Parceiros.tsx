@@ -112,7 +112,7 @@ const Parceiros = () => {
                     <img
                       src={logo}
                       alt={partner.name}
-                      className={`w-auto object-contain transition-all duration-300 ${partner.slug === 'veeam' ? 'h-14' : 'h-12'}`}
+                      className={`w-auto object-contain transition-all duration-300 ${['f5', 'invenzi', 'mitel', 'veeam'].includes(partner.slug) ? 'h-16' : 'h-12'}`}
                     />
                   ) : (
                     <div className="h-12 w-full flex items-center justify-center">
