@@ -42,6 +42,7 @@ const logoMap: Record<string, string> = {
   thales: thalesLogo,
   "trend-micro": trendLogo,
   veeam: veeamLogo,
+  invenzi: invenziLogo,
 };
 
 const Parceiros = () => {

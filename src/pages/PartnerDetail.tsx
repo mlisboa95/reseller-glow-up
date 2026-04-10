@@ -43,6 +43,7 @@ const logoMap: Record<string, string> = {
   thales: thalesLogo,
   "trend-micro": trendLogo,
   veeam: veeamLogo,
+  invenzi: invenziLogo,
 };
 
 // Partners with dedicated white logos for dark backgrounds (skip CSS filter)
