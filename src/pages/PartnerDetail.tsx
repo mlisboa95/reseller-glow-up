@@ -22,7 +22,7 @@ import nutanixLogo from "@/assets/partners/nutanix-partner.svg";
 import everpureLogo from "@/assets/partners/everpure-partner.svg";
 import riverbedLogo from "@/assets/partners/riverbed-partner.svg";
 import elasticLogo from "@/assets/partners/elastic-partner.svg";
-import thalesLogo from "@/assets/partners/thales.jpg";
+import thalesLogo from "@/assets/partners/thales-partner.svg";
 import veeamLogo from "@/assets/partners/veeam-partner.svg";
 import invenziLogo from "@/assets/partners/invenzi-partner.png";
 import lenovoLogo from "@/assets/partners/lenovo-partner.svg";
