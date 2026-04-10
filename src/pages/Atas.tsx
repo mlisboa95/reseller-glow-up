@@ -164,7 +164,7 @@ const Atas = () => {
                     key={ata.id}
                     className="rounded-xl border border-border bg-card hover:shadow-md transition-all overflow-hidden"
                   >
-                    <div className="h-[120px] bg-muted/20 flex items-center justify-center gap-4 px-4">
+                    <div className="rounded-t-xl bg-white border-b border-border h-[120px] flex items-center justify-center gap-6 px-6">
                       {(() => {
                         const fabricantes = [...new Set(ata.itens.map(i => i.fabricante).filter(f => f !== "Mahvla"))];
                         if (fabricantes.length === 0) return <FileText className="h-12 w-12 text-primary/40" />;
