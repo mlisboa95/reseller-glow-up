@@ -68,7 +68,7 @@ const ServicesSection = () => {
               key={service.title}
               className="bg-white p-7 group"
             >
-              <service.icon className="w-7 h-7 text-primary mb-5" />
+              <service.icon className="w-6 h-6 text-primary mb-5 stroke-[1.5]" />
               <h3 className="text-lg font-display font-bold text-gray-900 mb-2">{service.title}</h3>
               <p className="text-xs font-semibold text-primary/60 mb-3 tracking-wide uppercase">{service.tags}</p>
               <p className="text-sm text-gray-500 leading-relaxed">{service.description}</p>

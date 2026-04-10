@@ -21,13 +21,13 @@ const translations: Record<string, string> = {
   "hero.title2": "resultado.",
   "hero.subtitle": "22 anos de experiência em redes, cibersegurança, infraestrutura e cidades inteligentes.",
   "hero.cta1": "Nossas Soluções",
-  "hero.cta2": "Conheça a Mahvla",
+  "hero.cta2": "Sobre Nós",
 
   // About
   "about.label": "Sobre Nós",
   "about.title": "22 anos conectando tecnologia a",
   "about.titleHighlight": "resultados reais.",
-  "about.description": "Com sede em Brasília e atuação nacional e internacional, há mais de 22 anos ajudamos empresas privadas e órgãos públicos (federais, estaduais e municipais) a projetar, implantar e operar infraestrutura de TI segura, do data center à nuvem.",
+  "about.description": "Sede em Brasília, atuação nacional e internacional. Há mais de 22 anos ajudamos empresas privadas e órgãos públicos a projetar, implantar e operar infraestrutura de TI segura.",
   "about.stat1": "anos de experiência",
   "about.stat2": "certificações ativas",
   "about.stat3": "projetos entregues",
@@ -54,7 +54,7 @@ const translations: Record<string, string> = {
   "cta.badge": "Vamos Conversar",
   "cta.title": "Vamos conversar sobre o seu",
   "cta.titleHighlight": "projeto?",
-  "cta.description": "Conte sobre o seu ambiente. Desenhamos a solução e cuidamos de toda a entrega.",
+  "cta.description": "Conte sobre o seu ambiente e nós desenhamos a solução certa.",
   "cta.button": "Fale Conosco",
 
   // Footer
@@ -114,7 +114,7 @@ const translations: Record<string, string> = {
   // Partners page
   "partners.page.title": "Nossos Parceiros",
   "partners.page.titleHighlight": "Tecnológicos",
-  "partners.page.description": "Trabalhamos com os principais fabricantes de tecnologia do mundo para entregar soluções de ponta aos nossos clientes.",
+  "partners.page.description": "25 parceiros tecnológicos globais para entregar a solução certa ao seu ambiente.",
   "partners.detail.solutions": "Soluções relacionadas",
   "partners.detail.cta": "Fale com um especialista",
   "partners.detail.back": "Voltar para Parceiros",

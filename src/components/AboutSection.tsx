@@ -44,7 +44,7 @@ const AboutSection = () => {
 
   const differentiators = [
     "Equipe multi-vendor com 50+ certificações ativas",
-    "Projeto, fornecimento e operação em um só lugar",
+    "Projeto, fornecimento e operação integrados",
     "Entrega on-prem, híbrida e cloud",
     "Gestão dedicada de projetos e suporte contínuo",
   ];
