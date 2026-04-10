@@ -1,42 +1,8 @@
-import aristaLogo from "@/assets/partners/arista.jpg";
-import checkpointLogo from "@/assets/partners/checkpoint.jpg";
-import sentineloneLogo from "@/assets/partners/s1-partner.svg";
-import exagridLogo from "@/assets/partners/exagrid.jpg";
-import extremeLogo from "@/assets/partners/extreme.jpg";
-import f5Logo from "@/assets/partners/f5.jpg";
-import gigamonLogo from "@/assets/partners/gigamon.jpg";
-import hpeLogo from "@/assets/partners/hpe.jpg";
-import mitelLogo from "@/assets/partners/mitel.jpg";
-import nutanixLogo from "@/assets/partners/nutanix.jpg";
-import everpureLogo from "@/assets/partners/everpure.svg";
-import riverbedLogo from "@/assets/partners/riverbed.jpg";
-import thalesLogo from "@/assets/partners/thales.jpg";
-import veeamLogo from "@/assets/partners/veeam.jpg";
-import halcyonLogo from "@/assets/partners/halcyon-partner.svg";
-import proofpointLogo from "@/assets/partners/proofpoint-partner.svg";
-import milestoneLogo from "@/assets/partners/milestone-partner.svg";
+import { partnerLogos } from "@/data/partners";
 import { useLanguage } from "@/contexts/LanguageContext";
 import useScrollAnimation from "@/hooks/useScrollAnimation";
 
-const partners = [
-  { name: "Arista", logo: aristaLogo },
-  { name: "Check Point", logo: checkpointLogo },
-  { name: "SentinelOne", logo: sentineloneLogo },
-  { name: "ExaGrid", logo: exagridLogo },
-  { name: "Extreme Networks", logo: extremeLogo },
-  { name: "F5", logo: f5Logo },
-  { name: "Gigamon", logo: gigamonLogo },
-  { name: "HPE", logo: hpeLogo },
-  { name: "Mitel", logo: mitelLogo },
-  { name: "Nutanix", logo: nutanixLogo },
-  { name: "Everpure", logo: everpureLogo },
-  { name: "Riverbed", logo: riverbedLogo },
-  { name: "Thales", logo: thalesLogo },
-  { name: "Veeam", logo: veeamLogo },
-  { name: "Halcyon", logo: halcyonLogo },
-  { name: "Proofpoint", logo: proofpointLogo },
-  { name: "Milestone", logo: milestoneLogo },
-];
+const partners = Object.entries(partnerLogos).map(([name, logo]) => ({ name, logo }));
 
 const PartnersCarousel = () => {
   const allPartners = [...partners, ...partners];
