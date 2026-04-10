@@ -223,10 +223,10 @@ function DetailView({
       <div className="grid grid-cols-1 sm:grid-cols-2 gap-x-8 gap-y-3">
         {fields.map((f) => (
           <div key={f.label} className={f.span ? "sm:col-span-2" : ""}>
-            <p className="text-xs text-muted-foreground uppercase tracking-wide mb-0.5">
+            <p className="text-xs text-gray-500 uppercase tracking-wide mb-0.5">
               {f.label}
             </p>
-            <p className="text-sm font-medium">{f.value}</p>
+            <p className="text-sm font-medium text-gray-900">{f.value}</p>
           </div>
         ))}
       </div>
@@ -252,21 +252,21 @@ function DetailView({
             <TableBody>
               {ata.itens.map((it, i) => (
                 <TableRow key={i} className={`${i % 2 === 1 ? "bg-gray-50" : "bg-white"} hover:bg-gray-50`}>
-                  <TableCell className="text-sm text-foreground">{it.grupo}</TableCell>
-                  <TableCell className="text-sm text-foreground">{it.item}</TableCell>
-                  <TableCell className="text-sm text-foreground">{it.especificacao}</TableCell>
-                  <TableCell className="text-sm text-foreground">{it.unidade}</TableCell>
-                  <TableCell className="text-sm text-foreground text-right">{it.qtde.toLocaleString("pt-BR")}</TableCell>
-                  <TableCell className="text-sm text-foreground">{it.fabricante}</TableCell>
-                  <TableCell className="text-sm text-foreground text-right">{currency(it.valorUnitario)}</TableCell>
-                  <TableCell className="text-sm text-foreground text-right">{currency(it.valorTotal)}</TableCell>
+                  <TableCell className="text-sm text-gray-900">{it.grupo}</TableCell>
+                  <TableCell className="text-sm text-gray-900">{it.item}</TableCell>
+                  <TableCell className="text-sm text-gray-900">{it.especificacao}</TableCell>
+                  <TableCell className="text-sm text-gray-900">{it.unidade}</TableCell>
+                  <TableCell className="text-sm text-gray-900 text-right">{it.qtde.toLocaleString("pt-BR")}</TableCell>
+                  <TableCell className="text-sm text-gray-900">{it.fabricante}</TableCell>
+                  <TableCell className="text-sm text-gray-900 text-right">{currency(it.valorUnitario)}</TableCell>
+                  <TableCell className="text-sm text-gray-900 text-right">{currency(it.valorTotal)}</TableCell>
                 </TableRow>
               ))}
               <TableRow className="bg-gray-100 hover:bg-gray-100">
-                <TableCell colSpan={7} className="text-sm text-foreground text-right font-bold">
+                <TableCell colSpan={7} className="text-sm text-gray-900 text-right font-bold">
                   {t("atas.valorGlobal")}
                 </TableCell>
-                <TableCell className="text-sm text-foreground text-right font-bold">
+                <TableCell className="text-sm text-gray-900 text-right font-bold">
                   {currency(ata.valorGlobal)}
                 </TableCell>
               </TableRow>
