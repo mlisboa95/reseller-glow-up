@@ -40,7 +40,7 @@ const Footer = forwardRef<HTMLElement, FooterProps>(({ showCta = true }, ref) =>
                   <p className="text-foreground font-medium mb-1">Boca Raton, FL</p>
                   <p>5550 Glades Road, Suite 511</p>
                   <p>Boca Raton, FL 33431</p>
-                  <p>United States</p>
+                  <p>Estados Unidos</p>
                 </div>
               </div>
             </address>
@@ -76,10 +76,10 @@ const Footer = forwardRef<HTMLElement, FooterProps>(({ showCta = true }, ref) =>
             © {new Date().getFullYear()} Mahvla Telecomm Consultoria e Serviços em Tecnologia LTDA · CNPJ 06.277.077/0001-90 · {t("footer.copyright")}
           </p>
           <div className="flex items-center gap-6">
-            <a href="/privacy" className="text-muted-foreground/60 text-sm hover:text-primary transition-colors underline underline-offset-4">
+            <a href="/privacidade" className="text-muted-foreground/60 text-sm hover:text-primary transition-colors underline underline-offset-4">
               {t("footer.privacy")}
             </a>
-            <a href="/terms" className="text-muted-foreground/60 text-sm hover:text-primary transition-colors underline underline-offset-4">
+            <a href="/termos" className="text-muted-foreground/60 text-sm hover:text-primary transition-colors underline underline-offset-4">
               {t("footer.terms")}
             </a>
           </div>

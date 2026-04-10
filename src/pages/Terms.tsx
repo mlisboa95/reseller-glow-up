@@ -9,50 +9,50 @@ const Terms = () => {
 
   const sections = [
     {
-      title: "1. Acceptance of Terms",
-      content: "By accessing and using the Mahvla Group LLC website and services, you agree to be bound by these Terms of Service. If you do not agree with any part of these terms, you should not use our website or services."
+      title: "1. Aceitação dos Termos",
+      content: "Ao acessar e utilizar o site e os serviços da Mahvla Telecomm Consultoria e Serviços em Tecnologia LTDA, você concorda em cumprir estes Termos de Uso. Caso não concorde com qualquer parte destes termos, você não deve utilizar nosso site ou serviços."
     },
     {
-      title: "2. Services",
-      content: "Mahvla Group LLC provides technology integration services including, but not limited to, network infrastructure, cybersecurity, cloud and hybrid environments, physical security, managed operations, and consulting. The scope of services for each engagement is defined in individual agreements between Mahvla and the client."
+      title: "2. Serviços",
+      content: "A Mahvla Telecomm oferece serviços de tecnologia que incluem, entre outros, infraestrutura de redes, cibersegurança, ambientes cloud e híbridos, segurança física, operação assistida e consultoria. O escopo dos serviços para cada projeto é definido em contratos individuais entre a Mahvla e o cliente."
     },
     {
-      title: "3. Use of Website",
-      content: "You agree to use this website only for lawful purposes. You may not:",
+      title: "3. Uso do site",
+      content: "Você concorda em utilizar este site apenas para fins lícitos. É proibido:",
       list: [
-        "Use the website in any way that violates applicable laws or regulations",
-        "Attempt to gain unauthorized access to any part of the website or its systems",
-        "Use the website to transmit harmful, offensive, or misleading content",
-        "Reproduce, distribute, or modify any content without prior written consent"
+        "Utilizar o site de forma que viole leis ou regulamentações aplicáveis",
+        "Tentar obter acesso não autorizado a qualquer parte do site ou seus sistemas",
+        "Utilizar o site para transmitir conteúdo prejudicial, ofensivo ou enganoso",
+        "Reproduzir, distribuir ou modificar qualquer conteúdo sem autorização prévia por escrito"
       ]
     },
     {
-      title: "4. Intellectual Property",
-      content: "All content on this website — including text, graphics, logos, images, and software — is the property of Mahvla Group LLC or its licensors and is protected by applicable intellectual property laws. Unauthorized use of any materials may violate copyright, trademark, and other laws."
+      title: "4. Propriedade intelectual",
+      content: "Todo o conteúdo deste site, incluindo textos, gráficos, logotipos, imagens e software, é de propriedade da Mahvla Telecomm ou de seus licenciadores e está protegido pelas leis de propriedade intelectual aplicáveis. O uso não autorizado de qualquer material pode violar leis de direitos autorais, marcas registradas e outras legislações."
     },
     {
-      title: "5. Limitation of Liability",
-      content: "Mahvla Group LLC provides this website and its content on an \"as is\" basis. To the fullest extent permitted by law, we disclaim all warranties, express or implied. We shall not be liable for any direct, indirect, incidental, or consequential damages arising from the use of or inability to use our website or services."
+      title: "5. Limitação de responsabilidade",
+      content: "A Mahvla Telecomm disponibiliza este site e seu conteúdo \"no estado em que se encontram\". Na máxima extensão permitida por lei, isentamo-nos de todas as garantias, expressas ou implícitas. Não seremos responsáveis por quaisquer danos diretos, indiretos, incidentais ou consequenciais decorrentes do uso ou da impossibilidade de uso do nosso site ou serviços."
     },
     {
-      title: "6. Third-Party Links",
-      content: "Our website may contain links to third-party websites or services. Mahvla Group LLC is not responsible for the content, privacy practices, or availability of those external sites. Accessing third-party links is at your own risk."
+      title: "6. Links de terceiros",
+      content: "Nosso site pode conter links para sites ou serviços de terceiros. A Mahvla Telecomm não se responsabiliza pelo conteúdo, práticas de privacidade ou disponibilidade desses sites externos. O acesso a links de terceiros é feito por sua conta e risco."
     },
     {
-      title: "7. Confidentiality",
-      content: "Any information shared between Mahvla and its clients during service engagements is treated as confidential, subject to the terms of applicable non-disclosure or service agreements."
+      title: "7. Confidencialidade",
+      content: "Qualquer informação compartilhada entre a Mahvla e seus clientes durante a prestação de serviços é tratada como confidencial, sujeita aos termos de acordos de confidencialidade ou contratos de serviço aplicáveis."
     },
     {
-      title: "8. Modifications",
-      content: "Mahvla Group LLC reserves the right to update or modify these Terms of Service at any time without prior notice. Continued use of the website following any changes constitutes acceptance of the revised terms."
+      title: "8. Alterações",
+      content: "A Mahvla Telecomm reserva-se o direito de atualizar ou modificar estes Termos de Uso a qualquer momento, sem aviso prévio. O uso continuado do site após quaisquer alterações constitui aceitação dos termos revisados."
     },
     {
-      title: "9. Governing Law",
-      content: "These Terms of Service are governed by and construed in accordance with the laws of the State of Florida, United States, without regard to its conflict of law principles."
+      title: "9. Legislação aplicável",
+      content: "Estes Termos de Uso são regidos pelas leis da República Federativa do Brasil. Qualquer controvérsia será submetida ao foro da comarca de Brasília, Distrito Federal."
     },
     {
-      title: "10. Contact",
-      content: "If you have questions about these Terms of Service, please contact us:",
+      title: "10. Contato",
+      content: "Se você tiver dúvidas sobre estes Termos de Uso, entre em contato conosco:",
       contact: true
     }
   ];
@@ -69,15 +69,15 @@ const Terms = () => {
           >
             <div className="inline-flex items-center gap-2 px-4 py-2 rounded-full bg-primary/10 border border-primary/20 mb-6">
               <FileText className="w-4 h-4 text-primary" />
-              <span className="text-sm font-medium text-primary">Legal</span>
+              <span className="text-sm font-medium text-primary">Documento Legal</span>
             </div>
             
             <h1 className="text-4xl md:text-5xl font-display font-bold tracking-tight text-foreground mb-4 leading-[1.1]">
-              Terms of <span className="text-primary">Service</span>
+              Termos de <span className="text-primary">Uso</span>
             </h1>
             
             <p className="text-muted-foreground">
-              Last updated: {new Date().toLocaleDateString('en-US', { year: 'numeric', month: 'long', day: 'numeric' })}
+              Última atualização: {new Date().toLocaleDateString('pt-BR', { year: 'numeric', month: 'long', day: 'numeric' })}
             </p>
           </div>
 
@@ -111,14 +111,14 @@ const Terms = () => {
                 {section.contact && (
                   <div className="mt-4 space-y-2">
                     <p className="text-foreground">
-                      <span className="text-muted-foreground">Email:</span>{" "}
-                      <a href="mailto:legal@mahvla.com" className="text-primary hover:underline">
-                        legal@mahvla.com
+                      <span className="text-muted-foreground">E-mail:</span>{" "}
+                      <a href="mailto:contato@mahvla.com" className="text-primary hover:underline">
+                        contato@mahvla.com
                       </a>
                     </p>
                     <p className="text-foreground">
-                      <span className="text-muted-foreground">Address:</span>{" "}
-                      <span className="text-muted-foreground">5550 Glades Road, Suite 511, Boca Raton, FL 33431, United States</span>
+                      <span className="text-muted-foreground">Endereço:</span>{" "}
+                      <span className="text-muted-foreground">SRTVS Qd 701 Cj. L N. 38, Bloco 01, Salas 8, 9 e 10, Asa Sul, Brasília - DF</span>
                     </p>
                   </div>
                 )}
