@@ -19,7 +19,7 @@ import hpeLogo from "@/assets/partners/hpe.jpg";
 import mitelLogo from "@/assets/partners/mitel.jpg";
 import nutanixLogo from "@/assets/partners/nutanix-partner.svg";
 import purestorageLogo from "@/assets/partners/purestorage.jpg";
-import riverbedLogo from "@/assets/partners/riverbed.jpg";
+import riverbedLogo from "@/assets/partners/riverbed-partner.svg";
 import thalesLogo from "@/assets/partners/thales.jpg";
 import trendLogo from "@/assets/partners/trend.jpg";
 import veeamLogo from "@/assets/partners/veeam.jpg";
