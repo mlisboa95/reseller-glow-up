@@ -13,6 +13,7 @@ const SupportButton = () => {
           href="https://salesforce.com"
           target="_blank"
           rel="noopener noreferrer"
+          aria-label="Central de Suporte"
           className="fixed bottom-6 right-6 z-50 flex items-center gap-2.5 px-5 py-3.5 rounded-full shadow-[0_4px_20px_rgba(0,0,0,0.25)] transition-all duration-300 hover:scale-105 hover:shadow-[0_6px_28px_rgba(0,0,0,0.35)]"
           style={{ backgroundColor: "hsl(0, 0%, 18%)" }}
         >

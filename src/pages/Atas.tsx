@@ -2,18 +2,18 @@ import Header from "@/components/Header";
 import Footer from "@/components/Footer";
 import useScrollAnimation from "@/hooks/useScrollAnimation";
 import { useLanguage } from "@/contexts/LanguageContext";
-import { useEffect } from "react";
+import SEOHead from "@/components/SEOHead";
 
 const Atas = () => {
   const { ref: contentRef, isVisible: contentVisible } = useScrollAnimation();
   const { t } = useLanguage();
 
-  useEffect(() => {
-    document.title = "Atas de Registro de Preços | Mahvla Telecomm";
-  }, []);
-
   return (
     <div className="min-h-screen bg-white pt-3 md:pt-5">
+      <SEOHead
+        title="Atas de Registro de Preços | Mahvla Telecomm"
+        description="Confira as atas de registro de preços da Mahvla Telecomm disponíveis para contratação direta por órgãos públicos."
+      />
       <div className="mx-3 md:mx-5 rounded-[1.25rem] bg-background overflow-hidden relative">
         <Header />
         <div className="pt-32 md:pt-36 pb-10 px-6 lg:px-12 max-w-[1400px] mx-auto relative z-10">

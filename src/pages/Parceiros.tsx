@@ -5,8 +5,8 @@ import Footer from "@/components/Footer";
 import { partners } from "@/data/partners";
 import { useLanguage } from "@/contexts/LanguageContext";
 import useScrollAnimation from "@/hooks/useScrollAnimation";
+import SEOHead from "@/components/SEOHead";
 
-// Import available logos
 import aristaLogo from "@/assets/partners/arista-partner.svg";
 import awsLogo from "@/assets/partners/aws-partner.svg";
 import checkpointLogo from "@/assets/partners/checkpoint-partner.svg";
@@ -66,16 +66,12 @@ const Parceiros = () => {
   const { ref: headerRef, isVisible: headerVisible } = useScrollAnimation();
   const { ref: gridRef, isVisible: gridVisible } = useScrollAnimation();
 
-  useEffect(() => {
-    document.title = "Parceiros Tecnológicos | Mahvla Telecomm";
-    const meta = document.querySelector('meta[name="description"]');
-    if (meta) {
-      meta.setAttribute("content", "Conheça os parceiros tecnológicos da Mahvla Telecomm. Fabricantes líderes em redes, cibersegurança, infraestrutura e cidades inteligentes.");
-    }
-  }, []);
-
   return (
     <div className="min-h-screen bg-white pt-3 md:pt-5">
+      <SEOHead
+        title="Parceiros Tecnológicos | Mahvla Telecomm"
+        description="Conheça os parceiros tecnológicos da Mahvla Telecomm. Fabricantes líderes em redes, cibersegurança, infraestrutura e cidades inteligentes."
+      />
       <div className="mx-3 md:mx-5 rounded-[1.25rem] bg-background overflow-hidden relative">
         <Header />
         <div className="pt-32 md:pt-36 pb-10 px-6 lg:px-12 max-w-[1400px] mx-auto relative z-10">
@@ -111,7 +107,9 @@ const Parceiros = () => {
                   {logo ? (
                     <img
                       src={logo}
-                      alt={partner.name}
+                      alt={`Logo ${partner.name}`}
+                      loading="lazy"
+                      decoding="async"
                       className={`w-auto object-contain transition-all duration-300 ${['f5', 'invenzi', 'mitel', 'veeam'].includes(partner.slug) ? 'h-16' : 'h-12'}`}
                     />
                   ) : (
