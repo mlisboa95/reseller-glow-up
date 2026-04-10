@@ -106,6 +106,7 @@ const Header = () => {
         <div className="hidden lg:flex items-center">
           <a
             href="mailto:contato@mahvla.com.br"
+            aria-label="Fale Conosco — enviar e-mail para contato@mahvla.com.br"
             className="inline-flex items-center gap-2 px-5 py-2.5 text-sm font-semibold rounded-full bg-primary text-primary-foreground hover:bg-primary/90 transition-all duration-300"
           >
             {t("nav.portal")}
