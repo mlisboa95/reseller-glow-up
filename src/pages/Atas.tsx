@@ -1,4 +1,5 @@
-import { useState, useMemo } from "react";
+import { useState, useMemo, useEffect } from "react";
+import { useLocation } from "react-router-dom";
 import Header from "@/components/Header";
 import Footer from "@/components/Footer";
 import useScrollAnimation from "@/hooks/useScrollAnimation";
@@ -82,6 +83,11 @@ const Atas = () => {
   const [search, setSearch] = useState("");
   const [categoria, setCategoria] = useState("Todas");
   const [selectedId, setSelectedId] = useState<string | null>(null);
+  const location = useLocation();
+
+  useEffect(() => {
+    setSelectedId(null);
+  }, [location.key]);
 
   const filtered = useMemo(() => {
     const q = search.toLowerCase();
