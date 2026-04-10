@@ -9,7 +9,7 @@ import useScrollAnimation from "@/hooks/useScrollAnimation";
 // Import available logos
 import aristaLogo from "@/assets/partners/arista-partner.svg";
 import checkpointLogo from "@/assets/partners/checkpoint-partner.svg";
-import cyberarkLogo from "@/assets/partners/cyberark.jpg";
+import sentineloneLogo from "@/assets/partners/s1-partner.svg";
 import dahuaLogo from "@/assets/partners/dahua-partner.svg";
 import exagridLogo from "@/assets/partners/exagrid-partner.svg";
 import extremeLogo from "@/assets/partners/extreme-partner.svg";
@@ -33,7 +33,7 @@ import milestoneLogo from "@/assets/partners/milestone-partner.svg";
 const logoMap: Record<string, string> = {
   arista: aristaLogo,
   checkpoint: checkpointLogo,
-  cyberark: cyberarkLogo,
+  sentinelone: sentineloneLogo,
   dahua: dahuaLogo,
   exagrid: exagridLogo,
   "extreme-networks": extremeLogo,
