@@ -1,5 +1,6 @@
 import { Mail, Phone, MapPin } from "lucide-react";
 import { forwardRef } from "react";
+import { Link, useLocation, useNavigate } from "react-router-dom";
 import { useLanguage } from "@/contexts/LanguageContext";
 
 interface FooterProps {
@@ -12,8 +13,29 @@ const Footer = forwardRef<HTMLElement, FooterProps>(({ showCta = true }, ref) =>
   return (
     <footer ref={ref} id="contato" className="bg-background relative overflow-hidden border-t border-gray-200">
       <div className="max-w-[1400px] mx-auto px-6 lg:px-12 py-10">
-        <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
-          {/* Brasília */}
+        <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-8">
+          {/* Navegação */}
+          <div>
+            <h4 className="text-primary font-display font-semibold text-sm mb-3">Navegação</h4>
+            <nav className="flex flex-col gap-2.5">
+              {[
+                { label: t("nav.about"), href: "/#sobre" },
+                { label: t("nav.solutions"), href: "/#servicos" },
+                { label: t("nav.partners"), href: "/parceiros" },
+                { label: t("nav.atas"), href: "/atas" },
+                { label: t("nav.compliance"), href: "/compliance" },
+              ].map((link) => (
+                <Link
+                  key={link.href}
+                  to={link.href}
+                  className="text-muted-foreground text-sm hover:text-primary transition-colors w-fit"
+                >
+                  {link.label}
+                </Link>
+              ))}
+            </nav>
+          </div>
+
           <div>
             <h4 className="text-primary font-display font-semibold text-sm mb-3">
               {t("footer.office")}
