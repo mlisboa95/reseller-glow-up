@@ -68,7 +68,7 @@ const Header = () => {
           <img
             src={scrolled ? logoCinza : logoBranco}
             alt="Mahvla Telecomm"
-            className="h-[3.5rem] md:h-[4rem] w-auto transition-opacity duration-300 group-hover:opacity-80"
+            className="h-8 md:h-9 w-auto transition-opacity duration-300 group-hover:opacity-80"
           />
         </a>
 
