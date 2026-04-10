@@ -181,7 +181,7 @@ const HeroSection = () => {
         className="flex-1 flex items-center w-full max-w-[1400px] mx-auto px-6 lg:px-12 pt-40 md:pt-44 pb-8 relative z-10"
         style={{ opacity: contentOpacity }}
       >
-        <div className="max-w-3xl text-left">
+        <div className="max-w-3xl xl:max-w-4xl text-left">
           {t("hero.eyebrow") && (
             <TextReveal delay={200}>
               <p className="text-sm font-semibold tracking-widest uppercase text-muted-foreground mb-6">
