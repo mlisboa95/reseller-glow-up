@@ -86,24 +86,21 @@ const Parceiros = () => {
                 <Link
                   key={partner.slug}
                   to={`/parceiros/${partner.slug}`}
-                  className="group flex flex-col items-center justify-center p-6 rounded-xl border border-gray-200 bg-white hover:border-primary/40 hover:shadow-lg transition-all duration-300"
+                  className="group flex items-center justify-center p-6 rounded-xl border border-gray-200 bg-white hover:border-primary/40 hover:shadow-lg transition-all duration-300"
                 >
                   {logo ? (
                     <img
                       src={logo}
                       alt={partner.name}
-                      className="h-12 w-auto object-contain grayscale group-hover:grayscale-0 transition-all duration-300 mb-3"
+                      className="h-12 w-auto object-contain transition-all duration-300"
                     />
                   ) : (
-                    <div className="h-12 w-full flex items-center justify-center mb-3">
+                    <div className="h-12 w-full flex items-center justify-center">
                       <span className="text-lg font-display font-bold text-gray-400 group-hover:text-primary transition-colors">
                         {partner.name}
                       </span>
                     </div>
                   )}
-                  <span className="text-sm font-medium text-gray-600 group-hover:text-gray-900 transition-colors text-center">
-                    {partner.name}
-                  </span>
                 </Link>
               );
             })}
