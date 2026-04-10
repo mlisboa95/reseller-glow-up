@@ -1,0 +1,123 @@
+import { useEffect } from "react";
+import { Link } from "react-router-dom";
+import Header from "@/components/Header";
+import Footer from "@/components/Footer";
+import { partners } from "@/data/partners";
+import { useLanguage } from "@/contexts/LanguageContext";
+import useScrollAnimation from "@/hooks/useScrollAnimation";
+
+// Import available logos
+import aristaLogo from "@/assets/partners/arista.jpg";
+import checkpointLogo from "@/assets/partners/checkpoint.jpg";
+import cyberarkLogo from "@/assets/partners/cyberark.jpg";
+import exagridLogo from "@/assets/partners/exagrid.jpg";
+import extremeLogo from "@/assets/partners/extreme.jpg";
+import f5Logo from "@/assets/partners/f5.jpg";
+import gigamonLogo from "@/assets/partners/gigamon.jpg";
+import hpeLogo from "@/assets/partners/hpe.jpg";
+import mitelLogo from "@/assets/partners/mitel.jpg";
+import nutanixLogo from "@/assets/partners/nutanix.jpg";
+import purestorageLogo from "@/assets/partners/purestorage.jpg";
+import riverbedLogo from "@/assets/partners/riverbed.jpg";
+import thalesLogo from "@/assets/partners/thales.jpg";
+import trendLogo from "@/assets/partners/trend.jpg";
+import veeamLogo from "@/assets/partners/veeam.jpg";
+
+const logoMap: Record<string, string> = {
+  arista: aristaLogo,
+  checkpoint: checkpointLogo,
+  cyberark: cyberarkLogo,
+  exagrid: exagridLogo,
+  "extreme-networks": extremeLogo,
+  f5: f5Logo,
+  gigamon: gigamonLogo,
+  "hpe-aruba": hpeLogo,
+  mitel: mitelLogo,
+  nutanix: nutanixLogo,
+  purestorage: purestorageLogo,
+  riverbed: riverbedLogo,
+  thales: thalesLogo,
+  "trend-micro": trendLogo,
+  veeam: veeamLogo,
+};
+
+const Parceiros = () => {
+  const { t } = useLanguage();
+  const { ref: headerRef, isVisible: headerVisible } = useScrollAnimation();
+  const { ref: gridRef, isVisible: gridVisible } = useScrollAnimation();
+
+  useEffect(() => {
+    document.title = "Parceiros Tecnológicos | Mahvla Telecomm";
+    const meta = document.querySelector('meta[name="description"]');
+    if (meta) {
+      meta.setAttribute("content", "Conheça os parceiros tecnológicos da Mahvla Telecomm. Fabricantes líderes em redes, cibersegurança, infraestrutura e cidades inteligentes.");
+    }
+  }, []);
+
+  return (
+    <div className="min-h-screen bg-white">
+      <div className="mx-3 md:mx-5 rounded-[1.25rem] bg-background overflow-hidden relative">
+        <Header />
+        <div className="pt-40 md:pt-44 pb-16 px-6 lg:px-12 max-w-[1400px] mx-auto relative z-10">
+          <div
+            ref={headerRef}
+            className={`max-w-3xl mb-12 scroll-fade-up ${headerVisible ? "visible" : ""}`}
+          >
+            <span className="inline-flex items-center gap-2 px-4 py-1.5 rounded-full text-xs font-semibold tracking-wider uppercase border border-primary/30 text-primary bg-primary/5 mb-4">
+              <span className="w-1.5 h-1.5 rounded-full bg-primary" />
+              {t("partners.label")}
+            </span>
+            <h1 className="text-4xl md:text-5xl lg:text-6xl font-display font-bold tracking-tight text-foreground mb-4 leading-[1.1]">
+              {t("partners.page.title")}{" "}
+              <span className="text-primary">{t("partners.page.titleHighlight")}</span>
+            </h1>
+            <p className="text-base md:text-lg text-muted-foreground leading-relaxed max-w-2xl">
+              {t("partners.page.description")}
+            </p>
+          </div>
+        </div>
+      </div>
+
+      <main className="py-14 md:py-20">
+        <div className="max-w-[1400px] mx-auto px-6 lg:px-12">
+          <div
+            ref={gridRef}
+            className={`grid grid-cols-2 sm:grid-cols-3 md:grid-cols-4 lg:grid-cols-5 gap-4 stagger-children ${gridVisible ? "visible" : ""}`}
+          >
+            {partners.map((partner) => {
+              const logo = logoMap[partner.slug];
+              return (
+                <Link
+                  key={partner.slug}
+                  to={`/parceiros/${partner.slug}`}
+                  className="group flex flex-col items-center justify-center p-6 rounded-xl border border-gray-200 bg-white hover:border-primary/40 hover:shadow-lg transition-all duration-300"
+                >
+                  {logo ? (
+                    <img
+                      src={logo}
+                      alt={partner.name}
+                      className="h-12 w-auto object-contain grayscale group-hover:grayscale-0 transition-all duration-300 mb-3"
+                    />
+                  ) : (
+                    <div className="h-12 w-full flex items-center justify-center mb-3">
+                      <span className="text-lg font-display font-bold text-gray-400 group-hover:text-primary transition-colors">
+                        {partner.name}
+                      </span>
+                    </div>
+                  )}
+                  <span className="text-sm font-medium text-gray-600 group-hover:text-gray-900 transition-colors text-center">
+                    {partner.name}
+                  </span>
+                </Link>
+              );
+            })}
+          </div>
+        </div>
+      </main>
+
+      <Footer />
+    </div>
+  );
+};
+
+export default Parceiros;

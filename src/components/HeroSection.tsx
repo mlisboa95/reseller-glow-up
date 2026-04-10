@@ -64,16 +64,28 @@ const HeroSection = () => {
         style={{ opacity: contentOpacity }}
       >
         <div className="max-w-3xl text-left">
+          <TextReveal delay={200}>
+            <p className="text-sm font-semibold tracking-widest uppercase text-muted-foreground mb-6">
+              {t("hero.eyebrow")}
+            </p>
+          </TextReveal>
+
           <TextReveal delay={400}>
-            <h1 className="font-display text-5xl md:text-6xl lg:text-7xl xl:text-8xl font-bold leading-[0.95] mb-8 tracking-tight">
+            <h1 className="font-display text-5xl md:text-6xl lg:text-7xl xl:text-8xl font-bold leading-[0.95] mb-6 tracking-tight">
               <span className="text-foreground">{t("hero.title1")}</span>
               <br />
               <span className="text-primary hero-glow">{t("hero.title2")}</span>
             </h1>
           </TextReveal>
 
+          <TextReveal delay={600}>
+            <p className="text-base md:text-lg text-muted-foreground leading-relaxed max-w-2xl mb-8">
+              {t("hero.subtitle")}
+            </p>
+          </TextReveal>
+
           <TextReveal delay={800}>
-            <div className="flex flex-col sm:flex-row gap-4 mt-8">
+            <div className="flex flex-col sm:flex-row gap-4">
               <MagneticButton strength={0.15}>
                 <RippleButton
                   href="#servicos"
