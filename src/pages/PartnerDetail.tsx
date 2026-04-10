@@ -1,6 +1,6 @@
 import { useEffect } from "react";
 import { useParams, Link, useNavigate } from "react-router-dom";
-import { ArrowLeft, ArrowRight, Mail } from "lucide-react";
+import { ArrowLeft, Mail } from "lucide-react";
 import Header from "@/components/Header";
 import Footer from "@/components/Footer";
 import { getPartnerBySlug } from "@/data/partners";
@@ -73,77 +73,85 @@ const PartnerDetail = () => {
   }
 
   const logo = logoMap[partner.slug];
+  const hasTechnologies = partner.technologies && partner.technologies.length > 0;
 
   return (
     <div className="min-h-screen bg-white">
       <div className="mx-3 md:mx-5 rounded-[1.25rem] bg-background overflow-hidden relative">
         <Header />
-        <div className="pt-40 md:pt-44 pb-16 px-6 lg:px-12 max-w-[1400px] mx-auto relative z-10">
+        <div className="pt-40 md:pt-44 pb-12 px-6 lg:px-12 max-w-[1400px] mx-auto relative z-10">
           <button
             onClick={() => navigate("/parceiros")}
-            className="inline-flex items-center gap-2 text-sm text-muted-foreground hover:text-foreground transition-colors mb-8"
+            className="inline-flex items-center gap-2 text-sm text-muted-foreground hover:text-foreground transition-colors mb-6"
           >
             <ArrowLeft className="w-4 h-4" />
             {t("partners.detail.back")}
           </button>
 
-          <div className="flex items-center gap-6 mb-4">
+          <div className="flex items-center gap-6 mb-3">
             {logo ? (
-              <img src={logo} alt={partner.name} className="h-16 w-auto object-contain" />
+              <img
+                src={logo}
+                alt={partner.name}
+                className="h-14 w-auto object-contain brightness-0 invert"
+              />
             ) : (
-              <div className="h-16 flex items-center">
+              <div className="h-14 flex items-center">
                 <span className="text-3xl font-display font-bold text-foreground">{partner.name}</span>
               </div>
             )}
+            {partner.badge && (
+              <span className="inline-block px-3 py-1 text-xs font-semibold rounded bg-primary/15 text-primary">
+                {partner.badge}
+              </span>
+            )}
           </div>
 
-          {partner.badge && (
-            <span className="inline-block px-3 py-1 text-xs font-semibold rounded bg-primary/15 text-primary mb-4">
-              {partner.badge}
-            </span>
-          )}
-
-          <h1 className="text-4xl md:text-5xl font-display font-bold tracking-tight text-foreground mb-4">
+          <h1 className="text-3xl md:text-4xl lg:text-5xl font-display font-bold tracking-tight text-foreground">
             {partner.name}
           </h1>
         </div>
       </div>
 
-      <main className="py-14 md:py-20">
+      <main className="py-10 md:py-14">
         <div className="max-w-[1400px] mx-auto px-6 lg:px-12">
-          <div className="max-w-3xl">
-            {partner.description.split('\n\n').map((paragraph, i) => (
-              <p key={i} className="text-lg text-gray-600 leading-relaxed mb-6">
-                {paragraph}
-              </p>
-            ))}
+          {/* Two-column layout: description left, technologies right */}
+          <div className={`grid gap-10 mb-10 ${hasTechnologies ? 'lg:grid-cols-[1fr_380px]' : ''}`}>
+            <div>
+              {partner.description.split('\n\n').map((paragraph, i) => (
+                <p key={i} className="text-lg text-gray-600 leading-relaxed mb-5">
+                  {paragraph}
+                </p>
+              ))}
+            </div>
 
-            {/* Technologies */}
-            {partner.technologies && partner.technologies.length > 0 && (
-              <div className="mb-12">
-                <h2 className="text-xl font-display font-bold text-gray-900 mb-4">
+            {hasTechnologies && (
+              <div className="lg:border-l lg:border-gray-200 lg:pl-10">
+                <h2 className="text-lg font-display font-bold text-gray-900 mb-4">
                   Soluções e tecnologias
                 </h2>
                 <div className="space-y-3">
-                  {partner.technologies.map((tech) => (
+                  {partner.technologies!.map((tech) => (
                     <div key={tech.title} className="flex items-start gap-3">
                       <span className="w-1.5 h-1.5 rounded-full bg-primary mt-2.5 flex-shrink-0" />
                       <div>
-                        <span className="font-medium text-gray-900">{tech.title}</span>
-                        <span className="text-gray-500"> — {tech.detail}</span>
+                        <span className="font-medium text-gray-900 text-sm">{tech.title}</span>
+                        <span className="text-gray-500 text-sm"> — {tech.detail}</span>
                       </div>
                     </div>
                   ))}
                 </div>
               </div>
             )}
+          </div>
 
-            {/* Related solutions */}
-            <div className="mb-12">
-              <h2 className="text-xl font-display font-bold text-gray-900 mb-4">
+          {/* Bottom row: related solutions + CTA inline */}
+          <div className="flex flex-col sm:flex-row sm:items-center sm:justify-between gap-6 pt-8 border-t border-gray-200">
+            <div>
+              <h2 className="text-sm font-display font-bold text-gray-900 mb-3">
                 {t("partners.detail.solutions")}
               </h2>
-              <div className="flex flex-wrap gap-3">
+              <div className="flex flex-wrap gap-2">
                 {partner.relatedSolutions.map((sol) => (
                   <Link
                     key={sol.label}
@@ -157,10 +165,9 @@ const PartnerDetail = () => {
               </div>
             </div>
 
-            {/* CTA */}
             <a
               href="mailto:contato@mahvla.com.br"
-              className="cta-button inline-flex items-center gap-3 px-8 py-4 font-semibold rounded-full text-primary-foreground text-sm"
+              className="cta-button inline-flex items-center gap-3 px-8 py-4 font-semibold rounded-full text-primary-foreground text-sm flex-shrink-0"
             >
               {t("partners.detail.cta")}
               <span className="w-8 h-8 rounded-full bg-white/20 flex items-center justify-center">
