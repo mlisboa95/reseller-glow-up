@@ -13,6 +13,7 @@ import riverbedLogo from "@/assets/partners/riverbed.jpg";
 import thalesLogo from "@/assets/partners/thales.jpg";
 import trendLogo from "@/assets/partners/trend.jpg";
 import veeamLogo from "@/assets/partners/veeam.jpg";
+import halcyonLogo from "@/assets/partners/halcyon-partner.svg";
 import { useLanguage } from "@/contexts/LanguageContext";
 import useScrollAnimation from "@/hooks/useScrollAnimation";
 
@@ -32,6 +33,7 @@ const partners = [
   { name: "Thales", logo: thalesLogo },
   { name: "Trend Micro", logo: trendLogo },
   { name: "Veeam", logo: veeamLogo },
+  { name: "Halcyon", logo: halcyonLogo },
 ];
 
 const PartnersCarousel = () => {
