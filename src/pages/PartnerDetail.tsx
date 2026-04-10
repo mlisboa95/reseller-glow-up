@@ -28,7 +28,7 @@ import lenovoLogo from "@/assets/partners/lenovo-partner.svg";
 import rsaLogo from "@/assets/partners/rsa-partner.svg";
 import halcyonLogo from "@/assets/partners/halcyon-partner.svg";
 import proofpointLogo from "@/assets/partners/proofpoint-partner.svg";
-import veeamWhiteLogo from "@/assets/partners/veeam.svg";
+import milestoneLogo from "@/assets/partners/milestone-partner.svg";
 
 const logoMap: Record<string, string> = {
   arista: aristaLogo,
@@ -52,6 +52,7 @@ const logoMap: Record<string, string> = {
   rsa: rsaLogo,
   halcyon: halcyonLogo,
   proofpoint: proofpointLogo,
+  milestone: milestoneLogo,
 };
 
 // Partners with dedicated white logos for dark backgrounds (skip CSS filter)
