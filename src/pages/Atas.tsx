@@ -7,6 +7,7 @@ import { useLanguage } from "@/contexts/LanguageContext";
 import SEOHead from "@/components/SEOHead";
 import { Input } from "@/components/ui/input";
 import { Badge } from "@/components/ui/badge";
+import { partnerLogos } from "@/data/partners";
 import { Search, FileText, ArrowLeft, ExternalLink } from "lucide-react";
 import {
   Select,
@@ -163,8 +164,19 @@ const Atas = () => {
                     key={ata.id}
                     className="rounded-xl border border-border bg-card hover:shadow-md transition-all overflow-hidden"
                   >
-                    <div className="h-[120px] bg-muted/20 flex items-center justify-center">
-                      <FileText className="h-12 w-12 text-primary/40" />
+                    <div className="h-[120px] bg-muted/20 flex items-center justify-center gap-4 px-4">
+                      {(() => {
+                        const fabricantes = [...new Set(ata.itens.map(i => i.fabricante).filter(f => f !== "Mahvla"))];
+                        if (fabricantes.length === 0) return <FileText className="h-12 w-12 text-primary/40" />;
+                        return fabricantes.map(f => {
+                          const logo = partnerLogos[f];
+                          return logo ? (
+                            <img key={f} src={logo} alt={f} className="h-10 w-auto object-contain opacity-60" />
+                          ) : (
+                            <span key={f} className="text-xs text-gray-500 font-medium">{f}</span>
+                          );
+                        });
+                      })()}
                     </div>
                     <div className="p-4 space-y-2">
                       <p className="text-xs text-primary font-semibold uppercase tracking-wide">

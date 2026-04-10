@@ -1,3 +1,41 @@
+import aristaLogo from "@/assets/partners/arista.jpg";
+import checkpointLogo from "@/assets/partners/checkpoint.jpg";
+import sentineloneLogo from "@/assets/partners/s1-partner.svg";
+import exagridLogo from "@/assets/partners/exagrid.jpg";
+import extremeLogo from "@/assets/partners/extreme.jpg";
+import f5Logo from "@/assets/partners/f5.jpg";
+import gigamonLogo from "@/assets/partners/gigamon.jpg";
+import hpeLogo from "@/assets/partners/hpe.jpg";
+import mitelLogo from "@/assets/partners/mitel.jpg";
+import nutanixLogo from "@/assets/partners/nutanix.jpg";
+import everpureLogo from "@/assets/partners/everpure.svg";
+import riverbedLogo from "@/assets/partners/riverbed.jpg";
+import thalesLogo from "@/assets/partners/thales.jpg";
+import veeamLogo from "@/assets/partners/veeam.jpg";
+import halcyonLogo from "@/assets/partners/halcyon-partner.svg";
+import proofpointLogo from "@/assets/partners/proofpoint-partner.svg";
+import milestoneLogo from "@/assets/partners/milestone-partner.svg";
+
+export const partnerLogos: Record<string, string> = {
+  "Arista": aristaLogo,
+  "Check Point": checkpointLogo,
+  "SentinelOne": sentineloneLogo,
+  "ExaGrid": exagridLogo,
+  "Extreme Networks": extremeLogo,
+  "F5": f5Logo,
+  "Gigamon": gigamonLogo,
+  "HPE": hpeLogo,
+  "Mitel": mitelLogo,
+  "Nutanix": nutanixLogo,
+  "Everpure": everpureLogo,
+  "Riverbed": riverbedLogo,
+  "Thales": thalesLogo,
+  "Veeam": veeamLogo,
+  "Halcyon": halcyonLogo,
+  "Proofpoint": proofpointLogo,
+  "Milestone": milestoneLogo,
+};
+
 // Partner data for /parceiros pages
 export interface Partner {
   slug: string;
