@@ -32,6 +32,98 @@ const heroPartners = [
   { name: "Veeam", logo: veeamLogo, cls: "w-28 md:w-32 h-auto" },
 ];
 
+interface PartnerItem {
+  name: string;
+  logo: string;
+  cls: string;
+}
+
+const DragCarousel = ({ partners }: { partners: PartnerItem[] }) => {
+  const containerRef = useRef<HTMLDivElement>(null);
+  const innerRef = useRef<HTMLDivElement>(null);
+  const [isDragging, setIsDragging] = useState(false);
+  const [isPaused, setIsPaused] = useState(false);
+  const dragState = useRef({ startX: 0, scrollLeft: 0 });
+  const resumeTimer = useRef<ReturnType<typeof setTimeout>>();
+
+  const onPointerDown = useCallback((e: React.PointerEvent) => {
+    const container = containerRef.current;
+    if (!container) return;
+    setIsDragging(true);
+    setIsPaused(true);
+    clearTimeout(resumeTimer.current);
+    dragState.current = { startX: e.clientX, scrollLeft: container.scrollLeft };
+    container.setPointerCapture(e.pointerId);
+  }, []);
+
+  const onPointerMove = useCallback((e: React.PointerEvent) => {
+    if (!isDragging || !containerRef.current) return;
+    const dx = e.clientX - dragState.current.startX;
+    containerRef.current.scrollLeft = dragState.current.scrollLeft - dx;
+  }, [isDragging]);
+
+  const onPointerUp = useCallback(() => {
+    setIsDragging(false);
+    resumeTimer.current = setTimeout(() => setIsPaused(false), 3000);
+  }, []);
+
+  // Auto-scroll via requestAnimationFrame
+  useEffect(() => {
+    const container = containerRef.current;
+    const inner = innerRef.current;
+    if (!container || !inner) return;
+
+    let animId: number;
+    const speed = 0.5; // px per frame
+
+    const tick = () => {
+      if (!isPaused && !isDragging) {
+        container.scrollLeft += speed;
+        // Reset seamlessly when we've scrolled past the first set
+        const halfWidth = inner.scrollWidth / 2;
+        if (container.scrollLeft >= halfWidth) {
+          container.scrollLeft -= halfWidth;
+        }
+      }
+      animId = requestAnimationFrame(tick);
+    };
+
+    animId = requestAnimationFrame(tick);
+    return () => cancelAnimationFrame(animId);
+  }, [isPaused, isDragging]);
+
+  return (
+    <div
+      ref={containerRef}
+      className={`relative z-10 overflow-hidden select-none ${
+        isDragging ? 'cursor-grabbing' : 'cursor-grab'
+      }`}
+      onPointerDown={onPointerDown}
+      onPointerMove={onPointerMove}
+      onPointerUp={onPointerUp}
+      onPointerCancel={onPointerUp}
+    >
+      <div className="py-6">
+        <div ref={innerRef} className="flex" style={{ width: "max-content" }}>
+          {partners.map((partner, i) => (
+            <div
+              key={`${partner.name}-${i}`}
+              className="flex-shrink-0 px-6 md:px-10 flex items-center justify-center h-14"
+            >
+              <img
+                src={partner.logo}
+                alt={partner.name}
+                className={`${partner.cls} object-contain opacity-90`}
+                draggable={false}
+              />
+            </div>
+          ))}
+        </div>
+      </div>
+    </div>
+  );
+};
+
 const HeroSection = () => {
   const [scrollY, setScrollY] = useState(0);
   const { t } = useLanguage();
