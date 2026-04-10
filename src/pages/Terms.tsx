@@ -60,6 +60,10 @@ const Terms = () => {
 
   return (
     <div className="min-h-screen bg-white pt-3 md:pt-5">
+      <SEOHead
+        title="Termos de Uso | Mahvla Telecomm"
+        description="Termos de Uso do site da Mahvla Telecomm. Leia os termos e condições para utilização dos nossos serviços e do site."
+      />
       <div className="mx-3 md:mx-5 rounded-[1.25rem] bg-background overflow-hidden relative">
         <Header />
         <div className="pt-32 md:pt-36 pb-10 px-6 lg:px-12 max-w-[1400px] mx-auto relative z-10">

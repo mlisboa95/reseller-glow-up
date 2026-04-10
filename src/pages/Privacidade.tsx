@@ -72,6 +72,10 @@ const Privacidade = () => {
 
   return (
     <div className="min-h-screen bg-white pt-3 md:pt-5">
+      <SEOHead
+        title="Política de Privacidade | Mahvla Telecomm"
+        description="Política de Privacidade da Mahvla Telecomm. Saiba como coletamos, utilizamos e protegemos seus dados pessoais em conformidade com a LGPD."
+      />
       <div className="mx-3 md:mx-5 rounded-[1.25rem] bg-background overflow-hidden relative">
         <Header />
         <div className="pt-32 md:pt-36 pb-10 px-6 lg:px-12 max-w-[1400px] mx-auto relative z-10">
