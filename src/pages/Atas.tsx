@@ -171,7 +171,7 @@ const Atas = () => {
                         return fabricantes.map(f => {
                           const logo = partnerLogos[f];
                           return logo ? (
-                            <img key={f} src={logo} alt={f} className="h-10 w-auto object-contain opacity-60" />
+                            <img key={f} src={logo} alt={f} className="h-12 w-auto object-contain" />
                           ) : (
                             <span key={f} className="text-xs text-gray-500 font-medium">{f}</span>
                           );
@@ -182,7 +182,7 @@ const Atas = () => {
                       <p className="text-xs text-primary font-semibold uppercase tracking-wide">
                         {ata.numero}
                       </p>
-                      <p className="text-sm font-medium text-foreground line-clamp-3">
+                      <p className="text-sm font-medium text-gray-900">
                         {ata.objeto}
                       </p>
                       <div className="flex flex-wrap gap-1.5">
