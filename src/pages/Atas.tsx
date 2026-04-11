@@ -278,12 +278,10 @@ function DetailView({
           <Table>
             <TableHeader>
               <TableRow className="bg-foreground hover:bg-foreground">
-                <TableHead className="text-background text-xs uppercase tracking-wide">{t("atas.grupo")}</TableHead>
                 <TableHead className="text-background text-xs uppercase tracking-wide">{t("atas.item")}</TableHead>
                 <TableHead className="text-background text-xs uppercase tracking-wide">{t("atas.especificacao")}</TableHead>
                 <TableHead className="text-background text-xs uppercase tracking-wide">{t("atas.unidade")}</TableHead>
                 <TableHead className="text-background text-xs uppercase tracking-wide text-right">{t("atas.qtde")}</TableHead>
-                <TableHead className="text-background text-xs uppercase tracking-wide">{t("atas.fabricante")}</TableHead>
                 <TableHead className="text-background text-xs uppercase tracking-wide text-right">{t("atas.valorUnitario")}</TableHead>
                 <TableHead className="text-background text-xs uppercase tracking-wide text-right">{t("atas.valorTotal")}</TableHead>
               </TableRow>
@@ -291,18 +289,16 @@ function DetailView({
             <TableBody>
               {ata.itens.map((it, i) => (
                 <TableRow key={i} className={`${i % 2 === 1 ? "bg-gray-50" : "bg-white"} hover:bg-gray-50`}>
-                  <TableCell className="text-sm text-gray-900">{it.grupo}</TableCell>
                   <TableCell className="text-sm text-gray-900">{it.item}</TableCell>
                   <TableCell className="text-sm text-gray-900">{it.especificacao}</TableCell>
                   <TableCell className="text-sm text-gray-900">{it.unidade}</TableCell>
                   <TableCell className="text-sm text-gray-900 text-right">{it.qtde.toLocaleString("pt-BR")}</TableCell>
-                  <TableCell className="text-sm text-gray-900">{it.fabricante}</TableCell>
                   <TableCell className="text-sm text-gray-900 text-right">{currency(it.valorUnitario)}</TableCell>
                   <TableCell className="text-sm text-gray-900 text-right">{currency(it.valorTotal)}</TableCell>
                 </TableRow>
               ))}
               <TableRow className="bg-gray-100 hover:bg-gray-100">
-                <TableCell colSpan={7} className="text-sm text-gray-900 text-right font-bold">
+                <TableCell colSpan={5} className="text-sm text-gray-900 text-right font-bold">
                   {t("atas.valorGlobal")}
                 </TableCell>
                 <TableCell className="text-sm text-gray-900 text-right font-bold">
