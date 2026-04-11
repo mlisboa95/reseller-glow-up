@@ -64,6 +64,23 @@ const atas: Ata[] = [
       { grupo: 2, item: 10, especificacao: "Serviço de treinamento em solução de backup", unidade: "Und.", qtde: 1, fabricante: "Mahvla", valorUnitario: 80000.0, valorTotal: 80000.0 },
     ],
   },
+  {
+    id: "arp-11-2025",
+    numero: "ARP Nº 11/2025",
+    ambito: "Estadual (Judiciário)",
+    vigencia: "21/07/2026",
+    objeto:
+      "Registro de preços visando aquisição futura de soluções de segurança de perímetro, proteção de dispositivos, plataforma de colaboração, gerenciamento centralizado, instalação, treinamento e consultoria.",
+    categoria: "Switches",
+    valorGlobal: 8222000.0,
+    itens: [
+      { grupo: 1, item: 1, especificacao: "Solução de segurança de perímetro", unidade: "Und.", qtde: 10, fabricante: "Check Point", valorUnitario: 500000.0, valorTotal: 5000000.0 },
+      { grupo: 1, item: 2, especificacao: "Proteção de dispositivos", unidade: "Und.", qtde: 500, fabricante: "Check Point", valorUnitario: 2000.0, valorTotal: 1000000.0 },
+      { grupo: 1, item: 3, especificacao: "Plataforma de colaboração e gerenciamento centralizado", unidade: "Und.", qtde: 2, fabricante: "Check Point", valorUnitario: 800000.0, valorTotal: 1600000.0 },
+      { grupo: 1, item: 4, especificacao: "Serviço de instalação e treinamento", unidade: "Und.", qtde: 2, fabricante: "Mahvla", valorUnitario: 150000.0, valorTotal: 300000.0 },
+      { grupo: 1, item: 5, especificacao: "Consultoria especializada", unidade: "Und.", qtde: 4, fabricante: "Mahvla", valorUnitario: 80500.0, valorTotal: 322000.0 },
+    ],
+  },
 ];
 
 const categorias = [
@@ -183,10 +200,10 @@ const Atas = () => {
                       <p className="text-lg text-primary font-bold tracking-tight">
                         {ata.numero}
                       </p>
-                      <p className="text-sm font-medium text-gray-900 leading-relaxed">
+                      <p className="text-sm font-medium text-gray-300 leading-relaxed">
                         {ata.objeto}
                       </p>
-                      <p className="text-sm text-gray-500 font-medium">
+                      <p className="text-sm text-gray-400 font-medium">
                         {currency(ata.valorGlobal)}
                       </p>
                       <div className="flex flex-wrap gap-1.5">
