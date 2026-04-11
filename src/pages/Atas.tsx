@@ -58,8 +58,8 @@ const atas: Ata[] = [
     categoria: "Backup & Hiperconvergência",
     valorGlobal: 7070000.0,
     itens: [
-      { grupo: 2, item: 7, especificacao: "Software de backup corporativo", unidade: "Und.", qtde: 300, fabricante: "Veeam", valorUnitario: 4500.0, valorTotal: 1350000.0 },
-      { grupo: 2, item: 8, especificacao: "Appliance de backup", unidade: "Und.", qtde: 2, fabricante: "ExaGrid", valorUnitario: 2800000.0, valorTotal: 5600000.0 },
+      { grupo: 2, item: 7, especificacao: "Software de backup corporativo · Veeam VDP Advanced 5 anos", unidade: "Und.", qtde: 300, fabricante: "Veeam", valorUnitario: 4500.0, valorTotal: 1350000.0 },
+      { grupo: 2, item: 8, especificacao: "Appliance de backup · 2x ExaGrid EX54-SEC", unidade: "Und.", qtde: 2, fabricante: "ExaGrid", valorUnitario: 2800000.0, valorTotal: 5600000.0 },
       { grupo: 2, item: 9, especificacao: "Serviço de instalação de solução de backup", unidade: "Und.", qtde: 2, fabricante: "Mahvla", valorUnitario: 20000.0, valorTotal: 40000.0 },
       { grupo: 2, item: 10, especificacao: "Serviço de treinamento em solução de backup", unidade: "Und.", qtde: 1, fabricante: "Mahvla", valorUnitario: 80000.0, valorTotal: 80000.0 },
     ],
