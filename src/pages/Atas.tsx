@@ -162,28 +162,32 @@ const Atas = () => {
                 {filtered.map((ata) => (
                   <div
                     key={ata.id}
-                    className="rounded-xl border border-border bg-card hover:shadow-md transition-all overflow-hidden"
+                    className="rounded-xl border border-border bg-card hover:shadow-md shadow-sm transition-all overflow-hidden"
+                    style={{ border: '1px solid rgba(0,0,0,0.08)' }}
                   >
-                    <div className="rounded-t-xl bg-white border-b border-border h-[120px] flex items-center justify-center gap-6 px-6">
+                    <div className="rounded-t-xl bg-white border-b border-border h-[120px] flex items-center justify-center gap-8 px-8">
                       {(() => {
                         const fabricantes = [...new Set(ata.itens.map(i => i.fabricante).filter(f => f !== "Mahvla"))];
                         if (fabricantes.length === 0) return <FileText className="h-12 w-12 text-primary/40" />;
                         return fabricantes.map(f => {
                           const logo = partnerLogos[f];
                           return logo ? (
-                            <img key={f} src={logo} alt={f} className="h-12 w-auto object-contain" />
+                            <img key={f} src={logo} alt={f} className="max-h-[34px] w-auto object-contain" />
                           ) : (
                             <span key={f} className="text-xs text-gray-500 font-medium">{f}</span>
                           );
                         });
                       })()}
                     </div>
-                    <div className="p-4 space-y-2">
-                      <p className="text-xs text-primary font-semibold uppercase tracking-wide">
+                    <div className="p-5 space-y-2.5">
+                      <p className="text-lg text-primary font-bold tracking-tight">
                         {ata.numero}
                       </p>
-                      <p className="text-sm font-medium text-gray-900">
+                      <p className="text-sm font-medium text-gray-900 leading-relaxed">
                         {ata.objeto}
+                      </p>
+                      <p className="text-sm text-gray-500 font-medium">
+                        {currency(ata.valorGlobal)}
                       </p>
                       <div className="flex flex-wrap gap-1.5">
                         <Badge variant="secondary" className="bg-muted/50 text-xs rounded-full px-2 py-0.5 font-normal">
