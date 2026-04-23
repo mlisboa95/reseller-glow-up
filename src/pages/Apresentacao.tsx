@@ -184,7 +184,7 @@ const Slide1Capa = () => (
     <div className="relative flex items-center justify-between">
       <img src={logoMahvlaBranco} alt="Mahvla" className="h-10 md:h-12" />
       <span className="text-[11px] font-mono tracking-[0.25em] text-white/50 uppercase">
-        01 / 08
+        01 / 09
       </span>
     </div>
     <div className="relative space-y-7 max-w-5xl">
@@ -228,7 +228,7 @@ const Slide2Sobre = () => {
       eyebrow="Sobre nós"
       title="Conectando tecnologia a"
       accent="resultados reais."
-      number="02 / 08"
+      number="02 / 09"
     >
       <div className="grid lg:grid-cols-[1.1fr,1fr] gap-12 h-full items-center">
         <div className="space-y-6">
@@ -274,7 +274,7 @@ const Slide4ManifestoSolucoes = () => (
         </p>
       </div>
       <span className="text-[11px] font-mono tracking-[0.25em] text-white/50 uppercase">
-        03 / 08
+        03 / 09
       </span>
     </div>
     <div className="relative max-w-5xl space-y-6">
@@ -305,7 +305,7 @@ const Slide5Solucoes = () => {
       eyebrow="Soluções"
       title="Portfólio completo,"
       accent="entrega ponta a ponta."
-      number="04 / 08"
+      number="04 / 09"
     >
       <div className="grid grid-cols-2 lg:grid-cols-3 gap-6 h-full">
         {solutions.map((s, i) => (
@@ -344,7 +344,7 @@ const Slide6ManifestoParceiros = () => (
         </p>
       </div>
       <span className="text-[11px] font-mono tracking-[0.25em] text-white/50 uppercase">
-        05 / 08
+        05 / 09
       </span>
     </div>
     <div className="relative max-w-5xl space-y-6">
@@ -369,7 +369,7 @@ const Slide7Parceiros = () => {
       eyebrow="Parceiros"
       title="Fabricantes líderes,"
       accent="certificações ativas."
-      number="06 / 08"
+      number="06 / 09"
     >
       <div className="grid grid-cols-6 md:grid-cols-8 gap-px bg-gray-200 rounded-2xl overflow-hidden border border-gray-200">
         {list.map((p) => (
@@ -399,7 +399,7 @@ const Slide8Mapa = () => (
     eyebrow="Presença Nacional"
     title="Projetos em todo o"
     accent="território nacional."
-    number="07 / 08"
+    number="07 / 09"
   >
     <div className="grid lg:grid-cols-[1.2fr,1fr] gap-10 h-full items-center">
       <div className="relative w-full h-full min-h-[420px] flex items-center justify-center">
