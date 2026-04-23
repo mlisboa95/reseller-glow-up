@@ -14,7 +14,15 @@ import Parceiros from "./pages/Parceiros";
 import PartnerDetail from "./pages/PartnerDetail";
 import NotFound from "./pages/NotFound";
 import Apresentacao from "./pages/Apresentacao";
+import ApresentacaoPrint from "./pages/ApresentacaoPrint";
 import SupportButton from "@/components/SupportButton";
+import { useLocation } from "react-router-dom";
+
+const ConditionalSupport = () => {
+  const { pathname } = useLocation();
+  if (pathname.startsWith("/apresentacao")) return null;
+  return <SupportButton />;
+};
 
 const queryClient = new QueryClient();
 
@@ -35,9 +43,10 @@ const App = () => (
             <Route path="/parceiros" element={<Parceiros />} />
             <Route path="/parceiros/:slug" element={<PartnerDetail />} />
             <Route path="/apresentacao" element={<Apresentacao />} />
+            <Route path="/apresentacao/print" element={<ApresentacaoPrint />} />
             <Route path="*" element={<NotFound />} />
           </Routes>
-          <SupportButton />
+          <ConditionalSupport />
         </BrowserRouter>
       </TooltipProvider>
     </LanguageProvider>
