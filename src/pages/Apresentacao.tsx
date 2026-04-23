@@ -1,8 +1,61 @@
 import { useEffect, useState, useCallback } from "react";
 import { ChevronLeft, ChevronRight, Maximize2, Minimize2, Building2, ShieldCheck, Network, CloudCog, Camera, HeadsetIcon, Cog, MapPin, Mail, Phone, Globe } from "lucide-react";
-import { partnerLogos } from "@/data/partners";
-import BrazilMap from "@/components/BrazilMap";
-import logoMahvla from "@/assets/mahvla-cinza.svg";
+import { partners } from "@/data/partners";
+import logoMahvlaBranco from "@/assets/mahvla-branco.svg";
+import brazilMap from "@/assets/brazil-map.png";
+
+// Logos dos parceiros (mesma fonte usada em /parceiros)
+import aristaLogo from "@/assets/partners/arista-partner.svg";
+import awsLogo from "@/assets/partners/aws-partner.svg";
+import checkpointLogo from "@/assets/partners/checkpoint-partner.svg";
+import sentineloneLogo from "@/assets/partners/s1-partner.svg";
+import dahuaLogo from "@/assets/partners/dahua-partner.svg";
+import exagridLogo from "@/assets/partners/exagrid-partner.svg";
+import extremeLogo from "@/assets/partners/extreme-partner.svg";
+import f5Logo from "@/assets/partners/f5-partner.svg";
+import gigamonLogo from "@/assets/partners/gigamon-partner.svg";
+import hpeLogo from "@/assets/partners/hpe-partner.svg";
+import mitelLogo from "@/assets/partners/mitel-partner.svg";
+import nutanixLogo from "@/assets/partners/nutanix-partner.svg";
+import everpureLogo from "@/assets/partners/everpure-partner.svg";
+import riverbedLogo from "@/assets/partners/riverbed-partner.svg";
+import elasticLogo from "@/assets/partners/elastic-partner.svg";
+import thalesLogo from "@/assets/partners/thales-partner.svg";
+import veeamLogo from "@/assets/partners/veeam-partner.svg";
+import lenovoLogo from "@/assets/partners/lenovo-partner.svg";
+import rsaLogo from "@/assets/partners/rsa-partner.svg";
+import halcyonLogo from "@/assets/partners/halcyon-partner.svg";
+import proofpointLogo from "@/assets/partners/proofpoint-partner.svg";
+import milestoneLogo from "@/assets/partners/milestone-partner.svg";
+import netappLogo from "@/assets/partners/netapp-partner.svg";
+import seguraLogo from "@/assets/partners/segura-partner.svg";
+
+const partnerLogoMap: Record<string, string> = {
+  arista: aristaLogo,
+  aws: awsLogo,
+  checkpoint: checkpointLogo,
+  sentinelone: sentineloneLogo,
+  dahua: dahuaLogo,
+  exagrid: exagridLogo,
+  "extreme-networks": extremeLogo,
+  f5: f5Logo,
+  gigamon: gigamonLogo,
+  "hpe-aruba": hpeLogo,
+  mitel: mitelLogo,
+  nutanix: nutanixLogo,
+  everpure: everpureLogo,
+  riverbed: riverbedLogo,
+  thales: thalesLogo,
+  elastic: elasticLogo,
+  veeam: veeamLogo,
+  lenovo: lenovoLogo,
+  rsa: rsaLogo,
+  halcyon: halcyonLogo,
+  proofpoint: proofpointLogo,
+  milestone: milestoneLogo,
+  netapp: netappLogo,
+  segura: seguraLogo,
+};
 
 const totalSlides = 6;
 
@@ -31,7 +84,7 @@ const Slide1Capa = () => (
     <div className="absolute -right-40 -top-40 w-[480px] h-[480px] rounded-full bg-orange-500/15 blur-3xl" />
     <div className="absolute -left-40 -bottom-40 w-[480px] h-[480px] rounded-full bg-orange-500/10 blur-3xl" />
     <div className="relative">
-      <img src={logoMahvla} alt="Mahvla" className="h-10 md:h-12 brightness-0 invert" />
+      <img src={logoMahvlaBranco} alt="Mahvla" className="h-10 md:h-12" />
     </div>
     <div className="relative space-y-6 max-w-4xl">
       <p className="text-xs font-semibold tracking-[0.3em] uppercase text-orange-400">
@@ -114,52 +167,110 @@ const Slide3Solucoes = () => {
 };
 
 const Slide4Parceiros = () => {
-  const order = ["Arista", "Check Point", "HPE", "Nutanix", "Veeam", "ExaGrid", "F5", "Extreme Networks", "Gigamon", "Riverbed", "Thales", "SentinelOne", "Proofpoint", "Halcyon", "Milestone", "Mitel", "Everpure"];
+  // Mesma ordem do diretório /parceiros
+  const list = partners.filter((p) => partnerLogoMap[p.slug]);
   return (
     <SlideShell eyebrow="Parceiros" title="Fabricantes líderes," accent="certificações ativas.">
-      <div className="grid grid-cols-3 md:grid-cols-5 lg:grid-cols-6 gap-px bg-gray-200 rounded-2xl overflow-hidden">
-        {order.filter((n) => partnerLogos[n]).map((name) => (
-          <div key={name} className="bg-white aspect-[5/3] flex items-center justify-center p-5">
-            <img src={partnerLogos[name]} alt={name} className="max-h-10 max-w-full object-contain" />
+      <div className="grid grid-cols-5 md:grid-cols-6 lg:grid-cols-7 gap-px bg-gray-200 rounded-2xl overflow-hidden border border-gray-200">
+        {list.map((p) => (
+          <div key={p.slug} className="bg-white aspect-[5/3] flex items-center justify-center p-3 md:p-4">
+            <img src={partnerLogoMap[p.slug]} alt={p.name} className="max-h-8 md:max-h-9 max-w-full object-contain" />
           </div>
         ))}
       </div>
-      <p className="mt-6 text-sm text-gray-500">
-        Equipe multi-vendor com mais de 50 certificações técnicas ativas.
+      <p className="mt-5 text-sm text-gray-500">
+        {list.length} fabricantes parceiros · equipe multi-vendor com mais de 50 certificações técnicas ativas.
       </p>
     </SlideShell>
   );
 };
 
+// Pins posicionados em % relativo à imagem do mapa (ajustados visualmente)
+const mapPins: { id: string; label: string; top: string; left: string; hq?: boolean }[] = [
+  { id: "df", label: "Brasília · Sede", top: "55%", left: "55%", hq: true },
+  { id: "rr", label: "Roraima", top: "12%", left: "44%" },
+  { id: "ap", label: "Amapá", top: "16%", left: "57%" },
+  { id: "pa", label: "Pará", top: "30%", left: "52%" },
+  { id: "ro", label: "Rondônia", top: "44%", left: "33%" },
+  { id: "to", label: "Tocantins", top: "44%", left: "55%" },
+  { id: "rn", label: "Rio Grande do Norte", top: "36%", left: "78%" },
+  { id: "pb", label: "Paraíba", top: "40%", left: "79%" },
+  { id: "ba", label: "Bahia", top: "53%", left: "70%" },
+  { id: "go", label: "Goiás", top: "57%", left: "52%" },
+  { id: "es", label: "Espírito Santo", top: "65%", left: "70%" },
+];
+
 const Slide5Mapa = () => (
   <SlideShell eyebrow="Presença Nacional" title="Projetos em todo o" accent="território nacional.">
-    <div className="grid lg:grid-cols-[1fr,360px] gap-8 h-full">
-      <div className="bg-gray-50 rounded-2xl border border-gray-200 p-4 min-h-[400px]">
-        <BrazilMap />
+    <div className="grid lg:grid-cols-[1.2fr,1fr] gap-10 h-full items-center">
+      {/* Mapa */}
+      <div className="relative w-full h-full min-h-[420px] flex items-center justify-center">
+        <div className="relative w-full max-w-[520px] aspect-square">
+          <img
+            src={brazilMap}
+            alt="Mapa do Brasil"
+            loading="lazy"
+            className="w-full h-full object-contain select-none"
+            draggable={false}
+          />
+          {mapPins.map((p) => (
+            <div
+              key={p.id}
+              className="absolute -translate-x-1/2 -translate-y-full group"
+              style={{ top: p.top, left: p.left }}
+            >
+              {p.hq ? (
+                <div className="flex flex-col items-center">
+                  <div className="relative">
+                    <span className="absolute inset-0 rounded-full bg-blue-500/30 blur-md scale-150" />
+                    <MapPin className="relative w-8 h-8 text-blue-600 fill-blue-500 stroke-white" strokeWidth={2.2} />
+                  </div>
+                </div>
+              ) : (
+                <div className="flex flex-col items-center">
+                  <span className="absolute inset-0 rounded-full bg-orange-500/25 blur-sm scale-150" />
+                  <MapPin className="relative w-6 h-6 text-orange-600 fill-orange-500 stroke-white" strokeWidth={2.2} />
+                </div>
+              )}
+            </div>
+          ))}
+        </div>
       </div>
-      <div className="space-y-6 self-center">
-        <div className="space-y-3">
-          <div className="flex items-center gap-3">
-            <span className="w-3 h-3 rounded-full bg-blue-500 ring-4 ring-blue-500/20" />
-            <div>
-              <p className="text-sm font-semibold text-gray-900">Brasília · DF</p>
-              <p className="text-xs text-gray-500">Sede e centro de operações</p>
+
+      {/* Lateral: legendas + lista de estados */}
+      <div className="space-y-6">
+        <div className="grid grid-cols-2 gap-4">
+          <div className="rounded-xl border border-gray-200 bg-white p-4">
+            <div className="flex items-center gap-2 mb-1">
+              <MapPin className="w-4 h-4 text-blue-600 fill-blue-500" />
+              <p className="text-xs font-semibold uppercase tracking-wide text-gray-500">Sede</p>
             </div>
+            <p className="text-base font-display font-bold text-gray-900">Brasília · DF</p>
           </div>
-          <div className="flex items-start gap-3">
-            <span className="w-3 h-3 rounded-full bg-orange-500 ring-4 ring-orange-500/20 mt-1.5" />
-            <div>
-              <p className="text-sm font-semibold text-gray-900">Projetos ativos</p>
-              <p className="text-xs text-gray-500 leading-relaxed">
-                Amapá · Bahia · Espírito Santo · Goiás · Pará · Paraíba · Rio Grande do Norte · Rondônia · Roraima · Tocantins
-              </p>
+          <div className="rounded-xl border border-gray-200 bg-white p-4">
+            <div className="flex items-center gap-2 mb-1">
+              <MapPin className="w-4 h-4 text-orange-600 fill-orange-500" />
+              <p className="text-xs font-semibold uppercase tracking-wide text-gray-500">Projetos</p>
             </div>
+            <p className="text-base font-display font-bold text-gray-900">10 estados</p>
           </div>
         </div>
-        <div className="pt-4 border-t border-gray-200">
-          <p className="text-3xl font-display font-bold text-gray-900">11 estados</p>
-          <p className="text-sm text-gray-500 mt-1">com projetos entregues ou em operação</p>
+
+        <div className="rounded-xl border border-gray-200 bg-gray-50 p-5">
+          <p className="text-xs font-semibold uppercase tracking-wide text-gray-500 mb-3">Onde atuamos</p>
+          <div className="grid grid-cols-2 gap-x-4 gap-y-2 text-sm text-gray-700">
+            {["Amapá", "Bahia", "Espírito Santo", "Goiás", "Pará", "Paraíba", "Rio Grande do Norte", "Rondônia", "Roraima", "Tocantins"].map((uf) => (
+              <span key={uf} className="flex items-center gap-2">
+                <span className="w-1.5 h-1.5 rounded-full bg-orange-500" />
+                {uf}
+              </span>
+            ))}
+          </div>
         </div>
+
+        <p className="text-sm text-gray-500 leading-relaxed">
+          Atendimento nacional com gestão centralizada em Brasília e equipes técnicas mobilizadas em projetos públicos e privados.
+        </p>
       </div>
     </div>
   </SlideShell>
@@ -169,7 +280,7 @@ const Slide6Contato = () => (
   <div className="w-full h-full flex flex-col justify-between px-12 md:px-20 py-12 md:py-16 bg-gradient-to-br from-gray-900 via-gray-900 to-gray-800 text-white relative overflow-hidden">
     <div className="absolute -right-40 top-1/3 w-[500px] h-[500px] rounded-full bg-orange-500/15 blur-3xl" />
     <div className="relative">
-      <img src={logoMahvla} alt="Mahvla" className="h-10 md:h-12 brightness-0 invert" />
+      <img src={logoMahvlaBranco} alt="Mahvla" className="h-10 md:h-12" />
     </div>
     <div className="relative max-w-4xl space-y-8">
       <p className="text-xs font-semibold tracking-[0.3em] uppercase text-orange-400">Vamos conversar</p>
