@@ -399,18 +399,18 @@ const Slide7Parceiros = () => {
 
 // 08 — Mapa Presença Nacional (claro)
 const mapPins: { id: string; label: string; top: string; left: string; hq?: boolean }[] = [
-  { id: "df", label: "Brasília · Sede", top: "55%", left: "60%", hq: true },
-  { id: "rr", label: "Roraima", top: "16%", left: "44%" },
-  { id: "ap", label: "Amapá", top: "17%", left: "55%" },
-  { id: "pa", label: "Pará", top: "28%", left: "53%" },
-  { id: "ro", label: "Rondônia", top: "44%", left: "33%" },
-  { id: "to", label: "Tocantins", top: "37%", left: "57%" },
-  { id: "rn", label: "Rio Grande do Norte", top: "33%", left: "82%" },
-  { id: "pb", label: "Paraíba", top: "36%", left: "82%" },
-  { id: "ba", label: "Bahia", top: "46%", left: "69%" },
-  { id: "go", label: "Goiás", top: "51%", left: "57%" },
-  { id: "es", label: "Espírito Santo", top: "58%", left: "73%" },
-  { id: "sp", label: "São Paulo", top: "63%", left: "57%" },
+  { id: "df", label: "Brasília · Sede", top: "53.7%", left: "62.7%", hq: true },
+  { id: "rr", label: "Roraima", top: "9%", left: "32%" },
+  { id: "ap", label: "Amapá", top: "15.7%", left: "55.1%" },
+  { id: "pa", label: "Pará", top: "19.3%", left: "61.3%" },
+  { id: "ro", label: "Rondônia", top: "36.8%", left: "24.3%" },
+  { id: "to", label: "Tocantins", top: "40.2%", left: "61.6%" },
+  { id: "rn", label: "Rio Grande do Norte", top: "29.7%", left: "93.3%" },
+  { id: "pb", label: "Paraíba", top: "32.9%", left: "94.1%" },
+  { id: "ba", label: "Bahia", top: "46.9%", left: "85.3%" },
+  { id: "go", label: "Goiás", top: "55.9%", left: "59.5%" },
+  { id: "es", label: "Espírito Santo", top: "64.6%", left: "81%" },
+  { id: "sp", label: "São Paulo", top: "72.4%", left: "65.8%" },
 ];
 
 const Slide8Mapa = () => (
