@@ -209,7 +209,7 @@ const Slide2Sobre = () => {
     { v: "22", suffix: "+", l: "anos de mercado" },
     { v: "50", suffix: "+", l: "certificações ativas" },
     { v: "200", suffix: "+", l: "projetos entregues" },
-    { v: "11", suffix: "", l: "estados atendidos" },
+    { v: "15", suffix: "", l: "estados atendidos" },
   ];
   return (
     <LightShell
@@ -417,7 +417,7 @@ const Slide8Mapa = () => (
             <div className="flex items-center gap-2 mb-1">
               <MapPin className="w-4 h-4 text-blue-600 fill-blue-500" />
               <p className="text-xs font-semibold uppercase tracking-wide text-gray-500">
-                Sede
+                HQ Brasil
               </p>
             </div>
             <p className="text-base font-display font-bold text-gray-900">
@@ -426,13 +426,13 @@ const Slide8Mapa = () => (
           </div>
           <div className="rounded-xl border border-gray-200 bg-white p-4">
             <div className="flex items-center gap-2 mb-1">
-              <MapPin className="w-4 h-4 text-orange-600 fill-orange-500" />
+              <MapPin className="w-4 h-4 text-blue-600 fill-blue-500" />
               <p className="text-xs font-semibold uppercase tracking-wide text-gray-500">
-                Projetos
+                HQ EUA
               </p>
             </div>
             <p className="text-base font-display font-bold text-gray-900">
-              11 estados
+              Boca Raton · FL
             </p>
           </div>
         </div>
@@ -442,12 +442,17 @@ const Slide8Mapa = () => (
           </p>
           <div className="grid grid-cols-2 gap-x-4 gap-y-2 text-sm text-gray-700">
             {[
+              "Alagoas",
               "Amapá",
               "Bahia",
+              "Distrito Federal",
               "Espírito Santo",
               "Goiás",
+              "Mato Grosso",
+              "Mato Grosso do Sul",
               "Pará",
               "Paraíba",
+              "Pernambuco",
               "Rio Grande do Norte",
               "Rondônia",
               "Roraima",
