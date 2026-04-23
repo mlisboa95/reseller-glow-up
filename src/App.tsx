@@ -13,6 +13,7 @@ import Atas from "./pages/Atas";
 import Parceiros from "./pages/Parceiros";
 import PartnerDetail from "./pages/PartnerDetail";
 import NotFound from "./pages/NotFound";
+import Apresentacao from "./pages/Apresentacao";
 import SupportButton from "@/components/SupportButton";
 
 const queryClient = new QueryClient();
@@ -33,6 +34,7 @@ const App = () => (
             <Route path="/atas" element={<Atas />} />
             <Route path="/parceiros" element={<Parceiros />} />
             <Route path="/parceiros/:slug" element={<PartnerDetail />} />
+            <Route path="/apresentacao" element={<Apresentacao />} />
             <Route path="*" element={<NotFound />} />
           </Routes>
           <SupportButton />
