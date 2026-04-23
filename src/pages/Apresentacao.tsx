@@ -2,7 +2,6 @@ import { useEffect, useState, useCallback } from "react";
 import { ChevronLeft, ChevronRight, Maximize2, Minimize2, Building2, ShieldCheck, Network, CloudCog, Camera, HeadsetIcon, Cog, MapPin, Mail, Phone, Globe } from "lucide-react";
 import { partners } from "@/data/partners";
 import logoMahvlaBranco from "@/assets/mahvla-branco.svg";
-import logoMahvlaCinza from "@/assets/mahvla-cinza.svg";
 import brazilMap from "@/assets/brazil-map.png";
 
 // Logos dos parceiros (mesma fonte usada em /parceiros)
