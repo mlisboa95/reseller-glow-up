@@ -474,21 +474,21 @@ const Slide85Clientes = () => {
       accent="entrega de verdade."
       number="03 / 08"
     >
-      <div className="grid grid-cols-3 md:grid-cols-5 gap-px bg-gray-200 rounded-2xl overflow-hidden border border-gray-200">
+      <div className="grid grid-cols-5 grid-rows-3 gap-px bg-gray-200 rounded-2xl overflow-hidden border border-gray-200 h-[calc(100%-3.5rem)]">
         {clients.map((c) => (
           <div
             key={c.name}
-            className="bg-white aspect-[5/3] flex items-center justify-center p-4 md:p-5"
+            className="bg-white flex items-center justify-center p-5 min-h-0"
           >
             <img
               src={c.src}
               alt={c.name}
-              className="max-h-14 md:max-h-16 max-w-full object-contain"
+              className="max-h-[70%] max-w-[80%] object-contain"
             />
           </div>
         ))}
       </div>
-      <p className="mt-5 text-sm text-gray-500">
+      <p className="mt-4 text-sm text-gray-500">
         Órgãos públicos federais, estaduais e empresas privadas com operações
         críticas confiam na Mahvla há mais de 22 anos.
       </p>
