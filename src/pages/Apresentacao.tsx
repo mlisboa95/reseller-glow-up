@@ -184,7 +184,7 @@ const Slide1Capa = () => (
     <div className="relative flex items-center justify-between">
       <img src={logoMahvlaBranco} alt="Mahvla" className="h-10 md:h-12" />
       <span className="text-[11px] font-mono tracking-[0.25em] text-white/50 uppercase">
-        01 / 09
+        01 / 08
       </span>
     </div>
     <div className="relative space-y-7 max-w-5xl">
@@ -228,7 +228,7 @@ const Slide2Sobre = () => {
       eyebrow="Sobre nós"
       title="Conectando tecnologia a"
       accent="resultados reais."
-      number="02 / 09"
+      number="02 / 08"
     >
       <div className="grid lg:grid-cols-[1.1fr,1fr] gap-12 h-full items-center">
         <div className="space-y-6">
@@ -274,7 +274,7 @@ const Slide4ManifestoSolucoes = () => (
         </p>
       </div>
       <span className="text-[11px] font-mono tracking-[0.25em] text-white/50 uppercase">
-        03 / 09
+        04 / 08
       </span>
     </div>
     <div className="relative max-w-5xl space-y-6">
@@ -305,7 +305,7 @@ const Slide5Solucoes = () => {
       eyebrow="Soluções"
       title="Portfólio completo,"
       accent="entrega ponta a ponta."
-      number="04 / 09"
+      number="05 / 08"
     >
       <div className="grid grid-cols-2 lg:grid-cols-3 gap-6 h-full">
         {solutions.map((s, i) => (
@@ -332,35 +332,6 @@ const Slide5Solucoes = () => {
   );
 };
 
-// 06 — Manifesto Parceiros (escuro)
-const Slide6ManifestoParceiros = () => (
-  <div className="w-full h-full flex flex-col justify-between px-12 md:px-20 py-12 md:py-16 bg-gray-950 text-white relative overflow-hidden">
-    <DarkBackdrop />
-    <div className="relative flex items-center justify-between">
-      <div className="flex items-center gap-3">
-        <span className="h-px w-10 bg-orange-500" />
-        <p className="text-[11px] font-semibold tracking-[0.3em] uppercase text-orange-400">
-          Ecossistema
-        </p>
-      </div>
-      <span className="text-[11px] font-mono tracking-[0.25em] text-white/50 uppercase">
-        05 / 09
-      </span>
-    </div>
-    <div className="relative max-w-5xl space-y-6">
-      <p className="text-5xl md:text-7xl lg:text-8xl font-display font-bold leading-[1.0] tracking-tight">
-        <span className="text-orange-500 tabular-nums">24</span> fabricantes. <br />
-        <span className="text-white/40">Uma única</span> equipe <br />
-        <span className="text-white/40">multi-vendor.</span>
-      </p>
-      <p className="text-lg text-gray-400 max-w-2xl">
-        Mais de 50 certificações técnicas ativas garantem entrega de ponta a ponta, sem repasse de responsabilidade.
-      </p>
-    </div>
-    <Watermark dark />
-  </div>
-);
-
 // 07 — Parceiros (claro, grid 8x3)
 const Slide7Parceiros = () => {
   const list = partners.filter((p) => partnerLogoMap[p.slug]);
@@ -369,7 +340,7 @@ const Slide7Parceiros = () => {
       eyebrow="Parceiros"
       title="Fabricantes líderes,"
       accent="certificações ativas."
-      number="06 / 09"
+      number="07 / 08"
     >
       <div className="grid grid-cols-6 md:grid-cols-8 gap-px bg-gray-200 rounded-2xl overflow-hidden border border-gray-200">
         {list.map((p) => (
@@ -399,7 +370,7 @@ const Slide8Mapa = () => (
     eyebrow="Presença Nacional"
     title="Projetos em todo o"
     accent="território nacional."
-    number="07 / 09"
+    number="06 / 08"
   >
     <div className="grid lg:grid-cols-[1.2fr,1fr] gap-10 h-full items-center">
       <div className="relative w-full h-full min-h-[420px] flex items-center justify-center">
@@ -491,7 +462,7 @@ const Slide85Clientes = () => {
       eyebrow="Quem confia na Mahvla"
       title="Instituições que escolheram"
       accent="entrega de verdade."
-      number="08 / 09"
+      number="03 / 08"
     >
       <div className="grid grid-cols-3 md:grid-cols-5 gap-px bg-gray-200 rounded-2xl overflow-hidden border border-gray-200">
         {clients.map((c) => (
@@ -521,7 +492,7 @@ const Slide9Contato = () => (
     <div className="relative flex items-center justify-between">
       <img src={logoMahvlaBranco} alt="Mahvla" className="h-10 md:h-12" />
       <span className="text-[11px] font-mono tracking-[0.25em] text-white/50 uppercase">
-        09 / 09
+        08 / 08
       </span>
     </div>
     <div className="relative max-w-5xl space-y-8">
@@ -564,23 +535,21 @@ const Slide9Contato = () => (
 const slides = [
   Slide1Capa,
   Slide2Sobre,
+  Slide85Clientes,
   Slide4ManifestoSolucoes,
   Slide5Solucoes,
-  Slide6ManifestoParceiros,
   Slide7Parceiros,
   Slide8Mapa,
-  Slide85Clientes,
   Slide9Contato,
 ];
 const slideTitles = [
   "Capa",
   "Sobre Nós",
+  "Quem confia",
   "Portfólio",
   "Soluções",
-  "Ecossistema",
   "Parceiros",
   "Presença Nacional",
-  "Clientes",
   "Contato",
 ];
 const totalSlides = slides.length;
