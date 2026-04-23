@@ -264,7 +264,7 @@ const Slide2Sobre = () => {
 
 // 04 — Manifesto Soluções (escuro)
 const Slide4ManifestoSolucoes = () => (
-  <div className="w-full h-full flex flex-col justify-between px-12 md:px-20 py-12 md:py-16 bg-gray-950 text-white relative overflow-hidden">
+  <div className="w-full h-full flex flex-col px-12 md:px-20 py-12 md:py-16 bg-gray-950 text-white relative overflow-hidden">
     <DarkBackdrop />
     <div className="relative flex items-center justify-between">
       <div className="flex items-center gap-3">
@@ -277,7 +277,7 @@ const Slide4ManifestoSolucoes = () => (
         04 / 08
       </span>
     </div>
-    <div className="relative max-w-5xl space-y-6">
+    <div className="relative flex-1 flex flex-col justify-center max-w-5xl space-y-6">
       <p className="text-3xl md:text-4xl font-display font-medium text-white/50 leading-snug">
         Da camada física à camada de aplicação,
       </p>
