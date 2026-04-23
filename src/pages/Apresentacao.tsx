@@ -19,7 +19,7 @@ import {
 import { partners } from "@/data/partners";
 import logoMahvlaBranco from "@/assets/mahvla-branco.svg";
 import logoMahvlaCinza from "@/assets/mahvla-cinza.svg";
-import brazilMap from "@/assets/brazil-map.png";
+import { BrazilMap } from "@/components/BrazilMap";
 
 // Logos dos parceiros
 import aristaLogo from "@/assets/partners/arista-partner.svg";
@@ -398,21 +398,6 @@ const Slide7Parceiros = () => {
 };
 
 // 08 — Mapa Presença Nacional (claro)
-const mapPins: { id: string; label: string; top: string; left: string; hq?: boolean }[] = [
-  { id: "df", label: "Brasília · Sede", top: "56%", left: "55%", hq: true },
-  { id: "rr", label: "Roraima", top: "27%", left: "45%" },
-  { id: "ap", label: "Amapá", top: "26%", left: "53%" },
-  { id: "pa", label: "Pará", top: "37%", left: "48%" },
-  { id: "ro", label: "Rondônia", top: "48%", left: "37%" },
-  { id: "to", label: "Tocantins", top: "44%", left: "52%" },
-  { id: "rn", label: "Rio Grande do Norte", top: "40%", left: "67%" },
-  { id: "pb", label: "Paraíba", top: "43%", left: "67%" },
-  { id: "ba", label: "Bahia", top: "51%", left: "61%" },
-  { id: "go", label: "Goiás", top: "55%", left: "52%" },
-  { id: "es", label: "Espírito Santo", top: "59%", left: "63%" },
-  { id: "sp", label: "São Paulo", top: "67%", left: "51%" },
-];
-
 const Slide8Mapa = () => (
   <LightShell
     eyebrow="Presença Nacional"
@@ -423,38 +408,7 @@ const Slide8Mapa = () => (
     <div className="grid lg:grid-cols-[1.2fr,1fr] gap-10 h-full items-center">
       <div className="relative w-full h-full min-h-[420px] flex items-center justify-center">
         <div className="relative w-full max-w-[520px] aspect-square">
-          <img
-            src={brazilMap}
-            alt="Mapa do Brasil"
-            loading="lazy"
-            className="w-full h-full object-contain select-none"
-            draggable={false}
-          />
-          {mapPins.map((p) => (
-            <div
-              key={p.id}
-              className="absolute -translate-x-1/2 -translate-y-full"
-              style={{ top: p.top, left: p.left }}
-            >
-              {p.hq ? (
-                <div className="relative">
-                  <span className="absolute inset-0 rounded-full bg-blue-500/30 blur-md scale-150" />
-                  <MapPin
-                    className="relative w-6 h-6 text-blue-600 fill-blue-500 stroke-white"
-                    strokeWidth={2.2}
-                  />
-                </div>
-              ) : (
-                <div className="relative">
-                  <span className="absolute inset-0 rounded-full bg-orange-500/25 blur-sm scale-150" />
-                  <MapPin
-                    className="relative w-4 h-4 text-orange-600 fill-orange-500 stroke-white"
-                    strokeWidth={2.2}
-                  />
-                </div>
-              )}
-            </div>
-          ))}
+          <BrazilMap />
         </div>
       </div>
       <div className="space-y-6">
