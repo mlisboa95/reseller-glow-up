@@ -203,39 +203,8 @@ const Slide1Capa = () => (
   </div>
 );
 
-// 02 — Manifesto (escuro, frase forte)
-const Slide2Manifesto = () => (
-  <div className="w-full h-full flex flex-col justify-between px-12 md:px-20 py-12 md:py-16 bg-gray-950 text-white relative overflow-hidden">
-    <DarkBackdrop />
-    <div className="relative flex items-center justify-between">
-      <div className="flex items-center gap-3">
-        <span className="h-px w-10 bg-orange-500" />
-        <p className="text-[11px] font-semibold tracking-[0.3em] uppercase text-orange-400">
-          Manifesto
-        </p>
-      </div>
-      <span className="text-[11px] font-mono tracking-[0.25em] text-white/50 uppercase">
-        02 / 09
-      </span>
-    </div>
-    <div className="relative max-w-5xl">
-      <p className="text-4xl md:text-6xl lg:text-7xl font-display font-bold leading-[1.05] tracking-tight">
-        Não vendemos caixas. <br />
-        <span className="text-white/40">Entregamos </span>
-        <span className="text-orange-500">infraestrutura que funciona</span>
-        <span className="text-white/40"> — projetada, fornecida e operada por uma única equipe.</span>
-      </p>
-    </div>
-    <div className="relative flex items-center gap-3 text-sm text-gray-400">
-      <span className="h-px w-8 bg-orange-500/60" />
-      Mahvla Telecomm · 22 anos no mercado brasileiro
-    </div>
-    <Watermark dark />
-  </div>
-);
-
-// 03 — Sobre Nós (claro, números massivos)
-const Slide3Sobre = () => {
+// 02 — Sobre Nós + Manifesto (claro, números massivos)
+const Slide2Sobre = () => {
   const stats = [
     { v: "22", suffix: "+", l: "anos de mercado" },
     { v: "50", suffix: "+", l: "certificações ativas" },
