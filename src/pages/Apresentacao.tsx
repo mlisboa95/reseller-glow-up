@@ -171,10 +171,10 @@ const Slide4Parceiros = () => {
   const list = partners.filter((p) => partnerLogoMap[p.slug]);
   return (
     <SlideShell eyebrow="Parceiros" title="Fabricantes líderes," accent="certificações ativas.">
-      <div className="grid grid-cols-5 md:grid-cols-6 lg:grid-cols-7 gap-px bg-gray-200 rounded-2xl overflow-hidden border border-gray-200">
+      <div className="grid grid-cols-6 md:grid-cols-8 gap-px bg-gray-200 rounded-2xl overflow-hidden border border-gray-200">
         {list.map((p) => (
           <div key={p.slug} className="bg-white aspect-[5/3] flex items-center justify-center p-3 md:p-4">
-            <img src={partnerLogoMap[p.slug]} alt={p.name} className="max-h-8 md:max-h-9 max-w-full object-contain" />
+            <img src={partnerLogoMap[p.slug]} alt={p.name} className="max-h-7 md:max-h-9 max-w-full object-contain" />
           </div>
         ))}
       </div>
