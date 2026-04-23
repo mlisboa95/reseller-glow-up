@@ -306,7 +306,7 @@ const Slide5Solucoes = () => {
       eyebrow="Soluções"
       title="Portfólio completo,"
       accent="entrega ponta a ponta."
-      number="05 / 09"
+      number="04 / 08"
     >
       <div className="grid grid-cols-2 lg:grid-cols-3 gap-6 h-full">
         {solutions.map((s, i) => (
