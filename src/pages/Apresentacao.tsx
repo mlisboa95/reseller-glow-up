@@ -172,7 +172,7 @@ const Slide1Capa = () => (
     <div className="relative flex items-center justify-between">
       <img src={logoMahvlaBranco} alt="Mahvla" className="h-10 md:h-12" />
       <span className="text-[11px] font-mono tracking-[0.25em] text-white/50 uppercase">
-        01 / 09
+        01 / 08
       </span>
     </div>
     <div className="relative space-y-7 max-w-5xl">
@@ -203,39 +203,8 @@ const Slide1Capa = () => (
   </div>
 );
 
-// 02 — Manifesto (escuro, frase forte)
-const Slide2Manifesto = () => (
-  <div className="w-full h-full flex flex-col justify-between px-12 md:px-20 py-12 md:py-16 bg-gray-950 text-white relative overflow-hidden">
-    <DarkBackdrop />
-    <div className="relative flex items-center justify-between">
-      <div className="flex items-center gap-3">
-        <span className="h-px w-10 bg-orange-500" />
-        <p className="text-[11px] font-semibold tracking-[0.3em] uppercase text-orange-400">
-          Manifesto
-        </p>
-      </div>
-      <span className="text-[11px] font-mono tracking-[0.25em] text-white/50 uppercase">
-        02 / 09
-      </span>
-    </div>
-    <div className="relative max-w-5xl">
-      <p className="text-4xl md:text-6xl lg:text-7xl font-display font-bold leading-[1.05] tracking-tight">
-        Não vendemos caixas. <br />
-        <span className="text-white/40">Entregamos </span>
-        <span className="text-orange-500">infraestrutura que funciona</span>
-        <span className="text-white/40"> — projetada, fornecida e operada por uma única equipe.</span>
-      </p>
-    </div>
-    <div className="relative flex items-center gap-3 text-sm text-gray-400">
-      <span className="h-px w-8 bg-orange-500/60" />
-      Mahvla Telecomm · 22 anos no mercado brasileiro
-    </div>
-    <Watermark dark />
-  </div>
-);
-
-// 03 — Sobre Nós (claro, números massivos)
-const Slide3Sobre = () => {
+// 02 — Sobre Nós + Manifesto (claro, números massivos)
+const Slide2Sobre = () => {
   const stats = [
     { v: "22", suffix: "+", l: "anos de mercado" },
     { v: "50", suffix: "+", l: "certificações ativas" },
@@ -247,19 +216,20 @@ const Slide3Sobre = () => {
       eyebrow="Sobre nós"
       title="Conectando tecnologia a"
       accent="resultados reais."
-      number="03 / 09"
+      number="02 / 08"
     >
       <div className="grid lg:grid-cols-[1.1fr,1fr] gap-12 h-full items-center">
         <div className="space-y-6">
+          <p className="text-2xl md:text-3xl font-display font-semibold text-gray-900 leading-snug">
+            Não vendemos caixas. Entregamos{" "}
+            <span className="text-orange-600">infraestrutura que funciona</span>{" "}
+            — projetada, fornecida e operada por uma única equipe.
+          </p>
           <p className="text-lg md:text-xl text-gray-700 leading-relaxed">
             Sede em Brasília, atuação nacional. Há mais de duas décadas
             ajudamos empresas privadas e órgãos públicos a{" "}
             <span className="text-gray-900 font-semibold">projetar, implantar e operar</span>{" "}
             infraestrutura de TI segura.
-          </p>
-          <p className="text-base md:text-lg text-gray-500 leading-relaxed">
-            Equipe multi-vendor com entrega on-prem, híbrida e cloud. Projeto,
-            fornecimento e operação em um só lugar.
           </p>
           <div className="flex flex-wrap gap-2 pt-2">
             {["Esfera Federal", "Estadual", "Municipal", "Empresas Privadas"].map((t) => (
@@ -302,7 +272,7 @@ const Slide4ManifestoSolucoes = () => (
         </p>
       </div>
       <span className="text-[11px] font-mono tracking-[0.25em] text-white/50 uppercase">
-        04 / 09
+        03 / 08
       </span>
     </div>
     <div className="relative max-w-5xl space-y-6">
@@ -336,7 +306,7 @@ const Slide5Solucoes = () => {
       eyebrow="Soluções"
       title="Portfólio completo,"
       accent="entrega ponta a ponta."
-      number="05 / 09"
+      number="04 / 08"
     >
       <div className="grid grid-cols-2 lg:grid-cols-3 gap-6 h-full">
         {solutions.map((s, i) => (
@@ -375,7 +345,7 @@ const Slide6ManifestoParceiros = () => (
         </p>
       </div>
       <span className="text-[11px] font-mono tracking-[0.25em] text-white/50 uppercase">
-        06 / 09
+        05 / 08
       </span>
     </div>
     <div className="relative max-w-5xl space-y-6">
@@ -403,7 +373,7 @@ const Slide7Parceiros = () => {
       eyebrow="Parceiros"
       title="Fabricantes líderes,"
       accent="certificações ativas."
-      number="07 / 09"
+      number="06 / 08"
     >
       <div className="grid grid-cols-6 md:grid-cols-8 gap-px bg-gray-200 rounded-2xl overflow-hidden border border-gray-200">
         {list.map((p) => (
@@ -447,7 +417,7 @@ const Slide8Mapa = () => (
     eyebrow="Presença Nacional"
     title="Projetos em todo o"
     accent="território nacional."
-    number="08 / 09"
+    number="07 / 08"
   >
     <div className="grid lg:grid-cols-[1.2fr,1fr] gap-10 h-full items-center">
       <div className="relative w-full h-full min-h-[420px] flex items-center justify-center">
@@ -551,7 +521,7 @@ const Slide9Contato = () => (
     <div className="relative flex items-center justify-between">
       <img src={logoMahvlaBranco} alt="Mahvla" className="h-10 md:h-12" />
       <span className="text-[11px] font-mono tracking-[0.25em] text-white/50 uppercase">
-        09 / 09
+        08 / 08
       </span>
     </div>
     <div className="relative max-w-5xl space-y-8">
@@ -593,8 +563,7 @@ const Slide9Contato = () => (
 
 const slides = [
   Slide1Capa,
-  Slide2Manifesto,
-  Slide3Sobre,
+  Slide2Sobre,
   Slide4ManifestoSolucoes,
   Slide5Solucoes,
   Slide6ManifestoParceiros,
@@ -604,7 +573,6 @@ const slides = [
 ];
 const slideTitles = [
   "Capa",
-  "Manifesto",
   "Sobre Nós",
   "Portfólio",
   "Soluções",
