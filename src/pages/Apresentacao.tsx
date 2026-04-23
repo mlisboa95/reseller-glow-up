@@ -526,6 +526,7 @@ const slides = [
   Slide6ManifestoParceiros,
   Slide7Parceiros,
   Slide8Mapa,
+  Slide85Clientes,
   Slide9Contato,
 ];
 const slideTitles = [
@@ -536,6 +537,7 @@ const slideTitles = [
   "Ecossistema",
   "Parceiros",
   "Presença Nacional",
+  "Clientes",
   "Contato",
 ];
 const totalSlides = slides.length;
