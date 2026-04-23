@@ -472,6 +472,49 @@ const Slide8Mapa = () => (
 );
 
 // 09 — Contato (escuro)
+// 08.5 — Quem confia (claro)
+const Slide85Clientes = () => {
+  const clients = [
+    { src: clientDpf, name: "Polícia Federal" },
+    { src: clientPcdf, name: "Polícia Civil DF" },
+    { src: clientSerpro, name: "Serpro" },
+    { src: clientMetrodf, name: "Metrô DF" },
+    { src: clientUfg, name: "UFG" },
+    { src: clientTjto, name: "TJ Tocantins" },
+    { src: clientTjes, name: "TJ Espírito Santo" },
+    { src: clientMpto, name: "MP Tocantins" },
+    { src: clientDpe, name: "DPE Tocantins" },
+    { src: clientDetranap, name: "Detran Amapá" },
+  ];
+  return (
+    <LightShell
+      eyebrow="Quem confia na Mahvla"
+      title="Instituições que escolheram"
+      accent="entrega de verdade."
+      number="08 / 09"
+    >
+      <div className="grid grid-cols-3 md:grid-cols-5 gap-px bg-gray-200 rounded-2xl overflow-hidden border border-gray-200">
+        {clients.map((c) => (
+          <div
+            key={c.name}
+            className="bg-white aspect-[5/3] flex items-center justify-center p-4 md:p-5"
+          >
+            <img
+              src={c.src}
+              alt={c.name}
+              className="max-h-14 md:max-h-16 max-w-full object-contain"
+            />
+          </div>
+        ))}
+      </div>
+      <p className="mt-5 text-sm text-gray-500">
+        Órgãos públicos federais, estaduais e empresas privadas com operações
+        críticas confiam na Mahvla há mais de 22 anos.
+      </p>
+    </LightShell>
+  );
+};
+
 const Slide9Contato = () => (
   <div className="w-full h-full flex flex-col justify-between px-12 md:px-20 py-12 md:py-16 bg-gradient-to-br from-gray-950 via-gray-900 to-gray-900 text-white relative overflow-hidden">
     <DarkBackdrop />
