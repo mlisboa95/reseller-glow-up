@@ -440,7 +440,7 @@ const Slide8Mapa = () => (
                 <div className="relative">
                   <span className="absolute inset-0 rounded-full bg-blue-500/30 blur-md scale-150" />
                   <MapPin
-                    className="relative w-8 h-8 text-blue-600 fill-blue-500 stroke-white"
+                    className="relative w-6 h-6 text-blue-600 fill-blue-500 stroke-white"
                     strokeWidth={2.2}
                   />
                 </div>
@@ -448,7 +448,7 @@ const Slide8Mapa = () => (
                 <div className="relative">
                   <span className="absolute inset-0 rounded-full bg-orange-500/25 blur-sm scale-150" />
                   <MapPin
-                    className="relative w-6 h-6 text-orange-600 fill-orange-500 stroke-white"
+                    className="relative w-4 h-4 text-orange-600 fill-orange-500 stroke-white"
                     strokeWidth={2.2}
                   />
                 </div>
