@@ -3,7 +3,7 @@ import { MapPin } from "lucide-react";
 type Pin = { id: string; label: string; x: number; y: number; hq?: boolean };
 
 const PINS: Pin[] = [
-  { id: "df", label: "Brasília · Sede", x: 627, y: 537, hq: true },
+  { id: "df", label: "Brasília · HQ Brasil", x: 627, y: 537, hq: true },
   { id: "rr", label: "Roraima", x: 320, y: 90 },
   { id: "ap", label: "Amapá", x: 551, y: 157 },
   { id: "pa", label: "Pará", x: 613, y: 193 },
@@ -11,8 +11,12 @@ const PINS: Pin[] = [
   { id: "to", label: "Tocantins", x: 616, y: 402 },
   { id: "rn", label: "Rio Grande do Norte", x: 933, y: 297 },
   { id: "pb", label: "Paraíba", x: 941, y: 329 },
+  { id: "pe", label: "Pernambuco", x: 905, y: 360 },
+  { id: "al", label: "Alagoas", x: 920, y: 393 },
   { id: "ba", label: "Bahia", x: 853, y: 469 },
   { id: "go", label: "Goiás", x: 595, y: 559 },
+  { id: "mt", label: "Mato Grosso", x: 480, y: 470 },
+  { id: "ms", label: "Mato Grosso do Sul", x: 510, y: 620 },
   { id: "es", label: "Espírito Santo", x: 810, y: 646 },
   { id: "sp", label: "São Paulo", x: 658, y: 724 },
 ];
