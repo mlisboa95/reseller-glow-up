@@ -21,6 +21,18 @@ import logoMahvlaBranco from "@/assets/mahvla-branco.svg";
 import logoMahvlaCinza from "@/assets/mahvla-cinza.svg";
 import { BrazilMap } from "@/components/BrazilMap";
 
+// Logos dos clientes
+import clientUfg from "@/assets/clients/ufg.jpg";
+import clientTjto from "@/assets/clients/tjto.jpg";
+import clientTjes from "@/assets/clients/tjes.jpg";
+import clientSerpro from "@/assets/clients/serpro.jpg";
+import clientPcdf from "@/assets/clients/pcdf.jpg";
+import clientMpto from "@/assets/clients/mpto.jpg";
+import clientMetrodf from "@/assets/clients/metrodf.jpg";
+import clientDpf from "@/assets/clients/dpf.jpg";
+import clientDpe from "@/assets/clients/dpe.jpg";
+import clientDetranap from "@/assets/clients/detranap.jpg";
+
 // Logos dos parceiros
 import aristaLogo from "@/assets/partners/arista-partner.svg";
 import awsLogo from "@/assets/partners/aws-partner.svg";
