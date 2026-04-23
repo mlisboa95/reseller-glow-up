@@ -563,8 +563,7 @@ const Slide9Contato = () => (
 
 const slides = [
   Slide1Capa,
-  Slide2Manifesto,
-  Slide3Sobre,
+  Slide2Sobre,
   Slide4ManifestoSolucoes,
   Slide5Solucoes,
   Slide6ManifestoParceiros,
@@ -574,7 +573,6 @@ const slides = [
 ];
 const slideTitles = [
   "Capa",
-  "Manifesto",
   "Sobre Nós",
   "Portfólio",
   "Soluções",
