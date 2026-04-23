@@ -231,16 +231,6 @@ const Slide2Sobre = () => {
             <span className="text-gray-900 font-semibold">projetar, implantar e operar</span>{" "}
             infraestrutura de TI segura.
           </p>
-          <div className="flex flex-wrap gap-2 pt-2">
-            {["Esfera Federal", "Estadual", "Municipal", "Empresas Privadas"].map((t) => (
-              <span
-                key={t}
-                className="inline-flex items-center gap-2 px-3 py-1.5 rounded-full text-xs font-medium text-gray-700 bg-white border border-gray-200"
-              >
-                <span className="w-1 h-1 rounded-full bg-orange-500" /> {t}
-              </span>
-            ))}
-          </div>
         </div>
         <div className="grid grid-cols-2 gap-6">
           {stats.map((s) => (
@@ -283,9 +273,6 @@ const Slide4ManifestoSolucoes = () => (
         cobrimos <span className="text-orange-500">tudo</span> que faz <br />
         sua TI <span className="text-orange-500">funcionar.</span>
       </p>
-    </div>
-    <div className="relative text-sm text-gray-400">
-      Próximo · 6 frentes de atuação
     </div>
     <Watermark dark />
   </div>
@@ -357,9 +344,6 @@ const Slide6ManifestoParceiros = () => (
       <p className="text-lg text-gray-400 max-w-2xl">
         Mais de 50 certificações técnicas ativas garantem entrega de ponta a ponta, sem repasse de responsabilidade.
       </p>
-    </div>
-    <div className="relative text-sm text-gray-400">
-      Próximo · diretório completo
     </div>
     <Watermark dark />
   </div>
