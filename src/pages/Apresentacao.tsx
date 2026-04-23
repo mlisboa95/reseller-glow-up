@@ -478,7 +478,7 @@ const Slide8Mapa = () => (
               </p>
             </div>
             <p className="text-base font-display font-bold text-gray-900">
-              10 estados
+              11 estados
             </p>
           </div>
         </div>
@@ -497,6 +497,7 @@ const Slide8Mapa = () => (
               "Rio Grande do Norte",
               "Rondônia",
               "Roraima",
+              "São Paulo",
               "Tocantins",
             ].map((uf) => (
               <span key={uf} className="flex items-center gap-2">
