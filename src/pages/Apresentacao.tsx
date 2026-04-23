@@ -417,7 +417,7 @@ const Slide8Mapa = () => (
     eyebrow="Presença Nacional"
     title="Projetos em todo o"
     accent="território nacional."
-    number="08 / 09"
+    number="07 / 08"
   >
     <div className="grid lg:grid-cols-[1.2fr,1fr] gap-10 h-full items-center">
       <div className="relative w-full h-full min-h-[420px] flex items-center justify-center">
