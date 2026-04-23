@@ -19,7 +19,7 @@ import {
 import { partners } from "@/data/partners";
 import logoMahvlaBranco from "@/assets/mahvla-branco.svg";
 import logoMahvlaCinza from "@/assets/mahvla-cinza.svg";
-import brazilMap from "@/assets/brazil-map.png";
+import brazilMap from "@/assets/brazil-states.svg";
 
 // Logos dos parceiros
 import aristaLogo from "@/assets/partners/arista-partner.svg";
