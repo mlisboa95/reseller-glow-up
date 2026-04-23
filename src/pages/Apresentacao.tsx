@@ -209,7 +209,7 @@ const Slide2Sobre = () => {
     { v: "22", suffix: "+", l: "anos de mercado" },
     { v: "50", suffix: "+", l: "certificações ativas" },
     { v: "200", suffix: "+", l: "projetos entregues" },
-    { v: "11", suffix: "", l: "estados atendidos" },
+    { v: "15", suffix: "", l: "estados atendidos" },
   ];
   return (
     <LightShell
