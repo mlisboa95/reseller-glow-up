@@ -272,7 +272,7 @@ const Slide4ManifestoSolucoes = () => (
         </p>
       </div>
       <span className="text-[11px] font-mono tracking-[0.25em] text-white/50 uppercase">
-        04 / 09
+        03 / 08
       </span>
     </div>
     <div className="relative max-w-5xl space-y-6">
