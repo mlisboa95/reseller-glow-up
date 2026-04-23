@@ -521,7 +521,7 @@ const Slide9Contato = () => (
     <div className="relative flex items-center justify-between">
       <img src={logoMahvlaBranco} alt="Mahvla" className="h-10 md:h-12" />
       <span className="text-[11px] font-mono tracking-[0.25em] text-white/50 uppercase">
-        09 / 09
+        08 / 08
       </span>
     </div>
     <div className="relative max-w-5xl space-y-8">
