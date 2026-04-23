@@ -332,35 +332,6 @@ const Slide5Solucoes = () => {
   );
 };
 
-// 06 — Manifesto Parceiros (escuro)
-const Slide6ManifestoParceiros = () => (
-  <div className="w-full h-full flex flex-col justify-between px-12 md:px-20 py-12 md:py-16 bg-gray-950 text-white relative overflow-hidden">
-    <DarkBackdrop />
-    <div className="relative flex items-center justify-between">
-      <div className="flex items-center gap-3">
-        <span className="h-px w-10 bg-orange-500" />
-        <p className="text-[11px] font-semibold tracking-[0.3em] uppercase text-orange-400">
-          Ecossistema
-        </p>
-      </div>
-      <span className="text-[11px] font-mono tracking-[0.25em] text-white/50 uppercase">
-        05 / 09
-      </span>
-    </div>
-    <div className="relative max-w-5xl space-y-6">
-      <p className="text-5xl md:text-7xl lg:text-8xl font-display font-bold leading-[1.0] tracking-tight">
-        <span className="text-orange-500 tabular-nums">24</span> fabricantes. <br />
-        <span className="text-white/40">Uma única</span> equipe <br />
-        <span className="text-white/40">multi-vendor.</span>
-      </p>
-      <p className="text-lg text-gray-400 max-w-2xl">
-        Mais de 50 certificações técnicas ativas garantem entrega de ponta a ponta, sem repasse de responsabilidade.
-      </p>
-    </div>
-    <Watermark dark />
-  </div>
-);
-
 // 07 — Parceiros (claro, grid 8x3)
 const Slide7Parceiros = () => {
   const list = partners.filter((p) => partnerLogoMap[p.slug]);
