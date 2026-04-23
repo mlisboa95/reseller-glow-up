@@ -373,7 +373,7 @@ const Slide7Parceiros = () => {
       eyebrow="Parceiros"
       title="Fabricantes líderes,"
       accent="certificações ativas."
-      number="07 / 09"
+      number="06 / 08"
     >
       <div className="grid grid-cols-6 md:grid-cols-8 gap-px bg-gray-200 rounded-2xl overflow-hidden border border-gray-200">
         {list.map((p) => (
