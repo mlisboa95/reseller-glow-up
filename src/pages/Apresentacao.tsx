@@ -172,7 +172,7 @@ const Slide1Capa = () => (
     <div className="relative flex items-center justify-between">
       <img src={logoMahvlaBranco} alt="Mahvla" className="h-10 md:h-12" />
       <span className="text-[11px] font-mono tracking-[0.25em] text-white/50 uppercase">
-        01 / 09
+        01 / 08
       </span>
     </div>
     <div className="relative space-y-7 max-w-5xl">
