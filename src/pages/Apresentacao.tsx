@@ -398,21 +398,6 @@ const Slide7Parceiros = () => {
 };
 
 // 08 — Mapa Presença Nacional (claro)
-const mapPins: { id: string; label: string; top: string; left: string; hq?: boolean }[] = [
-  { id: "df", label: "Brasília · Sede", top: "53.7%", left: "62.7%", hq: true },
-  { id: "rr", label: "Roraima", top: "9%", left: "32%" },
-  { id: "ap", label: "Amapá", top: "15.7%", left: "55.1%" },
-  { id: "pa", label: "Pará", top: "19.3%", left: "61.3%" },
-  { id: "ro", label: "Rondônia", top: "36.8%", left: "24.3%" },
-  { id: "to", label: "Tocantins", top: "40.2%", left: "61.6%" },
-  { id: "rn", label: "Rio Grande do Norte", top: "29.7%", left: "93.3%" },
-  { id: "pb", label: "Paraíba", top: "32.9%", left: "94.1%" },
-  { id: "ba", label: "Bahia", top: "46.9%", left: "85.3%" },
-  { id: "go", label: "Goiás", top: "55.9%", left: "59.5%" },
-  { id: "es", label: "Espírito Santo", top: "64.6%", left: "81%" },
-  { id: "sp", label: "São Paulo", top: "72.4%", left: "65.8%" },
-];
-
 const Slide8Mapa = () => (
   <LightShell
     eyebrow="Presença Nacional"
@@ -423,38 +408,7 @@ const Slide8Mapa = () => (
     <div className="grid lg:grid-cols-[1.2fr,1fr] gap-10 h-full items-center">
       <div className="relative w-full h-full min-h-[420px] flex items-center justify-center">
         <div className="relative w-full max-w-[520px] aspect-square">
-          <img
-            src={brazilMap}
-            alt="Mapa do Brasil"
-            loading="lazy"
-            className="w-full h-full object-contain select-none"
-            draggable={false}
-          />
-          {mapPins.map((p) => (
-            <div
-              key={p.id}
-              className="absolute -translate-x-1/2 -translate-y-full"
-              style={{ top: p.top, left: p.left }}
-            >
-              {p.hq ? (
-                <div className="relative">
-                  <span className="absolute inset-0 rounded-full bg-blue-500/30 blur-md scale-150" />
-                  <MapPin
-                    className="relative w-6 h-6 text-blue-600 fill-blue-500 stroke-white"
-                    strokeWidth={2.2}
-                  />
-                </div>
-              ) : (
-                <div className="relative">
-                  <span className="absolute inset-0 rounded-full bg-orange-500/25 blur-sm scale-150" />
-                  <MapPin
-                    className="relative w-4 h-4 text-orange-600 fill-orange-500 stroke-white"
-                    strokeWidth={2.2}
-                  />
-                </div>
-              )}
-            </div>
-          ))}
+          <BrazilMap />
         </div>
       </div>
       <div className="space-y-6">
