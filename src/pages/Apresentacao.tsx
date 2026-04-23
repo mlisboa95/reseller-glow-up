@@ -1,8 +1,62 @@
 import { useEffect, useState, useCallback } from "react";
 import { ChevronLeft, ChevronRight, Maximize2, Minimize2, Building2, ShieldCheck, Network, CloudCog, Camera, HeadsetIcon, Cog, MapPin, Mail, Phone, Globe } from "lucide-react";
-import { partnerLogos } from "@/data/partners";
-import BrazilMap from "@/components/BrazilMap";
-import logoMahvla from "@/assets/mahvla-cinza.svg";
+import { partners } from "@/data/partners";
+import logoMahvlaBranco from "@/assets/mahvla-branco.svg";
+import logoMahvlaCinza from "@/assets/mahvla-cinza.svg";
+import brazilMap from "@/assets/brazil-map.png";
+
+// Logos dos parceiros (mesma fonte usada em /parceiros)
+import aristaLogo from "@/assets/partners/arista-partner.svg";
+import awsLogo from "@/assets/partners/aws-partner.svg";
+import checkpointLogo from "@/assets/partners/checkpoint-partner.svg";
+import sentineloneLogo from "@/assets/partners/s1-partner.svg";
+import dahuaLogo from "@/assets/partners/dahua-partner.svg";
+import exagridLogo from "@/assets/partners/exagrid-partner.svg";
+import extremeLogo from "@/assets/partners/extreme-partner.svg";
+import f5Logo from "@/assets/partners/f5-partner.svg";
+import gigamonLogo from "@/assets/partners/gigamon-partner.svg";
+import hpeLogo from "@/assets/partners/hpe-partner.svg";
+import mitelLogo from "@/assets/partners/mitel-partner.svg";
+import nutanixLogo from "@/assets/partners/nutanix-partner.svg";
+import everpureLogo from "@/assets/partners/everpure-partner.svg";
+import riverbedLogo from "@/assets/partners/riverbed-partner.svg";
+import elasticLogo from "@/assets/partners/elastic-partner.svg";
+import thalesLogo from "@/assets/partners/thales-partner.svg";
+import veeamLogo from "@/assets/partners/veeam-partner.svg";
+import lenovoLogo from "@/assets/partners/lenovo-partner.svg";
+import rsaLogo from "@/assets/partners/rsa-partner.svg";
+import halcyonLogo from "@/assets/partners/halcyon-partner.svg";
+import proofpointLogo from "@/assets/partners/proofpoint-partner.svg";
+import milestoneLogo from "@/assets/partners/milestone-partner.svg";
+import netappLogo from "@/assets/partners/netapp-partner.svg";
+import seguraLogo from "@/assets/partners/segura-partner.svg";
+
+const partnerLogoMap: Record<string, string> = {
+  arista: aristaLogo,
+  aws: awsLogo,
+  checkpoint: checkpointLogo,
+  sentinelone: sentineloneLogo,
+  dahua: dahuaLogo,
+  exagrid: exagridLogo,
+  "extreme-networks": extremeLogo,
+  f5: f5Logo,
+  gigamon: gigamonLogo,
+  "hpe-aruba": hpeLogo,
+  mitel: mitelLogo,
+  nutanix: nutanixLogo,
+  everpure: everpureLogo,
+  riverbed: riverbedLogo,
+  thales: thalesLogo,
+  elastic: elasticLogo,
+  veeam: veeamLogo,
+  lenovo: lenovoLogo,
+  rsa: rsaLogo,
+  halcyon: halcyonLogo,
+  proofpoint: proofpointLogo,
+  milestone: milestoneLogo,
+  netapp: netappLogo,
+  segura: seguraLogo,
+};
 
 const totalSlides = 6;
 
