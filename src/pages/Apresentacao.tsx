@@ -345,7 +345,7 @@ const Slide6ManifestoParceiros = () => (
         </p>
       </div>
       <span className="text-[11px] font-mono tracking-[0.25em] text-white/50 uppercase">
-        06 / 09
+        05 / 08
       </span>
     </div>
     <div className="relative max-w-5xl space-y-6">
