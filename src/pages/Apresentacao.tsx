@@ -21,6 +21,18 @@ import logoMahvlaBranco from "@/assets/mahvla-branco.svg";
 import logoMahvlaCinza from "@/assets/mahvla-cinza.svg";
 import { BrazilMap } from "@/components/BrazilMap";
 
+// Logos dos clientes
+import clientUfg from "@/assets/clients/ufg.jpg";
+import clientTjto from "@/assets/clients/tjto.jpg";
+import clientTjes from "@/assets/clients/tjes.jpg";
+import clientSerpro from "@/assets/clients/serpro.jpg";
+import clientPcdf from "@/assets/clients/pcdf.jpg";
+import clientMpto from "@/assets/clients/mpto.jpg";
+import clientMetrodf from "@/assets/clients/metrodf.jpg";
+import clientDpf from "@/assets/clients/dpf.jpg";
+import clientDpe from "@/assets/clients/dpe.jpg";
+import clientDetranap from "@/assets/clients/detranap.jpg";
+
 // Logos dos parceiros
 import aristaLogo from "@/assets/partners/arista-partner.svg";
 import awsLogo from "@/assets/partners/aws-partner.svg";
@@ -172,7 +184,7 @@ const Slide1Capa = () => (
     <div className="relative flex items-center justify-between">
       <img src={logoMahvlaBranco} alt="Mahvla" className="h-10 md:h-12" />
       <span className="text-[11px] font-mono tracking-[0.25em] text-white/50 uppercase">
-        01 / 08
+        01 / 09
       </span>
     </div>
     <div className="relative space-y-7 max-w-5xl">
@@ -216,7 +228,7 @@ const Slide2Sobre = () => {
       eyebrow="Sobre nós"
       title="Conectando tecnologia a"
       accent="resultados reais."
-      number="02 / 08"
+      number="02 / 09"
     >
       <div className="grid lg:grid-cols-[1.1fr,1fr] gap-12 h-full items-center">
         <div className="space-y-6">
@@ -262,7 +274,7 @@ const Slide4ManifestoSolucoes = () => (
         </p>
       </div>
       <span className="text-[11px] font-mono tracking-[0.25em] text-white/50 uppercase">
-        03 / 08
+        03 / 09
       </span>
     </div>
     <div className="relative max-w-5xl space-y-6">
@@ -293,7 +305,7 @@ const Slide5Solucoes = () => {
       eyebrow="Soluções"
       title="Portfólio completo,"
       accent="entrega ponta a ponta."
-      number="04 / 08"
+      number="04 / 09"
     >
       <div className="grid grid-cols-2 lg:grid-cols-3 gap-6 h-full">
         {solutions.map((s, i) => (
@@ -332,7 +344,7 @@ const Slide6ManifestoParceiros = () => (
         </p>
       </div>
       <span className="text-[11px] font-mono tracking-[0.25em] text-white/50 uppercase">
-        05 / 08
+        05 / 09
       </span>
     </div>
     <div className="relative max-w-5xl space-y-6">
@@ -357,7 +369,7 @@ const Slide7Parceiros = () => {
       eyebrow="Parceiros"
       title="Fabricantes líderes,"
       accent="certificações ativas."
-      number="06 / 08"
+      number="06 / 09"
     >
       <div className="grid grid-cols-6 md:grid-cols-8 gap-px bg-gray-200 rounded-2xl overflow-hidden border border-gray-200">
         {list.map((p) => (
@@ -387,7 +399,7 @@ const Slide8Mapa = () => (
     eyebrow="Presença Nacional"
     title="Projetos em todo o"
     accent="território nacional."
-    number="07 / 08"
+    number="07 / 09"
   >
     <div className="grid lg:grid-cols-[1.2fr,1fr] gap-10 h-full items-center">
       <div className="relative w-full h-full min-h-[420px] flex items-center justify-center">
@@ -460,13 +472,56 @@ const Slide8Mapa = () => (
 );
 
 // 09 — Contato (escuro)
+// 08.5 — Quem confia (claro)
+const Slide85Clientes = () => {
+  const clients = [
+    { src: clientDpf, name: "Polícia Federal" },
+    { src: clientPcdf, name: "Polícia Civil DF" },
+    { src: clientSerpro, name: "Serpro" },
+    { src: clientMetrodf, name: "Metrô DF" },
+    { src: clientUfg, name: "UFG" },
+    { src: clientTjto, name: "TJ Tocantins" },
+    { src: clientTjes, name: "TJ Espírito Santo" },
+    { src: clientMpto, name: "MP Tocantins" },
+    { src: clientDpe, name: "DPE Tocantins" },
+    { src: clientDetranap, name: "Detran Amapá" },
+  ];
+  return (
+    <LightShell
+      eyebrow="Quem confia na Mahvla"
+      title="Instituições que escolheram"
+      accent="entrega de verdade."
+      number="08 / 09"
+    >
+      <div className="grid grid-cols-3 md:grid-cols-5 gap-px bg-gray-200 rounded-2xl overflow-hidden border border-gray-200">
+        {clients.map((c) => (
+          <div
+            key={c.name}
+            className="bg-white aspect-[5/3] flex items-center justify-center p-4 md:p-5"
+          >
+            <img
+              src={c.src}
+              alt={c.name}
+              className="max-h-14 md:max-h-16 max-w-full object-contain"
+            />
+          </div>
+        ))}
+      </div>
+      <p className="mt-5 text-sm text-gray-500">
+        Órgãos públicos federais, estaduais e empresas privadas com operações
+        críticas confiam na Mahvla há mais de 22 anos.
+      </p>
+    </LightShell>
+  );
+};
+
 const Slide9Contato = () => (
   <div className="w-full h-full flex flex-col justify-between px-12 md:px-20 py-12 md:py-16 bg-gradient-to-br from-gray-950 via-gray-900 to-gray-900 text-white relative overflow-hidden">
     <DarkBackdrop />
     <div className="relative flex items-center justify-between">
       <img src={logoMahvlaBranco} alt="Mahvla" className="h-10 md:h-12" />
       <span className="text-[11px] font-mono tracking-[0.25em] text-white/50 uppercase">
-        08 / 08
+        09 / 09
       </span>
     </div>
     <div className="relative max-w-5xl space-y-8">
@@ -514,6 +569,7 @@ const slides = [
   Slide6ManifestoParceiros,
   Slide7Parceiros,
   Slide8Mapa,
+  Slide85Clientes,
   Slide9Contato,
 ];
 const slideTitles = [
@@ -524,6 +580,7 @@ const slideTitles = [
   "Ecossistema",
   "Parceiros",
   "Presença Nacional",
+  "Clientes",
   "Contato",
 ];
 const totalSlides = slides.length;
