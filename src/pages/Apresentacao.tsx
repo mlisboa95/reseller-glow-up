@@ -532,7 +532,7 @@ const Slide9Contato = () => (
 
 // ============== Stage ==============
 
-const slides = [
+export const presentationSlides = [
   Slide1Capa,
   Slide2Sobre,
   Slide85Clientes,
@@ -542,6 +542,7 @@ const slides = [
   Slide8Mapa,
   Slide9Contato,
 ];
+const slides = presentationSlides;
 const slideTitles = [
   "Capa",
   "Sobre Nós",
