@@ -399,18 +399,18 @@ const Slide7Parceiros = () => {
 
 // 08 — Mapa Presença Nacional (claro)
 const mapPins: { id: string; label: string; top: string; left: string; hq?: boolean }[] = [
-  { id: "df", label: "Brasília · Sede", top: "56%", left: "55%", hq: true },
-  { id: "rr", label: "Roraima", top: "27%", left: "45%" },
-  { id: "ap", label: "Amapá", top: "26%", left: "53%" },
-  { id: "pa", label: "Pará", top: "37%", left: "48%" },
-  { id: "ro", label: "Rondônia", top: "48%", left: "37%" },
-  { id: "to", label: "Tocantins", top: "44%", left: "52%" },
-  { id: "rn", label: "Rio Grande do Norte", top: "40%", left: "67%" },
-  { id: "pb", label: "Paraíba", top: "43%", left: "67%" },
-  { id: "ba", label: "Bahia", top: "51%", left: "61%" },
-  { id: "go", label: "Goiás", top: "55%", left: "52%" },
+  { id: "df", label: "Brasília · Sede", top: "55%", left: "53%", hq: true },
+  { id: "rr", label: "Roraima", top: "20%", left: "37%" },
+  { id: "ap", label: "Amapá", top: "21%", left: "50%" },
+  { id: "pa", label: "Pará", top: "31%", left: "46%" },
+  { id: "ro", label: "Rondônia", top: "46%", left: "29%" },
+  { id: "to", label: "Tocantins", top: "41%", left: "51%" },
+  { id: "rn", label: "Rio Grande do Norte", top: "34%", left: "73%" },
+  { id: "pb", label: "Paraíba", top: "38%", left: "74%" },
+  { id: "ba", label: "Bahia", top: "48%", left: "62%" },
+  { id: "go", label: "Goiás", top: "53%", left: "50%" },
   { id: "es", label: "Espírito Santo", top: "59%", left: "63%" },
-  { id: "sp", label: "São Paulo", top: "67%", left: "51%" },
+  { id: "sp", label: "São Paulo", top: "65%", left: "47%" },
 ];
 
 const Slide8Mapa = () => (
