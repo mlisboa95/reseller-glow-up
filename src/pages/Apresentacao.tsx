@@ -216,19 +216,20 @@ const Slide2Sobre = () => {
       eyebrow="Sobre nós"
       title="Conectando tecnologia a"
       accent="resultados reais."
-      number="03 / 09"
+      number="02 / 08"
     >
       <div className="grid lg:grid-cols-[1.1fr,1fr] gap-12 h-full items-center">
         <div className="space-y-6">
+          <p className="text-2xl md:text-3xl font-display font-semibold text-gray-900 leading-snug">
+            Não vendemos caixas. Entregamos{" "}
+            <span className="text-orange-600">infraestrutura que funciona</span>{" "}
+            — projetada, fornecida e operada por uma única equipe.
+          </p>
           <p className="text-lg md:text-xl text-gray-700 leading-relaxed">
             Sede em Brasília, atuação nacional. Há mais de duas décadas
             ajudamos empresas privadas e órgãos públicos a{" "}
             <span className="text-gray-900 font-semibold">projetar, implantar e operar</span>{" "}
             infraestrutura de TI segura.
-          </p>
-          <p className="text-base md:text-lg text-gray-500 leading-relaxed">
-            Equipe multi-vendor com entrega on-prem, híbrida e cloud. Projeto,
-            fornecimento e operação em um só lugar.
           </p>
           <div className="flex flex-wrap gap-2 pt-2">
             {["Esfera Federal", "Estadual", "Municipal", "Empresas Privadas"].map((t) => (
