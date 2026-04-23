@@ -399,17 +399,18 @@ const Slide7Parceiros = () => {
 
 // 08 — Mapa Presença Nacional (claro)
 const mapPins: { id: string; label: string; top: string; left: string; hq?: boolean }[] = [
-  { id: "df", label: "Brasília · Sede", top: "55%", left: "55%", hq: true },
-  { id: "rr", label: "Roraima", top: "12%", left: "44%" },
-  { id: "ap", label: "Amapá", top: "16%", left: "57%" },
-  { id: "pa", label: "Pará", top: "30%", left: "52%" },
-  { id: "ro", label: "Rondônia", top: "44%", left: "33%" },
-  { id: "to", label: "Tocantins", top: "44%", left: "55%" },
-  { id: "rn", label: "Rio Grande do Norte", top: "36%", left: "78%" },
-  { id: "pb", label: "Paraíba", top: "40%", left: "79%" },
-  { id: "ba", label: "Bahia", top: "53%", left: "70%" },
-  { id: "go", label: "Goiás", top: "57%", left: "52%" },
-  { id: "es", label: "Espírito Santo", top: "65%", left: "70%" },
+  { id: "df", label: "Brasília · Sede", top: "62%", left: "55%", hq: true },
+  { id: "rr", label: "Roraima", top: "22%", left: "44%" },
+  { id: "ap", label: "Amapá", top: "24%", left: "55%" },
+  { id: "pa", label: "Pará", top: "36%", left: "50%" },
+  { id: "ro", label: "Rondônia", top: "50%", left: "37%" },
+  { id: "to", label: "Tocantins", top: "50%", left: "55%" },
+  { id: "rn", label: "Rio Grande do Norte", top: "44%", left: "73%" },
+  { id: "pb", label: "Paraíba", top: "47%", left: "73%" },
+  { id: "ba", label: "Bahia", top: "58%", left: "65%" },
+  { id: "go", label: "Goiás", top: "63%", left: "52%" },
+  { id: "es", label: "Espírito Santo", top: "68%", left: "64%" },
+  { id: "sp", label: "São Paulo", top: "73%", left: "55%" },
 ];
 
 const Slide8Mapa = () => (
@@ -439,7 +440,7 @@ const Slide8Mapa = () => (
                 <div className="relative">
                   <span className="absolute inset-0 rounded-full bg-blue-500/30 blur-md scale-150" />
                   <MapPin
-                    className="relative w-8 h-8 text-blue-600 fill-blue-500 stroke-white"
+                    className="relative w-6 h-6 text-blue-600 fill-blue-500 stroke-white"
                     strokeWidth={2.2}
                   />
                 </div>
@@ -447,7 +448,7 @@ const Slide8Mapa = () => (
                 <div className="relative">
                   <span className="absolute inset-0 rounded-full bg-orange-500/25 blur-sm scale-150" />
                   <MapPin
-                    className="relative w-6 h-6 text-orange-600 fill-orange-500 stroke-white"
+                    className="relative w-4 h-4 text-orange-600 fill-orange-500 stroke-white"
                     strokeWidth={2.2}
                   />
                 </div>
@@ -477,7 +478,7 @@ const Slide8Mapa = () => (
               </p>
             </div>
             <p className="text-base font-display font-bold text-gray-900">
-              10 estados
+              11 estados
             </p>
           </div>
         </div>
@@ -496,6 +497,7 @@ const Slide8Mapa = () => (
               "Rio Grande do Norte",
               "Rondônia",
               "Roraima",
+              "São Paulo",
               "Tocantins",
             ].map((uf) => (
               <span key={uf} className="flex items-center gap-2">
