@@ -32,6 +32,11 @@ import clientMetrodf from "@/assets/clients/metrodf.jpg";
 import clientDpf from "@/assets/clients/dpf.jpg";
 import clientDpe from "@/assets/clients/dpe.jpg";
 import clientDetranap from "@/assets/clients/detranap.jpg";
+import clientAlero from "@/assets/clients/alero.jpg";
+import clientSenado from "@/assets/clients/senado.jpeg";
+import clientTrt23 from "@/assets/clients/trt23.png";
+import clientTrt24 from "@/assets/clients/trt24.png";
+import clientMpdft from "@/assets/clients/mpdft.png";
 
 // Logos dos parceiros
 import aristaLogo from "@/assets/partners/arista-partner.svg";
@@ -446,16 +451,21 @@ const Slide8Mapa = () => (
 // 08.5 — Quem confia (claro)
 const Slide85Clientes = () => {
   const clients = [
+    { src: clientSenado, name: "Senado Federal" },
     { src: clientDpf, name: "Polícia Federal" },
     { src: clientPcdf, name: "Polícia Civil DF" },
     { src: clientSerpro, name: "Serpro" },
     { src: clientMetrodf, name: "Metrô DF" },
+    { src: clientMpdft, name: "MPDFT" },
+    { src: clientAlero, name: "ALE Rondônia" },
     { src: clientUfg, name: "UFG" },
     { src: clientTjto, name: "TJ Tocantins" },
     { src: clientTjes, name: "TJ Espírito Santo" },
     { src: clientMpto, name: "MP Tocantins" },
     { src: clientDpe, name: "DPE Tocantins" },
     { src: clientDetranap, name: "Detran Amapá" },
+    { src: clientTrt23, name: "TRT 23ª Região (MT)" },
+    { src: clientTrt24, name: "TRT 24ª Região (MS)" },
   ];
   return (
     <LightShell
