@@ -4,11 +4,11 @@ const ApresentacaoPrint = () => {
   return (
     <div style={{ background: "#fff", margin: 0, padding: 0 }}>
       <style>{`
-        @page { size: 1920px 1080px; margin: 0; }
+        @page { size: 1280px 720px; margin: 0; }
         html, body, #root { margin: 0; padding: 0; background: #fff; }
         .slide-print {
-          width: 1920px;
-          height: 1080px;
+          width: 1280px;
+          height: 720px;
           page-break-after: always;
           break-after: page;
           overflow: hidden;
