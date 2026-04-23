@@ -535,23 +535,21 @@ const Slide9Contato = () => (
 const slides = [
   Slide1Capa,
   Slide2Sobre,
+  Slide85Clientes,
   Slide4ManifestoSolucoes,
   Slide5Solucoes,
-  Slide6ManifestoParceiros,
   Slide7Parceiros,
   Slide8Mapa,
-  Slide85Clientes,
   Slide9Contato,
 ];
 const slideTitles = [
   "Capa",
   "Sobre Nós",
+  "Quem confia",
   "Portfólio",
   "Soluções",
-  "Ecossistema",
   "Parceiros",
   "Presença Nacional",
-  "Clientes",
   "Contato",
 ];
 const totalSlides = slides.length;
